@@ -6,15 +6,13 @@ title: About
 
 {% for post in site.posts %}
 <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img data-src="holder.js/300x300" alt="...">
+  <div class="col-md-6">
+  	<img src="..." alt="..." class="img-rounded">
       <div class="caption">
         <h3>{{ post.title }}</h3>
         <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </p>
         <a href="{{ post.url }}" class="btn btn-primary" role="button">Read</a> 
       </div>
-    </div>
   </div>
 </div>
 {% endfor %}
