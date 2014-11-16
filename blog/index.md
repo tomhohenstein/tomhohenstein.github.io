@@ -7,7 +7,7 @@ title: About
 {% for post in site.posts %}
 <div class="row">
   <div class="col-md-6">
-  	<img src="..." alt="..." class="img-rounded">
+  	<img src="{{ site.baseurl/assets/img/post.thumbnail}}" alt="..." class="img-rounded">
       <div class="caption">
         <h3>{{ post.title }}</h3>
         <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </p>
