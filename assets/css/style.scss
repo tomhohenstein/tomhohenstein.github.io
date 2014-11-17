@@ -101,13 +101,17 @@ p {
 	background-color: $background-w;
 }
 
-
-
 .navbar-header {
     float: left;
     padding: 0 15px 15px 15px;
     text-align: center;
     width: 100%;
+}
+
+.navbar-header ul {
+	display: inline-block;
+	list-style: none;
+	float: right;
 }
 
 #brand-holder {
@@ -117,12 +121,6 @@ p {
 	padding: 16px 20px 60px 20px;
 }
 
-/* About, Blog, Projects */
-
-#nav-projects {
-	display: block; 
-	padding-left: 15px; 
-}
 
 /* fix some bootstap styles to match */ 
 @media (min-width: 768px) {

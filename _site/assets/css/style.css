@@ -83,17 +83,17 @@ p {
   width: 100%;
 }
 
+.navbar-header ul {
+  display: inline-block;
+  list-style: none;
+  float: right;
+}
+
 #brand-holder {
   display: inline-block;
   float: none;
   margin: 0 0;
   padding: 16px 20px 60px 20px;
-}
-
-/* About, Blog, Projects */
-#nav-projects {
-  display: block;
-  padding-left: 15px;
 }
 
 /* fix some bootstap styles to match */
