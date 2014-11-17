@@ -9,6 +9,38 @@
 /*** 
 	Colors 
 ***/
+/***
+	Text
+***/
+/************************
+
+  Typography
+
+*************************/
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a,
+ul,
+li,
+p {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+ul,
+li,
+p {
+  color: #444444;
+}
+
 /************************
 
   Body Styles 
@@ -24,19 +56,24 @@
 
 *************************/
 .custom-navbar-link {
-  color: red;
+  color: white;
 }
 
-.navbar-brand {
+.navbar-default {
+  background-color: rgba(101, 101, 107, 0.5);
+  border: none;
+}
+
+.navbar-default .navbar-brand {
   border-radius: 0 0 60px 60px;
-  background: rgba(255, 255, 255, 0.5);
+  background-color: white;
   float: none;
   margin: 0 25px;
   padding: 15px 30px 30px 30px;
 }
 
-.navbar-default {
-  background-color: rgba(101, 101, 107, 0.5);
+.navbar-default .navbar-brand:hover {
+  background-color: white;
 }
 
 .navbar-header {

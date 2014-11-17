@@ -19,8 +19,49 @@
 /*** 
 	Colors 
 ***/ 
-	$background: rgba(101, 101, 107, .5); 
-	$color: rgba(255, 255, 255, .5); 
+	$background-d: rgba(101, 101, 107, .5); 
+	$background-l: rgba(255, 255, 255, .5); 
+	$background-w: rgb(255, 255, 255); 
+
+/***
+	Text
+***/ 	
+	$text-p: rgb(68, 68, 68);
+	$text-w: rgb(255, 255, 255); 
+	$font-size: 20px; 
+
+
+/************************
+
+  Typography
+
+*************************/ 
+a, 
+a:hover {
+	text-decoration: none; 
+}
+
+a, 
+ul,
+li,  
+p {
+	font-size: $font-size; 
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+a, 
+ul,
+li,  
+p {
+	color: $text-p; 
+}
+
+
+
 
 /************************
 
@@ -40,20 +81,27 @@
 *************************/ 
 
 .custom-navbar-link {
-	color: red; 
+ 	color: $text-w; 
 }
 
-.navbar-brand {
+.navbar-default {
+	background-color: $background-d; 
+	border: none;
+}
+
+.navbar-default .navbar-brand {
 	border-radius: 0 0 60px 60px;
-	background: $color; 
+	background-color: $background-w;
 	float: none; 
 	margin: 0 25px;
 	padding: 15px 30px 30px 30px;
 }
 
-.navbar-default{
-	background-color: $background; 
+.navbar-default .navbar-brand:hover {
+	background-color: $background-w;
 }
+
+
 
 .navbar-header {
     float: left;
