@@ -12,8 +12,8 @@ title: Blog
         <h2>{{ post.title }}</h2>
         <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </p>
         <ul>
-        {% for tag in site.tags %}
-        <li>{{ post.tag }}</li>
+        {% for tag in post.tags %}
+        	<li>{{ post.tag }}</li>
         {% endfor %}
         </ul>
         <a href="{{ post.url }}" class="btn-lg btn-primary" role="button">Read</a> 
