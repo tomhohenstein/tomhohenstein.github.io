@@ -1,5 +1,44 @@
-/* break points */
-/* center brand */
+/************************
+
+  My Variables 
+
+*************************/
+/*** 
+	Break Points 
+***/
+/*** 
+	Colors 
+***/
+/************************
+
+  Body Styles 
+
+*************************/
+#body-wrapper {
+  margin-top: 200px;
+}
+
+/************************
+
+  Navigation Styles 
+
+*************************/
+.custom-navbar-link {
+  color: red;
+}
+
+.navbar-brand {
+  border-radius: 0 0 60px 60px;
+  background: rgba(255, 255, 255, 0.5);
+  float: none;
+  margin: 0 25px;
+  padding: 15px 30px 30px 30px;
+}
+
+.navbar-default {
+  background-color: rgba(101, 101, 107, 0.5);
+}
+
 .navbar-header {
   float: left;
   padding: 0 15px 15px 15px;
@@ -8,28 +47,16 @@
 }
 
 #brand-holder {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
   display: inline-block;
-  border-radius: 0 0 90px 90px;
   float: none;
   margin: 0 0;
-  padding: 16px 30px 70px 30px;
-}
-
-.navbar-brand {
-  border: 1px solid;
-  border-radius: 0 0 60px 60px;
-  background: rgba(255, 255, 255, 0.5);
-  float: none;
-  margin: 0 25px;
-  padding: 15px 30px 30px 30px;
+  padding: 16px 20px 60px 20px;
 }
 
 /* About, Blog, Projects */
 #nav-projects {
   display: block;
+  padding-left: 15px;
 }
 
 /* fix some bootstap styles to match */
