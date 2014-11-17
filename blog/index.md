@@ -5,18 +5,22 @@ title: Blog
 ##A list of blog posts
 
 {% for post in site.posts %}
-<div class="row">
-  <div class="col-md-6">
-  	<img alt="..." class="img-rounded" height="200" src="{{ site.baseurl }}/assets/img/{{ post.thumbnail }}" width="200" >
+<div class="blog-list row">
+  <div class="col-md-6 col-md-offset-1">
+  	<img alt="..." class="blog-list-img img-rounded" height="200" src="{{ site.baseurl }}/assets/img/{{ post.thumbnail }}" width="200" >
       <div class="caption">
         <h2>{{ post.title }}</h2>
         <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </p>
-        <ul>
+        <p>Tags: 
         {% for tag in post.tags %}
-        	<li>{{ tag }}</li>
+          {% if forloop.last == false %}
+        	  {{ tag }},
+          {% else %} 
+            {{ tag }}. 
+          {% endif %}
         {% endfor %}
-        </ul>
-        <a href="{{ post.url }}" class="btn-lg btn-primary" role="button">Read</a> 
+        </p>
+        <a href="{{ post.url }}" class="btn-lg btn-default" role="button">Read</a> 
       </div>
   </div>
 </div>

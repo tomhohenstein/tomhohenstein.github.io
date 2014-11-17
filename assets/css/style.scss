@@ -60,12 +60,9 @@ p {
 	color: $text-p; 
 }
 
-
-
-
 /************************
 
-  Body Styles 
+  Body  
 
 *************************/ 
 
@@ -73,10 +70,9 @@ p {
 	margin-top: 200px; 
 }
 
-
 /************************
 
-  Navigation Styles 
+  Navigation  
 
 *************************/ 
 
@@ -123,6 +119,25 @@ p {
 	float: none;
 	margin: 0 0;
 	padding: 16px 15px 40px 15px;
+}
+
+/************************
+
+  Blog List
+
+*************************/ 
+
+.blog-list-img {
+	float: left; 
+	margin: 0 15px 0 0; 
+}
+
+.caption .btn-lg {
+	font-size: $font-size+2px; 
+	padding: 10px 16px 10px 0; 
+}
+.caption .btn-lg:hover {
+	
 }
 
 
