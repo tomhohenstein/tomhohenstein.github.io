@@ -14,6 +14,7 @@ title: Blog
         <ul>
         {% for tag in site.tags %}
         <li>{{ post.tag }}</li>
+        {% endfor %}
         </ul>
         <a href="{{ post.url }}" class="btn-lg btn-primary" role="button">Read</a> 
       </div>
