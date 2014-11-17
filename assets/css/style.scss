@@ -104,7 +104,6 @@ p {
 .navbar-header {
     float: left;
     padding: 0 15px 15px 15px;
-    text-align: center;
     width: 100%;
 }
 
@@ -112,13 +111,14 @@ p {
 	display: inline-block;
 	list-style: none;
 	float: right;
+	padding: 10px 0; 
 }
 
 #brand-holder {
 	display: inline-block;
 	float: none;
 	margin: 0 0;
-	padding: 16px 20px 60px 20px;
+	padding: 16px 15px 40px 15px;
 }
 
 
