@@ -11,6 +11,10 @@ title: About
       <div class="caption">
         <h2>{{ post.title }}</h2>
         <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </p>
+        <ul>
+        {% for tag in site.tags %}
+        <li>{{ post.tag }}</li>
+        </ul>
         <a href="{{ post.url }}" class="btn-lg btn-primary" role="button">Read</a> 
       </div>
   </div>
