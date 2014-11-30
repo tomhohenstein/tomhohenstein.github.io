@@ -7,6 +7,78 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Learning Markdown</title>
+				<description>&lt;p&gt;While I enjoy marking up text with HTML, it is in my interest to learn, and master, markdown. This post is a little playpen for me to learn and document learning markdowns. &lt;/p&gt;
+
+&lt;p&gt;Let’s start with some basics &lt;/p&gt;
+
+&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
+
+&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
+
+&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
+
+&lt;h3 id=&quot;text-basics&quot;&gt;Text Basics&lt;/h3&gt;
+
+&lt;p&gt;Now for a paragraph of text. I have written a few sentences of text. 
+This is on a new line in my text editor, but it should be in the same paragraph. &lt;/p&gt;
+
+&lt;p&gt;Text separated by an empty lines start a new paragraph. &lt;/p&gt;
+
+&lt;p&gt;An unordered list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;item &lt;/li&gt;
+  &lt;li&gt;item &lt;/li&gt;
+  &lt;li&gt;item &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ordered list:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;item &lt;/li&gt;
+  &lt;li&gt;item &lt;/li&gt;
+  &lt;li&gt;item &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And a nested list: &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;item 
+    &lt;ul&gt;
+      &lt;li&gt;sub-item &lt;/li&gt;
+      &lt;li&gt;sub-item 
+        &lt;ol&gt;
+          &lt;li&gt;sub-sub-item &lt;/li&gt;
+          &lt;li&gt;sub-sub-item &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;sub-item &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;item &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;italic text&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;bold text&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;~~strikethrough~~ &lt;/p&gt;
+
+&lt;p&gt;‘as is text s p  a   c   i  n g’&lt;/p&gt;
+
+&lt;h3 id=&quot;linking&quot;&gt;Linking&lt;/h3&gt;
+</description>
+				<pubDate>Sun, 30 Nov 2014 00:00:00 -0500</pubDate>
+				<link>/Learning-Markdown/</link>
+				<guid isPermaLink="true">/Learning-Markdown/</guid>
+			</item>
+		
+			<item>
 				<title>Hello Again</title>
 				<description>&lt;p&gt;This is my second post. It is normally useful to have a few posts up when designing a blog’s layout. I wouldn’t read this one : ) &lt;/p&gt;
 </description>
