@@ -7,10 +7,17 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Hello Again</title>
+				<description>&lt;p&gt;This is my second post. It is normally useful to have a few posts up when designing a blog’s layout. I wouldn’t read this one : ) &lt;/p&gt;
+</description>
+				<pubDate>Tue, 25 Nov 2014 00:00:00 -0500</pubDate>
+				<link>/Hello-Again/</link>
+				<guid isPermaLink="true">/Hello-Again/</guid>
+			</item>
+		
+			<item>
 				<title>Hello World</title>
-				<description>&lt;h2 id=&quot;hello-world&quot;&gt;Hello World!&lt;/h2&gt;
-
-&lt;p&gt;This is my first post written in markdown, processed via jekyll, and hosted on GitHub. It is going to be a bit of a project, but everything seems to be coming along one step at a time.  &lt;/p&gt;
+				<description>&lt;p&gt;This is my first post written in markdown, processed via jekyll, and hosted on GitHub. It is going to be a bit of a project, but everything seems to be coming along one step at a time.  &lt;/p&gt;
 </description>
 				<pubDate>Sun, 16 Nov 2014 00:00:00 -0500</pubDate>
 				<link>/Hello-World/</link>

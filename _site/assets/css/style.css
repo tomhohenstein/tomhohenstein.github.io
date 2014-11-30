@@ -48,6 +48,7 @@ p {
 *************************/
 #body-wrapper {
   margin-top: 200px;
+  padding: 0 10px;
 }
 
 /************************
@@ -55,6 +56,13 @@ p {
   Navigation  
 
 *************************/
+#brand-holder {
+  display: inline-block;
+  float: none;
+  margin: 0 0;
+  padding: 16px 15px 40px 15px;
+}
+
 .custom-navbar-link {
   color: white;
 }
@@ -93,31 +101,67 @@ p {
   padding: 5px 0;
 }
 
-#brand-holder {
-  display: inline-block;
-  float: none;
-  margin: 0 0;
-  padding: 16px 15px 40px 15px;
-}
-
-/************************
-
-  Blog List
-
-*************************/
-.blog-list-img {
-  float: left;
-  margin: 0 15px 0 0;
-}
-
-.caption .btn-lg {
-  font-size: 22px;
-  padding: 10px 16px 10px 0;
-}
-
 /* fix some bootstap styles to match */
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: 25px;
   }
+
+  /************************
+  
+    Blog List
+  
+  *************************/
+  .blog-list-img {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .blog-list-img {
+    display: inline-block;
+    float: left;
+    margin: 0px 15px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-list {
+    border-bottom: 1px solid black;
+    padding: 0 0 10px 20px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .caption {
+    margin-left: 175px;
+  }
+}
+
+@media (min-width: 768px) {
+  .caption .btn-lg {
+    font-size: 22px;
+    padding: 10px 16px 10px 16px;
+  }
+
+  .thumbnail-placeholder {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .thumbnail-placeholder {
+    background-color: rgba(101, 101, 107, 0.5);
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    height: 150px;
+    margin: 0px 15px 0 0;
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  /************************
+  
+    Navigation  
+  
+  *************************/
 }

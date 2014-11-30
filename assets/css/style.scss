@@ -68,6 +68,7 @@ p {
 
 #body-wrapper {
 	margin-top: 200px; 
+	padding: 0 10px; 
 }
 
 /************************
@@ -75,6 +76,13 @@ p {
   Navigation  
 
 *************************/ 
+
+#brand-holder {
+	display: inline-block;
+	float: none;
+	margin: 0 0;
+	padding: 16px 15px 40px 15px;
+}
 
 .custom-navbar-link {
  	color: $text-w; 
@@ -114,12 +122,13 @@ p {
 	padding: 5px 0; 
 }
 
-#brand-holder {
-	display: inline-block;
-	float: none;
-	margin: 0 0;
-	padding: 16px 15px 40px 15px;
-}
+
+/* fix some bootstap styles to match */ 
+@media (min-width: $break-s) {
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+ 		margin-left: 25px;
+	}
+
 
 /************************
 
@@ -128,22 +137,55 @@ p {
 *************************/ 
 
 .blog-list-img {
-	float: left; 
-	margin: 0 15px 0 0; 
+	display: none; 
+	@media (min-width: $break-s) {
+		display: inline-block; 
+		float: left; 
+		margin: 0px 15px 0 0; 
+	}
+}
+
+.blog-list {
+	border-bottom: 1px solid black; 
+	padding: 0 0 10px 20px; 
+}
+
+#blog-title {
+
+}
+
+.caption {
+	@media (min-width: $break-s) {
+		margin-left: 175px; 
+	}
 }
 
 .caption .btn-lg {
 	font-size: $font-size+2px; 
-	padding: 10px 16px 10px 0; 
+	padding: 10px 16px 10px 16px; 
 }
 .caption .btn-lg:hover {
 	
 }
 
-
-/* fix some bootstap styles to match */ 
-@media (min-width: 768px) {
-	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
- 		margin-left: 25px;
+.thumbnail-placeholder {
+	display: none; 
+	@media (min-width: $break-s) {
+		background-color: $background-d; 
+		border-radius: 5px; 
+		display: inline-block; 
+		float: left; 
+		height: 150px;
+		margin: 0px 15px 0 0;  
+		width: 150px; 
 	}
+	
+}
+
+/************************
+
+  Navigation  
+
+*************************/
+
 }

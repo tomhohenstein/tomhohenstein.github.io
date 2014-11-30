@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>/Hello-Again/</loc>
+    
+    <lastmod>2014-11-25T00:00:00-05:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>/Hello-World/</loc>
     
     <lastmod>2014-11-16T00:00:00-05:00</lastmod>
@@ -13,28 +21,28 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-11-17T16:59:56-05:00</lastmod>
+    <lastmod>2014-11-30T14:58:26-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2014-11-17T16:59:56-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/</loc>
-    <lastmod>2014-11-17T16:59:56-05:00</lastmod>
+    <loc>/opinion/</loc>
+    <lastmod>2014-11-30T14:58:26-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/projects/</loc>
-    <lastmod>2014-11-17T16:59:56-05:00</lastmod>
+    <lastmod>2014-11-30T14:58:26-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2014-11-30T14:58:26-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
