@@ -10,6 +10,15 @@
 				<title>Learning Markdown</title>
 				<description>&lt;p&gt;While I enjoy marking up text with HTML, it is in my interest to learn, and master, markdown. This post is a little playpen for me to learn and document learning markdowns. &lt;/p&gt;
 
+&lt;p&gt;Resources: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown/&quot;&gt;GitHub Flavored Markdown&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot;&gt;Markdown Basics&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;Let’s start with some basics &lt;/p&gt;
 
 &lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
@@ -67,11 +76,38 @@ This is on a new line in my text editor, but it should be in the same paragraph.
 
 &lt;p&gt;&lt;strong&gt;bold text&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;~~strikethrough~~ &lt;/p&gt;
+&lt;p&gt;~~strikethrough~~ ?!? - not really working right now &lt;/p&gt;
 
-&lt;p&gt;‘as is text s p  a   c   i  n g’&lt;/p&gt;
+&lt;p&gt;Let’s try to get a blockquote &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You are here and the time is now&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;as is text s p  a   c   i  n g&lt;/code&gt; ?!? - shows up as code &lt;/p&gt;
 
 &lt;h3 id=&quot;linking&quot;&gt;Linking&lt;/h3&gt;
+
+&lt;p&gt;http://tomhohenstein.com - This should be autolinked&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tomhohenstein.com&quot;&gt;Tom’s website&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Basic syntax &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;	var tom = okay; 
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We can also do &lt;code&gt;var this = inline&lt;/code&gt; if we want. &lt;/p&gt;
+
+&lt;p&gt;Declare a language &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python
+x = 0 
+for x in this:
+  do something 
+&lt;/code&gt;&lt;/p&gt;
 </description>
 				<pubDate>Sun, 30 Nov 2014 00:00:00 -0500</pubDate>
 				<link>/Learning-Markdown/</link>

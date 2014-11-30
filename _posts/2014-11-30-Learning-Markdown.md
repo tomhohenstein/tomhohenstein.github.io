@@ -8,6 +8,14 @@ tags: [[learning, markdown]]
 
 While I enjoy marking up text with HTML, it is in my interest to learn, and master, markdown. This post is a little playpen for me to learn and document learning markdowns. 
 
+Resources: 
+
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+* [Markdown Basics](https://help.github.com/articles/markdown-basics/) 
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+
 Let's start with some basics 
 
 # Heading 1 
@@ -54,8 +62,34 @@ And a nested list:
 
 **bold text**
 
-~~strikethrough~~ 
+~~strikethrough~~ ?!? - not really working right now 
 
-'as is text s p  a   c   i  n g'
+Let's try to get a blockquote 
+
+> You are here and the time is now
+
+`as is text s p  a   c   i  n g` ?!? - shows up as code 
 
 ### Linking
+
+http://tomhohenstein.com - This should be autolinked
+
+[Tom's website](http://tomhohenstein.com)
+
+
+### Code 
+
+Basic syntax 
+
+```	var tom = okay; 
+```
+
+We can also do `var this = inline` if we want. 
+
+Declare a language 
+
+```python
+x = 0 
+for x in this:
+  do something 
+```
