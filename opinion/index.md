@@ -10,13 +10,11 @@ title: Opinion
     <div>
       {% if post.thumbnail == FALSE %}
           <a class="img-link" href="{{ post.url }}">
-            <div class="thumbnail-placeholder">
-              <p> {{ post.date | date: "%b %e" }}</p>
-              <p> {{ post.date | date: "%Y" }}</p>
-            </div>
+              <span class="date-holder">{{ post.date | date: "%b. %e, %Y" }}</span>
           </a>
         {% else %} 
-          <a href="{{ post.url }}">
+          <a class="img-link" href="{{ post.url }}">
+            <span class="date-holder">{{ post.date | date: "%b. %e, %Y" }}</span>
             <img alt="..." class="blog-list-img img-rounded" height="150" src="{{ site.baseurl }}/assets/img/{{ post.thumbnail }}" width="150">
           </a>
         {% endif %}
