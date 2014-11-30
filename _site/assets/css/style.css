@@ -95,8 +95,9 @@ span {
 .navbar-header ul {
   display: inline-block;
   list-style: none;
+  margin-bottom: 0;
   float: right;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 .navbar-header ul li {
@@ -129,6 +130,10 @@ span {
 .blog-list {
   border-bottom: 1px solid black;
   padding: 0 0 10px 20px;
+}
+
+.blog-wrapper h1 {
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {

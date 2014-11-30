@@ -30,7 +30,6 @@ title: Opinion
             {% endif %}
           {% endfor %}
           </p>
-          <a href="{{ post.url }}" class="btn-lg btn-default" role="button">Read</a> 
         </div>
     </div>
   </div>
