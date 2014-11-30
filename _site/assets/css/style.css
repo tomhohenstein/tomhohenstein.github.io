@@ -19,6 +19,7 @@
 *************************/
 a,
 a:hover {
+  color: #444444;
   text-decoration: none;
 }
 
@@ -66,24 +67,23 @@ span {
 }
 
 .custom-navbar-link {
-  color: white;
+  color: #444444;
 }
 
 .navbar-default {
-  background-color: rgba(101, 101, 107, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   border: none;
 }
 
 .navbar-default .navbar-brand {
   border-radius: 0 0 60px 60px;
-  background-color: white;
   float: none;
   margin: 0 25px;
   padding: 15px 40px 40px 40px;
 }
 
 .navbar-default .navbar-brand:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .navbar-header {

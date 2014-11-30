@@ -20,7 +20,7 @@
 	Colors 
 ***/ 
 	$background-d: rgba(101, 101, 107, .5); 
-	$background-l: rgba(255, 255, 255, .5); 
+	$background-l: rgba(255, 255, 255, .9); 
 	$background-w: rgb(255, 255, 255); 
 
 /***
@@ -38,6 +38,7 @@
 *************************/ 
 a, 
 a:hover {
+	color: $text-p; 
 	text-decoration: none; 
 }
 
@@ -87,24 +88,23 @@ span {
 }
 
 .custom-navbar-link {
- 	color: $text-w; 
+ 	color: $text-p; 
 }
 
 .navbar-default {
-	background-color: $background-d; 
+	background-color: $background-l; 
 	border: none;
 }
 
 .navbar-default .navbar-brand {
 	border-radius: 0 0 60px 60px;
-	background-color: $background-w;
 	float: none; 
 	margin: 0 25px;
 	padding: 15px 40px 40px 40px;
 }
 
 .navbar-default .navbar-brand:hover {
-	background-color: $background-w;
+	background-color: $background-l;
 }
 
 .navbar-header {
