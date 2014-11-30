@@ -33,7 +33,7 @@
 
 &lt;h3 id=&quot;text-basics&quot;&gt;Text Basics&lt;/h3&gt;
 
-&lt;p&gt;Now for a paragraph of text. I have written a few sentences of text. 
+&lt;p&gt;Now for a paragraph of text. I have written a few sentences of text. &lt;br /&gt;
 This is on a new line in my text editor, but it should be in the same paragraph. &lt;/p&gt;
 
 &lt;p&gt;Text separated by an empty lines start a new paragraph. &lt;/p&gt;
@@ -101,13 +101,20 @@ This is on a new line in my text editor, but it should be in the same paragraph.
 
 &lt;p&gt;We can also do &lt;code&gt;var this = inline&lt;/code&gt; if we want. &lt;/p&gt;
 
-&lt;p&gt;Declare a language &lt;/p&gt;
+&lt;p&gt;Declare a language (not working yet)&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;python
-x = 0 
+&lt;p&gt;Python&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;x = 0 
 for x in this:
   do something 
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;JavaScript &lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;if (here)
+  return true; 
+&lt;/code&gt;&lt;/pre&gt;
 </description>
 				<pubDate>Sun, 30 Nov 2014 00:00:00 -0500</pubDate>
 				<link>/Learning-Markdown/</link>

@@ -86,10 +86,19 @@ Basic syntax
 
 We can also do `var this = inline` if we want. 
 
-Declare a language 
+Declare a language (not working yet)
+
+Python
 
 ```python
 x = 0 
 for x in this:
   do something 
+```
+
+JavaScript 
+
+```javascript
+if (here)
+  return true; 
 ```
