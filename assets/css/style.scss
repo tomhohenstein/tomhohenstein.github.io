@@ -70,7 +70,8 @@ span {
 *************************/ 
 
 #body-wrapper {
-	margin-top: 200px; 
+	margin-top: 200px;
+	max-width: $break-l;  
 	padding: 0 10px; 
 }
 
@@ -110,7 +111,8 @@ span {
 .navbar-header {
     float: left;
     padding: 0 0 15px 15px;
-    width: 100%;
+    width: 100%; 
+    max-width: $break-l;
 }
 
 .navbar-header ul {
