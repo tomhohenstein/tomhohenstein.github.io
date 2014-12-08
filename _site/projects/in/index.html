@@ -42,12 +42,8 @@
     <style>
 
 .link {
-    stroke: #777;
+    stroke: rgb(25, 25, 25);
     stroke-width: 0.5px;
-}
-
-.blue {
-	background-color: blue; 
 }
 
 .node {
@@ -56,10 +52,10 @@
     stroke-width: 5px;
 }
 
-.red {
-	background-color: red; 
-}
+text {
+	color: black;
 
+}
 
 </style>
 
@@ -67,7 +63,7 @@
 
 <div id="svg"></div>
 
-<h1 id="end">End</h1>
+<div id="information"></div>
 
 <script src="/projects/in/d3/d3.min.js"></script>
 
@@ -84,84 +80,77 @@ var svg = d3.select("#svg").append("svg")
     .attr("height", height);
 
 
-d3.json("in.json", function(error, links){
+
+d3.json("node.json", function(error, nodes){
 	if(error) return console.warn(error);
 	
-	//create nodes - a, b c, d, and e are librarians
-	var nodes = [
-			{
-				"label": "A",
-				"color": "blue",
-				"size": 10
-			},
-			{
-				"label": "B",
-				"color": "blue",
-				"size": 10
-			},
-			{
-				"label": "C",
-				"color": "blue",
-				"size": 10
-			},
-			{
-				"label": "D",
-				"color": "blue",
-				"size": 10
-			},
-			{
-				"label": "E",
-				"color": "blue",
-				"size": 10
-				
-			}];
-		
-	// add faculty faculty nodes (1-159)
-	for(i = 0; i<160; i++){
-		nodes.push({
-			"label": i,
-			"color": "red",
-			"size": 5
-		}); 
-	}
+	d3.json("edge.json", function(error, links){
+		if(error) return console.warn(error);
 
-	//links are the json file 
-	var force = d3.layout.force()
-        .size([width, height])
-        .nodes(nodes)
-        .links(links);
-    //set the link distance 
-    force.linkDistance(1);
-    //draw links first
-    var link = svg.selectAll('.link')
-		.data(links)
-		.enter().append('line')
-		.attr('class', 'link');
+		//links are the json file 
+		var force = d3.layout.force()
+	        .size([width, height])
+	        .gravity(0.8)
+	        .charge(-500)
+	        .linkStrength(0.4)
+	        .nodes(nodes)
+	        .links(links);
+	    //set the link distance 
+	    force.linkDistance(20);
 
-	//draw nodes - issue with x, y 
-	var node = svg.selectAll('.node')
-		.data(nodes)
-		.enter().append('circle')
-		.style('fill',function(d) {return d.color})
-		.attr('class','node')
-		.attr('r',function(d) {return d.size})
-		.attr('id', function(d) {return d.label});
+	    var drag = force.drag()
+    		.on("dragstart", dragstart);
 
-	force.on('end', function(){
-		
-	   node.attr('cx', function(d) { return d.x; })
-	       .attr('cy', function(d) { return d.y; })
+	    //draw links first
+	    var link = svg.selectAll('.link')
+			.data(links)
+			.enter().append('line')
+			.attr('class', 'link');
 
-       link.attr('x1', function(d) { return d.source.x; })
-	        .attr('y1', function(d) { return d.source.y; })
-	        .attr('x2', function(d) { return d.target.x; })
-	        .attr('y2', function(d) { return d.target.y; });
+		//draw nodes - issue with x, y 
+		var node = svg.selectAll('.node')
+			.data(nodes)
+			.enter().append('circle')
+			.attr('class','node')
+			.style('fill',function(d) {return d.color})
+			.style('stroke',function(d) {return d.color})
+			.attr('r',function(d) {return d.size})
+			.attr('id', function(d) {return d.label})
+			.on("click", click)
+			.on("dblclick", dblclick)
+			.call(drag);
 
+		force.on('tick', function(){
+			
+		   node.attr('cx', function(d) { return d.x; })
+		       .attr('cy', function(d) { return d.y; })
+
+	       link.attr('x1', function(d) { return d.source.x; })
+		        .attr('y1', function(d) { return d.source.y; })
+		        .attr('x2', function(d) { return d.target.x; })
+		        .attr('y2', function(d) { return d.target.y; });
+
+		});
+		force.start(); 
 	});
-	force.start(); 
+	
 });
-
 //force functions 
+function click(d) {
+	console.log(d);  
+	d3.select(this).append("text")
+		.attr("x", 12)
+		.attr("dy", ".4em")
+		.text(d.label); 
+	d3.select(this).append("text")
+}
+function dblclick(d) {
+  d3.select(this).classed("fixed", d.fixed = false);
+}
+
+function dragstart(d) {
+  d3.select(this).classed("fixed", d.fixed = true);
+}
 
 </script>
 
