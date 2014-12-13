@@ -6,4 +6,23 @@ title: Welcome
   <div class="container">
     <p>Welcome, feel free to stay while I build this out : ) </p>
   </div>
+  <div class="jumbotron" id="featured-post">
+  	{% assign featuredcount = '0' %}
+	{% for post in site.posts %}
+	  {% if post.featured %}
+	  	{% assign featuredcount = featuredcount | plus:'1' %}
+		<h2>{{ post.title }}</h2>
+	    <p>{{ post.excerpt }}</p>
+	  {% endif %}
+	{% endfor %}
+	{% if featuredcount == '0' %}
+		<h2>No posts has been featured yet</h2>
+	{% endif %}
+  </div> 
+  <div class="jumbotron" id="featured-project">
+   		<h2>Featured Project here</h2> 
+   </div>
+   <div class="jumbotron" id="current-project">
+   		<h2>What I am working here</h2> 
+   </div> 
 </div>

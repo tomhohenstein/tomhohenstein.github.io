@@ -47,10 +47,34 @@ span {
 
   Body  
 
+	w/sticky footer 
+
 *************************/
+html,
+body {
+  height: 100%;
+}
+
+#body-wrapper,
+footer {
+  max-width: 1200px;
+}
+
 #body-wrapper {
   margin-top: 135px;
-  padding: 0 10px;
+  margin-bottom: 200px;
+  min-height: 100%;
+  padding: 0 50px;
+}
+
+#body-wrapper:after {
+  content: "";
+  display: block;
+}
+
+#body-wrapper:after,
+footer {
+  heigh: 200px;
 }
 
 footer {
@@ -167,6 +191,51 @@ footer {
 
 /************************
 
-  Navigation  
+  Footer Page  
 
 *************************/
+footer > div {
+  text-align: center;
+}
+
+footer .footer-icon {
+  margin: 2%;
+}
+
+/************************
+
+  About Page  
+
+*************************/
+#about-content h2,
+#about-content p {
+  text-align: center;
+}
+
+#about-content h4 {
+  font-size: 22px;
+}
+
+#about-content ul {
+  padding: 0 20px;
+}
+
+.resume-location {
+  display: block;
+  margin: 10px 0;
+}
+@media (min-width: 992px) {
+  .resume-location {
+    display: inline;
+    float: right;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #resume-experience > h3,
+  #resume-education > h3,
+  #resume-additional > h3 {
+    margin-left: 8.33333333%;
+  }
+}

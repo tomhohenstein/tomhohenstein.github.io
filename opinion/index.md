@@ -2,7 +2,6 @@
 layout: default
 title: Opinion
 ---
-
 <div class="blog-wrapper col-sm-8 col-sm-offset-1">
   <h1 id="blog-title">Some Thoughts</h1>
   {% for post in site.posts %}

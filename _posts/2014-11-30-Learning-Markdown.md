@@ -3,6 +3,7 @@ layout: post
 title: Learning Markdown 
 excerpt: A markdown testing center 
 thumbnail: 
+featured: true
 tags: [[learning, markdown]]
 ---
 
