@@ -191,7 +191,7 @@ footer {
 
 /************************
 
-  Footer Page  
+  Footer  
 
 *************************/
 footer > div {
@@ -200,6 +200,59 @@ footer > div {
 
 footer .footer-icon {
   margin: 2%;
+}
+
+/************************
+
+  Home Page  
+
+*************************/
+#featured-post {
+  background-color: white;
+}
+
+#featured-post,
+#featured-project,
+#current-projects {
+  text-align: center;
+}
+
+#featured-post > div > p:first-child,
+#current-projects > div > p:first-child {
+  color: #c37741;
+  font-size: 25px;
+  font-style: italic;
+}
+
+#featured-project {
+  background-color: white;
+}
+
+#featured-project > div > p:first-child {
+  color: black;
+  font-size: 25px;
+}
+
+#current-projects {
+  background-color: white;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  background-color: white;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
+
+.carousel-indicators li {
+  border: 1px solid #c37741;
+}
+
+.carousel-inner .item {
+  height: auto;
 }
 
 /************************
