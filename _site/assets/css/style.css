@@ -255,6 +255,19 @@ footer .footer-icon {
   height: auto;
 }
 
+.carousel-inner .item img {
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  text-shadow: none;
+}
+
+.carousel-inner .carousel-caption.white h2,
+.carousel-inner .carousel-caption.white p {
+  color: white;
+}
+
 /************************
 
   About Page  
