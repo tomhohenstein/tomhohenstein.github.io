@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Welcome
+javascript: carousel.swipe.js
 ---
 <div class="jumbotron">
 	<div class="container">
@@ -83,13 +84,3 @@ title: Welcome
 		</a>
 	</div>
 </div> 
-<script>
-	$(document).ready(function() {  
-  		 $("current-projects-carousel").swiperight(function() {  
-    		  $(this).carousel('prev');  
-	    		});  
-		   $("current-projects-carousel").swipeleft(function() {  
-		      $(this).carousel('next');  
-	   });  
-	});  
-</script> 

@@ -57,5 +57,8 @@
       ga('create', 'UA-51252936-1', 'auto');
       ga('send', 'pageview');
     </script>
+    {% for js in page.javascript %}
+      <script src="{{ site.baseurl }}/assets/js/{{ js }}"></script>
+    {% endfor %}
   </body>
 </html>
