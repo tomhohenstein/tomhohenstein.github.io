@@ -65,7 +65,8 @@
 <p>I hope that reviewing our statistics as a network graph will help us ask questions like: </p>
 
 <ul>
-  <li>Are we able to maintain relationships during staff transitions? * Are we too dependent on some relationships? </li>
+  <li>Are we able to maintain relationships during staff transitions? </li>
+  <li>Are we too dependent on some relationships? </li>
   <li>Are there gaps in our instruction network? </li>
 </ul>
 
@@ -75,17 +76,15 @@
 
 <div id="svg"></div>
 
-<h2 id="how-it-works">How it works</h2>
+<h2 id="background">Background</h2>
 
 <p>Before starting, I need to thank a <a href="http://bl.ocks.org/sathomas/11550728">series of posts</a> by <a href="http://bl.ocks.org/sathomas">sathomas</a> on <a href="http://bl.ocks.org">bl.ocks.org</a>. I was completely lost before I found these posts and would probably still be. I would also like to think the <a href="http://altbibl.io/dst4l/">DST4L</a> community that Chris Erdmann is building. The DST4L classes that I attended this fall were awesome and made it possible for me to get this little project off the ground. </p>
 
-<p>I have to admit that the math behind how gravitational force and charge of each node impacts the overall graph is well over my head. However, I the underlying concept behind the graph is rather simple - using a line to depict a certain relationship between each node. In this example the nodes are faculty or librarians, and the lines are instructional sessions. As such, the datasets behind the network graph are a list of nodes and a two column csv representing the links. Each link has a source and a target, I simply changed faculty to source and librarian to target in my csv. All of the “fun” features, like moving the nodes and the initial build, are aspects of the <a href="http://d3js.org/">d3 javascript</a> library.  </p>
-
-<h3 id="tools">Tools</h3>
+<h2 id="tools">Tools</h2>
 <p>Here are the tools that I used for this project: </p>
 
 <ul>
-  <li><a href="http://d3js.org/">d3 javascript</a> library, which can be found <a href="https://github.com/mbostock/d3">on GitHub</a>. </li>
+  <li>Mike Bostock’s <a href="http://d3js.org/">D3 javascript</a> library, which can be found <a href="https://github.com/mbostock/d3">on GitHub</a>. </li>
   <li><a href="http://openrefine.org/">OpenRefine</a></li>
   <li><a href="http://www.sublimetext.com/">SublimeText</a> </li>
   <li><a href="http://www.convertcsv.com/csv-to-json.htm">Convert CSV to JSON</a></li>
@@ -115,99 +114,79 @@
 </ul>
 
 <h3 id="cleaning-with-openrefine">Cleaning with OpenRefine</h3>
-<p>I ignored/deleted all the data except library coordinator and faculty instructor. Next, I moved the spreadsheet into <a href="http://openrefine.org/">OpenRefine</a> and cleaned it. As one might imagine our statistics had small typos, variations in faculty names, and other small undesirable data features. However, with <a href="http://openrefine.org/">OpenRefine</a> I was able to quickly clean our data. The csv I exported from <a href="http://openrefine.org/">OpenRefine</a> looked had two columns - faculty and librarian. 	</p>
-
-<p>Once I had a clean dataset I replaced all the names with numbers and began playing the <a href="http://d3js.org/">d3 javascript</a> library. I also created a list of the nodes I wanted to create (aka unique names in the dataset). </p>
-
-<p>The two dataset I had, one listing the nodes and the other listing the faculty-librarian relationship became the basis for the network graph. One issue I ran into was that my list of nodes was not indexed in the same way that my faculty-librarian csv was. While this is a little tricky to explain, D3 tracks nodes via an array and uses the node’s indexed position to track it. Simply,  your source and target information and the order you add your nodes need to match. </p>
+<p>I ignored/deleted all the data except library coordinator and faculty instructor. Next, I moved the spreadsheet into <a href="http://openrefine.org/">OpenRefine</a> and cleaned it. As one might imagine our statistics had small typos, variations in faculty names, and other small undesirable data features. However, with <a href="http://openrefine.org/">OpenRefine</a> I was able to quickly clean our data and transform it into two csv documents. One document for the nodes and one for the edges, or links. 	</p>
 
 <h3 id="converting-to-json">Converting to JSON</h3>
 
-<p>I converted my fancy, two column csv into JSON as a personal preference. D3 does have the ability to <a href="https://github.com/mbostock/d3/wiki/CSV">parse csv</a> data but I would rather work with JSON. I used <a href="http://www.convertcsv.com/csv-to-json.htm">convertcsv.com</a> to transform my csv to JSON. There are other tools that can perform the same task, <a href="http://www.convertcsv.com/csv-to-json.htm">convertcsv.com</a> just happened to show up higher on my <a href="https://www.google.com?q=csv%20to%20json">Google search</a>. </p>
+<p>I converted my files into JSON as a personal preference. D3 does have the ability to <a href="https://github.com/mbostock/d3/wiki/CSV">parse csv</a> data but I would rather work with JSON. I used <a href="http://www.convertcsv.com/csv-to-json.htm">convertcsv.com</a> to transform my csv to JSON. There are other tools that can perform the same task, <a href="http://www.convertcsv.com/csv-to-json.htm">convertcsv.com</a> just happened to show up higher on my <a href="https://www.google.com?q=csv%20to%20json">Google search</a>. Here is an <a href="http://bl.ocks.org/mbostock/4062045#miserables.json">example of a JSON file</a> from <a href="https://github.com/mbostock">Mike Bostock’s</a> <a href="http://bl.ocks.org/mbostock/4062045#miserables.json">Les Miserable’s data visualization</a>.</p>
 
 <h3 id="using-d3">Using D3</h3>
 
-<p>The <a href="http://d3js.org/">d3 javascript</a> library is a really powerful library with more features and capacity than I could ever hope to explain. But, it also has very good <a href="https://github.com/mbostock/d3/wiki">documentation</a> and lots of <a href="https://github.com/mbostock/d3/wiki/Gallery">examples</a>. </p>
+<p>Mike Bostock’s <a href="http://d3js.org/">D3 javascript</a> library is a really powerful library with more features and capacity than I could ever hope to explain. But, it also has very good <a href="https://github.com/mbostock/d3/wiki">documentation</a> and lots of <a href="https://github.com/mbostock/d3/wiki/Gallery">examples</a>. </p>
 
-<p>The basic procedure for creating a network graph are best explained by sathomas’s <a href="http://bl.ocks.org/sathomas/11550728">series of posts</a> on bl.ock.org. A quick synopsis is: </p>
+<p>The basic procedure for creating a network graph are best explained by sathomas’s <a href="http://bl.ocks.org/sathomas/11550728">series of posts</a> on bl.ock.org. Below is some pseudo code to outline the process. </p>
 
-<ul>
-  <li>In your html element add a div for placing all of the svg graphics that the browser will create. It is easiest to set the height and width of the “svg canvas” in your javascript </li>
-  <li>Add the “svg canvas” to your div using </li>
-</ul>
+<pre><code>&lt;!-- add an empty svg element to your webpage --&gt;
+&lt;svg&gt;&lt;/svg&gt;
 
-<pre><code class="language-javascript">	d3.select("#yourdiv").append("svg")
-		.attr("width", your-width-here)
-		.attr("height", your-height-here);
+&lt;script&gt;
+
+    //Use d3.select to select your svg element 
+    d3.select().append()
+               .attr()
+               .attr(); 
+
+    //load your data
+    d3.json("your-file", callback function(){
+
+        //create "the force" : ) 
+        var force = d3.layout.force()
+                             .size()
+                             .gravity()
+                             .charge()
+                             .linkStrength()
+                             .nodes()
+                             .links(); 
+
+        //draw your links first for layout purposes
+        var link = svg.selectAll('.link')
+                             .data()
+                             .enter().append('link')
+                             .attr(); 
+
+        //draw your nodes 
+        var node = svg.selectAll('.node')
+                             .data()
+                             .enter().append('circle')
+                             .attr()
+                             .style()
+                             .on("click" toms_function //event handler 
+                             .call();
+
+        //use force.on() to iterate during each tick 
+        force.on('tick', function(){
+
+            //update node location 
+            node.attr('cx', function(d) { return d.x; })
+                .attr('cy', function(d) { return d.y; });
+
+            //update link location
+            link.attr('x1', function(d) { return d.source.x; })
+                .attr('y1', function(d) { return d.source.y; })
+                .attr('x2', function(d) { return d.target.x; })
+                .attr('y2', function(d) { return d.target.y; });
+        }); 
+
+    //start the force 
+    force.start(); 
+    }); 
+
+    //additional functions 
+    toms_function(){
+        //do things when node is clicked
+    }
+&lt;/script
 </code></pre>
-<ul>
-  <li>Load your data, I used</li>
-</ul>
-
-<pre><code class="language-javascritpt">	d3.json("your-data-file-here", function(error, nodes){
-		// callback function here 
-	}
-</code></pre>
-<ul>
-  <li>At this point, you can go in a lot of directions. Within the callback, I decided to </li>
-</ul>
-
-<pre><code class="language-javascript">	//create the force 
-	var force = d3.layout.force()
-	        .size([width, height]) //size
-	        .gravity(0.5) //gravity
-	        .charge(-700) //charge between elements
-	        .linkStrength(0.8) // link strength, rigidity 
-	        .nodes(nodes) // adds nodes
-	        .links(links) // adds links 
-	
-	//draw links first
-	    var link = svg.selectAll('.link')
-			.data(links)
-			.enter().append('line')
-			.attr('class', 'link');
-
-	//draw nodes 
-	var node = svg.selectAll('.node')
-		.data(nodes)
-		.enter().append('circle')
-		.attr('class','node')
-		.style('fill',function(d) {return d.color})
-		.style('stroke',function(d) {return d.color})
-		.attr('r',function(d) {return d.size})
-		.attr('id', function(d) {return d.label})
-		.on("click", click)
-		.on("dblclick", dblclick)
-		.call(drag);
-</code></pre>
-<blockquote>
-  <p>One important lesson learned was to create the links first. Doing it this way ensure the nodes are on top of the links.<br />
-Another lesson was that D3 tracks the nodes by their index number. This means that the data that represents your links needs to match the order that you add your nodes. That is the “source” and “target,” in this example the faculty member and librarian, match the order you add the nodes.  </p>
-</blockquote>
-
-<ul>
-  <li>The last bit is to have D3 update the node and links position after each “tick.” A tick is essentially one step in the force simulation. The way I understand this is to envision the solar system. The network graph has similar features to the solar system - gravity, electric “charge,” and distance between objects. In the same way the solar system is consistently moving based on these forces, the simulation does too. A tick, is like one day in the solar system, it is one step in the simulation. At the end of the simulation the graph achieves a sort of “steady state” until it is altered again. Within the same callback function from <code>d3.json("your-data-file-here", function(error, nodes){...}</code></li>
-</ul>
-
-<pre><code class="language-javascript">	//turn force on and sent function for each tick
-	force.on('tick', function(){
-	
-		//update node location
-		node.attr('cx', function(d) { return d.x; })
-			.attr('cy', function(d) { return d.y; });
-
-		//update link location
-		link.attr('x1', function(d) { return d.source.x; })
-			.attr('y1', function(d) { return d.source.y; })
-			.attr('x2', function(d) { return d.target.x; })
-			.attr('y2', function(d) { return d.target.y; });
-		});
-</code></pre>
-
-<ul>
-  <li>At this point you can add additional functions for normal events like click, double click, and mouse over. </li>
-</ul>
-
 <script src="/projects/in/d3/d3.min.js"></script>
 
 <script>
@@ -269,11 +248,9 @@ d3.json("node.json", function(error, nodes){
 		        .attr('y1', function(d) { return d.source.y; })
 		        .attr('x2', function(d) { return d.target.x; })
 		        .attr('y2', function(d) { return d.target.y; });
-
 		});
 		force.start(); 
 	});
-	
 });
 //force functions 
 function click(d) {
@@ -305,6 +282,16 @@ function dragstart(d) {
     </footer>
 
     <script src="/assets/js/jquery-1.11.1.js"></script>
-    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.mobile.custom.touch.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51252936-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

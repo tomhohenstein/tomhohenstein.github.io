@@ -78,6 +78,7 @@ footer {
 }
 
 footer {
+  clear: both;
   margin: 50px 0;
 }
 
