@@ -98,12 +98,12 @@ The basic procedure for creating a network graph are best explained by sathomas'
 	d3.json("your-file", callback function(){
 		//create "the force" : ) 
 		var force = d3.layout.force()
-					.size()
-					.gravity()
-					.charge()
-					.linkStrength()
-					.nodes()
-					.links(); 
+			.size()
+			.gravity()
+			.charge()
+			.linkStrength()
+			.nodes()
+			.links(); 
 		//draw your links first for layout purposes
 		var link = svg.selectAll('.link')
 					.data()
