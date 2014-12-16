@@ -64,7 +64,7 @@ footer {
   margin-top: 135px;
   margin-bottom: 200px;
   min-height: 100%;
-  padding: 0;
+  padding: 0 10px;
 }
 @media (min-width: 992px) {
   #body-wrapper {
