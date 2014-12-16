@@ -136,14 +136,14 @@ The basic procedure for creating a network graph are best explained by sathomas'
                 .attr('y2', function(d) { return d.target.y; });
         }); 
 
-      //start the force 
-      force.start(); 
-     }); 
+    //start the force 
+    force.start(); 
+    }); 
 
-//additional functions 
-toms_function(){
-//do things when node is clicked
-}
+    //additional functions 
+    toms_function(){
+        //do things when node is clicked
+    }
 </script
 ``` 
 <script src="{{ site.baseurl }}/projects/in/d3/d3.min.js"></script>
