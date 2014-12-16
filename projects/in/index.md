@@ -94,8 +94,10 @@ The basic procedure for creating a network graph are best explained by sathomas'
 	d3.select().append()
 		.attr()
 		.attr(); 
+
 	//load your data
 	d3.json("your-file", callback function(){
+
 		//create "the force" : ) 
 		var force = d3.layout.force()
 					.size()
@@ -104,11 +106,13 @@ The basic procedure for creating a network graph are best explained by sathomas'
 					.linkStrength()
 					.nodes()
 					.links(); 
+
 		//draw your links first for layout purposes
 		var link = svg.selectAll('.link')
 					.data()
 					.enter().append('link')
 					.attr(); 
+
 		//draw your nodes 
 		var node = svg.selectAll('.node')
 					.data()
@@ -117,20 +121,25 @@ The basic procedure for creating a network graph are best explained by sathomas'
 					.style()
 					.on("click" toms_function //event handler 
 					.call();
+
 		//use force.on() to iterate during each tick 
 		force.on('tick', function(){
+
 			//update node location 
 			node.attr('cx', function(d) { return d.x; })
 				.attr('cy', function(d) { return d.y; });
+
 			//update link location
 			link.attr('x1', function(d) { return d.source.x; })
 				.attr('y1', function(d) { return d.source.y; })
 				.attr('x2', function(d) { return d.target.x; })
 				.attr('y2', function(d) { return d.target.y; });
 		}); 
+
 		//start the force 
 		force.start(); 
 	}); 
+					
 	//additional functions 
 	toms_function(){
 		//do things when node is clicked
