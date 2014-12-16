@@ -130,5 +130,4 @@ Quick introductory text..
         <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0At6NjQiEuW11dDlTdmEzVVhHQzM5clFzellkQXpldXc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=700' width='100%' height='700' frameborder='0'></iframe>
     </div>
   </div>
-
 </div> 
