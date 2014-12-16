@@ -266,6 +266,14 @@ footer .footer-icon {
 	background-color: $background-w;
 }
 
+.carousel-control {
+	display: none; 
+	@media (min-width: $break-m) {
+		display: inline; 
+	}
+
+}
+
 .carousel-control.left,
 .carousel-control.right {
 	background-image: none; 
