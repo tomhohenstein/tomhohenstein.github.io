@@ -44,7 +44,7 @@ Before starting, I need to thank a [series of posts](http://bl.ocks.org/sathomas
 ##Tools
 Here are the tools that I used for this project: 
 
-* [d3 javascript](http://d3js.org/) library, which can be found [on GitHub](https://github.com/mbostock/d3). 
+* Mike Bostock's [D3 javascript](http://d3js.org/) library, which can be found [on GitHub](https://github.com/mbostock/d3). 
 * [OpenRefine](http://openrefine.org/)
 * [SublimeText](http://www.sublimetext.com/) 
 * [Convert CSV to JSON](http://www.convertcsv.com/csv-to-json.htm)
@@ -71,16 +71,16 @@ Our statistics are entered into a form - Google Docs or Qualtrics - and ported i
  * Is this the first time we have worked with this faculty member?
 
 ###Cleaning with OpenRefine
-I ignored/deleted all the data except library coordinator and faculty instructor. Next, I moved the spreadsheet into [OpenRefine](http://openrefine.org/) and cleaned it. As one might imagine our statistics had small typos, variations in faculty names, and other small undesirable data features. However, with [OpenRefine](http://openrefine.org/) I was able to quickly clean our data and transform it into two documents. One document for the nodes and one for the edges, or links. 	
+I ignored/deleted all the data except library coordinator and faculty instructor. Next, I moved the spreadsheet into [OpenRefine](http://openrefine.org/) and cleaned it. As one might imagine our statistics had small typos, variations in faculty names, and other small undesirable data features. However, with [OpenRefine](http://openrefine.org/) I was able to quickly clean our data and transform it into two csv documents. One document for the nodes and one for the edges, or links. 	
 
 
 ###Converting to JSON 
 
-I converted my csvs into JSON as a personal preference. D3 does have the ability to [parse csv](https://github.com/mbostock/d3/wiki/CSV) data but I would rather work with JSON. I used [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) to transform my csv to JSON. There are other tools that can perform the same task, [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) just happened to show up higher on my [Google search](https://www.google.com?q=csv%20to%20json). Here is an [example of a JSON file](http://bl.ocks.org/mbostock/4062045#miserables.json) from [Mike Bostock's](https://github.com/mbostock) Les Miserable's data visualization.
+I converted my files into JSON as a personal preference. D3 does have the ability to [parse csv](https://github.com/mbostock/d3/wiki/CSV) data but I would rather work with JSON. I used [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) to transform my csv to JSON. There are other tools that can perform the same task, [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) just happened to show up higher on my [Google search](https://www.google.com?q=csv%20to%20json). Here is an [example of a JSON file](http://bl.ocks.org/mbostock/4062045#miserables.json) from [Mike Bostock's](https://github.com/mbostock) [Les Miserable's data visualization](http://bl.ocks.org/mbostock/4062045#miserables.json).
 
 ###Using D3
 
-Mike Bostock's [d3 javascript](http://d3js.org/) library is a really powerful library with more features and capacity than I could ever hope to explain. But, it also has very good [documentation](https://github.com/mbostock/d3/wiki) and lots of [examples](https://github.com/mbostock/d3/wiki/Gallery). 
+Mike Bostock's [D3 javascript](http://d3js.org/) library is a really powerful library with more features and capacity than I could ever hope to explain. But, it also has very good [documentation](https://github.com/mbostock/d3/wiki) and lots of [examples](https://github.com/mbostock/d3/wiki/Gallery). 
 
 The basic procedure for creating a network graph are best explained by sathomas's [series of posts](http://bl.ocks.org/sathomas/11550728) on bl.ock.org. Below is some pseudo code to outline the process. 
 
