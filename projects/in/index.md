@@ -98,12 +98,12 @@ The basic procedure for creating a network graph are best explained by sathomas'
 	d3.json("your-file", callback function(){
 		//create "the force" : ) 
 		var force = d3.layout.force()
-			.size()
-			.gravity()
-			.charge()
-			.linkStrength()
-			.nodes()
-			.links(); 
+					.size()
+					.gravity()
+					.charge()
+					.linkStrength()
+					.nodes()
+					.links(); 
 		//draw your links first for layout purposes
 		var link = svg.selectAll('.link')
 					.data()
@@ -136,10 +136,7 @@ The basic procedure for creating a network graph are best explained by sathomas'
 		//do things when node is clicked
 	}
 </script
-
 ``` 
- 
-
 <script src="{{ site.baseurl }}/projects/in/d3/d3.min.js"></script>
 <script>
 //canvas size 
@@ -200,11 +197,9 @@ d3.json("node.json", function(error, nodes){
 		        .attr('y1', function(d) { return d.source.y; })
 		        .attr('x2', function(d) { return d.target.x; })
 		        .attr('y2', function(d) { return d.target.y; });
-
 		});
 		force.start(); 
 	});
-	
 });
 //force functions 
 function click(d) {
