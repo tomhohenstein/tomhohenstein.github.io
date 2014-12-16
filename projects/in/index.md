@@ -26,7 +26,8 @@ This project attempts to represent instructional statistics from [WPI's Gordon L
 
 I hope that reviewing our statistics as a network graph will help us ask questions like: 
 
-* Are we able to maintain relationships during staff transitions? * Are we too dependent on some relationships? 
+* Are we able to maintain relationships during staff transitions? 
+* Are we too dependent on some relationships? 
 * Are there gaps in our instruction network? 
 
 Within the graph below the smaller "redish" circles, or nodes, depict faculty members while the larger "blueish" circles are librarians. The blue circles have been artificially enlarged to allow for easier interpretation (it is in no way a reflection on faculty members' importance! : ). Finally, the links, or edges, between each circle represents an instructional session. The darker lines are multiple instruction sessions with a particular faculty member. 
