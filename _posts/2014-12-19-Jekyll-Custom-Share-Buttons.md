@@ -4,6 +4,7 @@ title: Jekyll - Custom Share Buttons
 excerpt: Learn how to make custom share buttons use Jekyll
 thumbnail: 
 featured: true
+shorturl: 
 tags: [[learning, Jekyll]]
 ---
 
@@ -21,8 +22,96 @@ I found the following posts very useful on how to best use Jekyll to create cust
 As a relative newbee to creating social media share buttons, it is probably best to focus on only a few platforms that I use, rather than create a "social media sharing kitchen sink." I am only going to focus on: 
 
 * [Twitter](https://dev.twitter.com/web/tweet-button)
-* [Facebook](https://developers.facebook.com/docs/plugins/share-button)
-* [LinkedIn](https://developer.linkedin.com/plugins/share-plugin-generator)
+* [Facebook](https://developers.facebook.com/docs/sharing/reference/share-dialog)
+* [LinkedIn's "official"](https://developer.linkedin.com/plugins/share-plugin-generator); and [the url way](https://developer.linkedin.com/documents/share-linkedin)
 * [Google+](https://developers.google.com/+/web/share/)
 
+### Twitter 
 
+Before building a custom Twitter share link, it is important to review [Twitter's branding guidelines](https://about.twitter.com/press/brand-assets). 
+
+```
+{% raw %}
+<!--the Twitter base 
+    https://twitter.com/share --> 
+
+<a href="https://twitter.com/share?
+    text={{ page.title }}
+    &url={{ site.url }}{{ page.url }}
+    &via=tomhohenstein">
+
+<!-- use the twitter logo for the link --> 
+<img alt="..." 
+    class="footer-icon" 
+    src="{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png">
+
+</a>
+{% endraw %}
+```
+
+Twitter example: <a href="https://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=tomhohenstein"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png"></a>
+
+
+### Facebook 
+
+Again, here are the [branding guidelines for Facebook](https://www.facebookbrand.com/).
+
+```
+{% raw %}
+<!--the Facebook base 
+    https://twitter.com/share --> 
+
+<a href="https://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=tomhohenstein">
+
+<!-- use the twitter logo for the link --> 
+<img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo_blue_50.png">
+
+</a>
+{% endraw %}
+```
+
+Facebook Example: <a href="https://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=tomhohenstein"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo__blue_50.png"></a>
+
+### LinkedIn
+
+Here are [LinkedIn's branding guidelines](https://developer.linkedin.com/documents/branding-guidelines).
+
+```
+{% raw %}
+<!--the LinkedIn base url 
+    http://www.linkedin.com/shareArticle?mini=true --> 
+
+<a href="http://www.linkedin.com/shareArticle
+    ?mini=true
+    &url={{ site.url }}{{ page.url }}
+    &title={{ page.title }}
+    &source={{ site.title }}">
+
+<img alt="..." 
+    class="footer-icon"
+    src="{{ site.baseurl }}/assets/img/footer-icons/LinkedIn-InBug-2CRev.png">
+
+</a> 
+{% endraw %}
+```
+
+LinkedIn example: <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}&summary="><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/footer-icons/LinkedIn-InBug-2CRev.png"></a> 
+
+### Google+ 
+
+Finally, the [Google+ branding guidelines](https://developers.google.com/+/branding-guidelines).
+
+```
+{% raw %}
+<!--the Google+ link url; base = https://twitter.com/share --> 
+
+<a href="https://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=tomhohenstein">
+
+<!-- use the twitter logo for the link --> 
+<img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png">
+
+</a>
+{% endraw %}
+```
+
+Google+ Example: 

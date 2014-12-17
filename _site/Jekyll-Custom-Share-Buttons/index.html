@@ -55,11 +55,95 @@
 
 <ul>
   <li><a href="https://dev.twitter.com/web/tweet-button">Twitter</a></li>
-  <li><a href="https://developers.facebook.com/docs/plugins/share-button">Facebook</a></li>
-  <li><a href="https://developer.linkedin.com/plugins/share-plugin-generator">LinkedIn</a></li>
+  <li><a href="https://developers.facebook.com/docs/sharing/reference/share-dialog">Facebook</a></li>
+  <li><a href="https://developer.linkedin.com/plugins/share-plugin-generator">LinkedIn’s “official”</a>; and <a href="https://developer.linkedin.com/documents/share-linkedin">the url way</a></li>
   <li><a href="https://developers.google.com/+/web/share/">Google+</a></li>
 </ul>
 
+<h3 id="twitter">Twitter</h3>
+
+<p>Before building a custom Twitter share link, it is important to review <a href="https://about.twitter.com/press/brand-assets">Twitter’s branding guidelines</a>. </p>
+
+<pre><code>
+&lt;!--the Twitter base 
+    https://twitter.com/share --&gt; 
+
+&lt;a href="https://twitter.com/share?
+    text={{ page.title }}
+    &amp;url={{ site.url }}{{ page.url }}
+    &amp;via=tomhohenstein"&gt;
+
+&lt;!-- use the twitter logo for the link --&gt; 
+&lt;img alt="..." 
+    class="footer-icon" 
+    src="{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png"&gt;
+
+&lt;/a&gt;
+
+</code></pre>
+
+<p>Twitter example: <a href="https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;via=tomhohenstein"><img alt="..." class="footer-icon" src="/assets/img/footer-icons/Twitter_logo_blue.png" /></a></p>
+
+<h3 id="facebook">Facebook</h3>
+
+<p>Again, here are the <a href="https://www.facebookbrand.com/">branding guidelines for Facebook</a>.</p>
+
+<pre><code>
+&lt;!--the Facebook base 
+    https://twitter.com/share --&gt; 
+
+&lt;a href="https://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via=tomhohenstein"&gt;
+
+&lt;!-- use the twitter logo for the link --&gt; 
+&lt;img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo_blue_50.png"&gt;
+
+&lt;/a&gt;
+
+</code></pre>
+
+<p>Facebook Example: <a href="https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;via=tomhohenstein"><img alt="..." class="footer-icon" src="/assets/img/social-icons/FB-f-Logo__blue_50.png" /></a></p>
+
+<h3 id="linkedin">LinkedIn</h3>
+
+<p>Here are <a href="https://developer.linkedin.com/documents/branding-guidelines">LinkedIn’s branding guidelines</a>.</p>
+
+<pre><code>
+&lt;!--the LinkedIn base url 
+    http://www.linkedin.com/shareArticle?mini=true --&gt; 
+
+&lt;a href="http://www.linkedin.com/shareArticle
+    ?mini=true
+    &amp;url={{ site.url }}{{ page.url }}
+    &amp;title={{ page.title }}
+    &amp;source={{ site.title }}"&gt;
+
+&lt;img alt="..." 
+    class="footer-icon"
+    src="{{ site.baseurl }}/assets/img/footer-icons/LinkedIn-InBug-2CRev.png"&gt;
+
+&lt;/a&gt; 
+
+</code></pre>
+
+<p>LinkedIn example: <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;title=Jekyll - Custom Share Buttons&amp;source=&amp;summary="><img alt="..." class="footer-icon" src="/assets/img/footer-icons/LinkedIn-InBug-2CRev.png" /></a> </p>
+
+<h3 id="google">Google+</h3>
+
+<p>Finally, the <a href="https://developers.google.com/+/branding-guidelines">Google+ branding guidelines</a>.</p>
+
+<pre><code>
+&lt;!--the Google+ link url; base = https://twitter.com/share --&gt; 
+
+&lt;a href="https://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via=tomhohenstein"&gt;
+
+&lt;!-- use the twitter logo for the link --&gt; 
+&lt;img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png"&gt;
+
+&lt;/a&gt;
+
+</code></pre>
+
+<p>Google+ Example: </p>
 
   </div>
 </article>

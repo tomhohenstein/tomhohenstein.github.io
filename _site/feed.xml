@@ -3,8 +3,8 @@
 	<channel>
 		<title>Tom Hohenstein</title>
 		<description>A place for my experiments</description>		
-		<link></link>
-		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://tomhohenstein.com</link>
+		<atom:link href="http://tomhohenstein.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Jekyll - Custom Share Buttons</title>
@@ -25,15 +25,99 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://dev.twitter.com/web/tweet-button&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.facebook.com/docs/plugins/share-button&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.linkedin.com/plugins/share-plugin-generator&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.facebook.com/docs/sharing/reference/share-dialog&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.linkedin.com/plugins/share-plugin-generator&quot;&gt;LinkedIn’s “official”&lt;/a&gt;; and &lt;a href=&quot;https://developer.linkedin.com/documents/share-linkedin&quot;&gt;the url way&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://developers.google.com/+/web/share/&quot;&gt;Google+&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&quot;twitter&quot;&gt;Twitter&lt;/h3&gt;
+
+&lt;p&gt;Before building a custom Twitter share link, it is important to review &lt;a href=&quot;https://about.twitter.com/press/brand-assets&quot;&gt;Twitter’s branding guidelines&lt;/a&gt;. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;!--the Twitter base 
+    https://twitter.com/share --&amp;gt; 
+
+&amp;lt;a href=&quot;https://twitter.com/share?
+    text={{ page.title }}
+    &amp;amp;url={{ site.url }}{{ page.url }}
+    &amp;amp;via=tomhohenstein&quot;&amp;gt;
+
+&amp;lt;!-- use the twitter logo for the link --&amp;gt; 
+&amp;lt;img alt=&quot;...&quot; 
+    class=&quot;footer-icon&quot; 
+    src=&quot;{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png&quot;&amp;gt;
+
+&amp;lt;/a&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Twitter example: &lt;a href=&quot;https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;via=tomhohenstein&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/footer-icons/Twitter_logo_blue.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;facebook&quot;&gt;Facebook&lt;/h3&gt;
+
+&lt;p&gt;Again, here are the &lt;a href=&quot;https://www.facebookbrand.com/&quot;&gt;branding guidelines for Facebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;!--the Facebook base 
+    https://twitter.com/share --&amp;gt; 
+
+&amp;lt;a href=&quot;https://twitter.com/share?text={{ page.title }}&amp;amp;url={{ site.url }}{{ page.url }}&amp;amp;via=tomhohenstein&quot;&amp;gt;
+
+&amp;lt;!-- use the twitter logo for the link --&amp;gt; 
+&amp;lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo_blue_50.png&quot;&amp;gt;
+
+&amp;lt;/a&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Facebook Example: &lt;a href=&quot;https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;via=tomhohenstein&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/social-icons/FB-f-Logo__blue_50.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;linkedin&quot;&gt;LinkedIn&lt;/h3&gt;
+
+&lt;p&gt;Here are &lt;a href=&quot;https://developer.linkedin.com/documents/branding-guidelines&quot;&gt;LinkedIn’s branding guidelines&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;!--the LinkedIn base url 
+    http://www.linkedin.com/shareArticle?mini=true --&amp;gt; 
+
+&amp;lt;a href=&quot;http://www.linkedin.com/shareArticle
+    ?mini=true
+    &amp;amp;url={{ site.url }}{{ page.url }}
+    &amp;amp;title={{ page.title }}
+    &amp;amp;source={{ site.title }}&quot;&amp;gt;
+
+&amp;lt;img alt=&quot;...&quot; 
+    class=&quot;footer-icon&quot;
+    src=&quot;{{ site.baseurl }}/assets/img/footer-icons/LinkedIn-InBug-2CRev.png&quot;&amp;gt;
+
+&amp;lt;/a&amp;gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;LinkedIn example: &lt;a href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;title=Jekyll - Custom Share Buttons&amp;amp;source=&amp;amp;summary=&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/footer-icons/LinkedIn-InBug-2CRev.png&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;h3 id=&quot;google&quot;&gt;Google+&lt;/h3&gt;
+
+&lt;p&gt;Finally, the &lt;a href=&quot;https://developers.google.com/+/branding-guidelines&quot;&gt;Google+ branding guidelines&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;!--the Google+ link url; base = https://twitter.com/share --&amp;gt; 
+
+&amp;lt;a href=&quot;https://twitter.com/share?text={{ page.title }}&amp;amp;url={{ site.url }}{{ page.url }}&amp;amp;via=tomhohenstein&quot;&amp;gt;
+
+&amp;lt;!-- use the twitter logo for the link --&amp;gt; 
+&amp;lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png&quot;&amp;gt;
+
+&amp;lt;/a&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Google+ Example: &lt;/p&gt;
 </description>
 				<pubDate>Fri, 19 Dec 2014 00:00:00 -0500</pubDate>
-				<link>/Jekyll-Custom-Share-Buttons/</link>
-				<guid isPermaLink="true">/Jekyll-Custom-Share-Buttons/</guid>
+				<link>http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</guid>
 			</item>
 		
 			<item>
@@ -147,8 +231,8 @@ for x in this:
 &lt;/code&gt;&lt;/pre&gt;
 </description>
 				<pubDate>Sun, 30 Nov 2014 00:00:00 -0500</pubDate>
-				<link>/Learning-Markdown/</link>
-				<guid isPermaLink="true">/Learning-Markdown/</guid>
+				<link>http://tomhohenstein.com/Learning-Markdown/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Learning-Markdown/</guid>
 			</item>
 		
 			<item>
@@ -156,8 +240,8 @@ for x in this:
 				<description>&lt;p&gt;This is my second post. It is normally useful to have a few posts up when designing a blog’s layout. I wouldn’t read this one : ) &lt;/p&gt;
 </description>
 				<pubDate>Tue, 25 Nov 2014 00:00:00 -0500</pubDate>
-				<link>/Hello-Again/</link>
-				<guid isPermaLink="true">/Hello-Again/</guid>
+				<link>http://tomhohenstein.com/Hello-Again/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Hello-Again/</guid>
 			</item>
 		
 			<item>
@@ -165,8 +249,8 @@ for x in this:
 				<description>&lt;p&gt;This is my first post written in markdown, processed via jekyll, and hosted on GitHub. It is going to be a bit of a project, but everything seems to be coming along one step at a time.  &lt;/p&gt;
 </description>
 				<pubDate>Sun, 16 Nov 2014 00:00:00 -0500</pubDate>
-				<link>/Hello-World/</link>
-				<guid isPermaLink="true">/Hello-World/</guid>
+				<link>http://tomhohenstein.com/Hello-World/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Hello-World/</guid>
 			</item>
 		
 	</channel>

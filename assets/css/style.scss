@@ -64,6 +64,13 @@ span {
 	color: $text-p; 
 }
 
+pre,
+code {
+	color: $text-p; 
+	background-color: #D5FFE7; 
+	font-size: $font-size - 2; 
+}
+
 /************************
 
   Body  
