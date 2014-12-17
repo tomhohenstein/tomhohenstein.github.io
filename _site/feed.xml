@@ -7,6 +7,36 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Jekyll - Custom Share Buttons</title>
+				<description>&lt;p&gt;As I continue building out this site, I thought it would be a good idea to write posts as I develop features and solve problems. This post is on how to build custom share buttons for posts and pages. &lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+&lt;p&gt;I found the following posts very useful on how to best use Jekyll to create custom share buttons for social media platforms: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zhangwenli.com/&quot;&gt;Wenli Zhang’s&lt;/a&gt; &lt;a href=&quot;http://zhangwenli.com/blog/2014/08/03/make-your-own-social-sharing-bar-with-jekyll/&quot;&gt;Make Your Own Social Shareing Bar with Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://scottndecker.com/Contact/&quot;&gt;Scott N Decker’s&lt;/a&gt; &lt;a href=&quot;http://scottndecker.com/blog/2014/06/29/How-to-Make-Custom-Share-Buttons-with-Jekyll/&quot;&gt;How to Make Custom Share Buttons with Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Eric Lagergren’s &lt;a href=&quot;http://www.ericlagergren.com/blog/dynamic-sharing-buttons/&quot;&gt;Dynamic Sharing for Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;platforms&quot;&gt;Platforms&lt;/h2&gt;
+
+&lt;p&gt;As a relative newbee to creating social media share buttons, it is probably best to focus on only a few platforms that I use, rather than create a “social media sharing kitchen sink.” I am only going to focus on: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.twitter.com/web/tweet-button&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.facebook.com/docs/plugins/share-button&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.linkedin.com/plugins/share-plugin-generator&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.google.com/+/web/share/&quot;&gt;Google+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+				<pubDate>Fri, 19 Dec 2014 00:00:00 -0500</pubDate>
+				<link>/Jekyll-Custom-Share-Buttons/</link>
+				<guid isPermaLink="true">/Jekyll-Custom-Share-Buttons/</guid>
+			</item>
+		
+			<item>
 				<title>Learning Markdown</title>
 				<description>&lt;p&gt;While I enjoy marking up text with HTML, it is in my interest to learn, and master, markdown. This post is a little playpen for me to learn and document learning markdowns. &lt;/p&gt;
 

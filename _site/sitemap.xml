@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>/Jekyll-Custom-Share-Buttons/</loc>
+    
+    <lastmod>2014-12-19T00:00:00-05:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>/Learning-Markdown/</loc>
     
     <lastmod>2014-11-30T00:00:00-05:00</lastmod>
@@ -29,35 +37,35 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-12-16T15:45:31-05:00</lastmod>
+    <lastmod>2014-12-17T10:24:24-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2014-12-16T15:45:31-05:00</lastmod>
+    <lastmod>2014-12-17T10:24:24-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/projects/</loc>
-    <lastmod>2014-12-16T15:45:31-05:00</lastmod>
+    <lastmod>2014-12-17T10:24:24-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/projects/in/</loc>
-    <lastmod>2014-12-16T15:45:31-05:00</lastmod>
+    <lastmod>2014-12-17T10:24:24-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2014-12-16T15:45:31-05:00</lastmod>
+    <lastmod>2014-12-17T10:24:24-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
