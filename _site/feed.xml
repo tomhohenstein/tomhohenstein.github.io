@@ -3,8 +3,8 @@
 	<channel>
 		<title>Tom Hohenstein</title>
 		<description>A place for my experiments</description>		
-		<link>http://tomhohenstein.com</link>
-		<atom:link href="http://tomhohenstein.com/feed.xml" rel="self" type="application/rss+xml" />
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Jekyll - Custom Share Buttons</title>
@@ -52,7 +52,7 @@
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Twitter example: &lt;a href=&quot;https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;via=tomhohenstein&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/footer-icons/Twitter_logo_blue.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Twitter example: &lt;a href=&quot;https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;amp;url=/Jekyll-Custom-Share-Buttons/&amp;amp;via=tomhohenstein&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/footer-icons/Twitter_logo_blue.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;facebook&quot;&gt;Facebook&lt;/h3&gt;
 
@@ -60,18 +60,22 @@
 
 &lt;pre&gt;&lt;code&gt;
 &amp;lt;!--the Facebook base 
-    https://twitter.com/share --&amp;gt; 
+    https://www.facebook.com/dialog/share? --&amp;gt; 
 
-&amp;lt;a href=&quot;https://twitter.com/share?text={{ page.title }}&amp;amp;url={{ site.url }}{{ page.url }}&amp;amp;via=tomhohenstein&quot;&amp;gt;
+&amp;lt;a href=&quot;https://www.facebook.com/dialog/share
+    ?app_id=946372735391329&amp;amp;display=popup
+    &amp;amp;href={{ site.url }}{{ page.url }}
+    &amp;amp;redirect_uri={{ site.url }}{{ page.url }}&quot;&amp;gt;
 
-&amp;lt;!-- use the twitter logo for the link --&amp;gt; 
-&amp;lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo_blue_50.png&quot;&amp;gt;
-
+    &amp;lt;img 
+        alt=&quot;...&quot; 
+        class=&quot;footer-icon&quot; 
+        src=&quot;{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo__blue_50.png&quot;&amp;gt;
 &amp;lt;/a&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Facebook Example: &lt;a href=&quot;https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;via=tomhohenstein&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/social-icons/FB-f-Logo__blue_50.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Facebook Example: &lt;a href=&quot;https://www.facebook.com/dialog/share?app_id=946372735391329&amp;amp;display=popup&amp;amp;href=/Jekyll-Custom-Share-Buttons/&amp;amp;redirect_uri=/Jekyll-Custom-Share-Buttons/&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/social-icons/FB-f-Logo__blue_50.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;linkedin&quot;&gt;LinkedIn&lt;/h3&gt;
 
@@ -95,7 +99,7 @@
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;LinkedIn example: &lt;a href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;title=Jekyll - Custom Share Buttons&amp;amp;source=&amp;amp;summary=&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/footer-icons/LinkedIn-InBug-2CRev.png&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;LinkedIn example: &lt;a href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=/Jekyll-Custom-Share-Buttons/&amp;amp;title=Jekyll - Custom Share Buttons&amp;amp;source=&amp;amp;summary=&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/footer-icons/LinkedIn-InBug-2CRev.png&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
 
 &lt;h3 id=&quot;google&quot;&gt;Google+&lt;/h3&gt;
 
@@ -116,8 +120,8 @@
 &lt;p&gt;Google+ Example: &lt;/p&gt;
 </description>
 				<pubDate>Fri, 19 Dec 2014 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</guid>
+				<link>/Jekyll-Custom-Share-Buttons/</link>
+				<guid isPermaLink="true">/Jekyll-Custom-Share-Buttons/</guid>
 			</item>
 		
 			<item>
@@ -231,8 +235,8 @@ for x in this:
 &lt;/code&gt;&lt;/pre&gt;
 </description>
 				<pubDate>Sun, 30 Nov 2014 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Learning-Markdown/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Learning-Markdown/</guid>
+				<link>/Learning-Markdown/</link>
+				<guid isPermaLink="true">/Learning-Markdown/</guid>
 			</item>
 		
 			<item>
@@ -240,8 +244,8 @@ for x in this:
 				<description>&lt;p&gt;This is my second post. It is normally useful to have a few posts up when designing a blog’s layout. I wouldn’t read this one : ) &lt;/p&gt;
 </description>
 				<pubDate>Tue, 25 Nov 2014 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Hello-Again/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Hello-Again/</guid>
+				<link>/Hello-Again/</link>
+				<guid isPermaLink="true">/Hello-Again/</guid>
 			</item>
 		
 			<item>
@@ -249,8 +253,8 @@ for x in this:
 				<description>&lt;p&gt;This is my first post written in markdown, processed via jekyll, and hosted on GitHub. It is going to be a bit of a project, but everything seems to be coming along one step at a time.  &lt;/p&gt;
 </description>
 				<pubDate>Sun, 16 Nov 2014 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Hello-World/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Hello-World/</guid>
+				<link>/Hello-World/</link>
+				<guid isPermaLink="true">/Hello-World/</guid>
 			</item>
 		
 	</channel>

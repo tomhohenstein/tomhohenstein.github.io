@@ -82,7 +82,7 @@
 
 </code></pre>
 
-<p>Twitter example: <a href="https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;via=tomhohenstein"><img alt="..." class="footer-icon" src="/assets/img/footer-icons/Twitter_logo_blue.png" /></a></p>
+<p>Twitter example: <a href="https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;url=/Jekyll-Custom-Share-Buttons/&amp;via=tomhohenstein"><img alt="..." class="footer-icon" src="/assets/img/footer-icons/Twitter_logo_blue.png" /></a></p>
 
 <h3 id="facebook">Facebook</h3>
 
@@ -90,18 +90,22 @@
 
 <pre><code>
 &lt;!--the Facebook base 
-    https://twitter.com/share --&gt; 
+    https://www.facebook.com/dialog/share? --&gt; 
 
-&lt;a href="https://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via=tomhohenstein"&gt;
+&lt;a href="https://www.facebook.com/dialog/share
+    ?app_id=946372735391329&amp;display=popup
+    &amp;href={{ site.url }}{{ page.url }}
+    &amp;redirect_uri={{ site.url }}{{ page.url }}"&gt;
 
-&lt;!-- use the twitter logo for the link --&gt; 
-&lt;img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo_blue_50.png"&gt;
-
+    &lt;img 
+        alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo__blue_50.png"&gt;
 &lt;/a&gt;
 
 </code></pre>
-
-<p>Facebook Example: <a href="https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;via=tomhohenstein"><img alt="..." class="footer-icon" src="/assets/img/social-icons/FB-f-Logo__blue_50.png" /></a></p>
+<p>Facebook Example: <a href="https://www.facebook.com/dialog/share?app_id=946372735391329&amp;display=popup&amp;href=/Jekyll-Custom-Share-Buttons/&amp;redirect_uri=/Jekyll-Custom-Share-Buttons/"><img alt="..." class="footer-icon" src="/assets/img/social-icons/FB-f-Logo__blue_50.png" />
+</a></p>
 
 <h3 id="linkedin">LinkedIn</h3>
 
@@ -125,7 +129,7 @@
 
 </code></pre>
 
-<p>LinkedIn example: <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;title=Jekyll - Custom Share Buttons&amp;source=&amp;summary="><img alt="..." class="footer-icon" src="/assets/img/footer-icons/LinkedIn-InBug-2CRev.png" /></a> </p>
+<p>LinkedIn example: <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=/Jekyll-Custom-Share-Buttons/&amp;title=Jekyll - Custom Share Buttons&amp;source=&amp;summary="><img alt="..." class="footer-icon" src="/assets/img/footer-icons/LinkedIn-InBug-2CRev.png" /></a> </p>
 
 <h3 id="google">Google+</h3>
 

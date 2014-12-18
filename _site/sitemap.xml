@@ -3,7 +3,7 @@
   
   
   <url>
-    <loc>http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</loc>
+    <loc>/Jekyll-Custom-Share-Buttons/</loc>
     
     <lastmod>2014-12-19T00:00:00-05:00</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/Learning-Markdown/</loc>
+    <loc>/Learning-Markdown/</loc>
     
     <lastmod>2014-11-30T00:00:00-05:00</lastmod>
     
@@ -19,7 +19,7 @@
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/Hello-Again/</loc>
+    <loc>/Hello-Again/</loc>
     
     <lastmod>2014-11-25T00:00:00-05:00</lastmod>
     
@@ -27,7 +27,7 @@
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/Hello-World/</loc>
+    <loc>/Hello-World/</loc>
     
     <lastmod>2014-11-16T00:00:00-05:00</lastmod>
     
@@ -36,36 +36,36 @@
   
   
   <url>
-    <loc>http://tomhohenstein.com/</loc>
-    <lastmod>2014-12-17T15:39:48-05:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2014-12-18T08:25:57-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/about/</loc>
-    <lastmod>2014-12-17T15:39:48-05:00</lastmod>
+    <loc>/about/</loc>
+    <lastmod>2014-12-18T08:25:57-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/projects/</loc>
-    <lastmod>2014-12-17T15:39:48-05:00</lastmod>
+    <loc>/projects/</loc>
+    <lastmod>2014-12-18T08:25:57-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/projects/in/</loc>
-    <lastmod>2014-12-17T15:39:48-05:00</lastmod>
+    <loc>/projects/in/</loc>
+    <lastmod>2014-12-18T08:25:57-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/blog/</loc>
-    <lastmod>2014-12-17T15:39:48-05:00</lastmod>
+    <loc>/blog/</loc>
+    <lastmod>2014-12-18T08:25:57-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

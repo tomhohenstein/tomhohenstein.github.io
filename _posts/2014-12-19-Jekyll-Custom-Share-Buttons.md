@@ -59,18 +59,22 @@ Again, here are the [branding guidelines for Facebook](https://www.facebookbrand
 ```
 {% raw %}
 <!--the Facebook base 
-    https://twitter.com/share --> 
+    https://www.facebook.com/dialog/share? --> 
 
-<a href="https://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=tomhohenstein">
+<a href="https://www.facebook.com/dialog/share
+    ?app_id=946372735391329&display=popup
+    &href={{ site.url }}{{ page.url }}
+    &redirect_uri={{ site.url }}{{ page.url }}">
 
-<!-- use the twitter logo for the link --> 
-<img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo_blue_50.png">
-
+    <img 
+        alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo__blue_50.png">
 </a>
 {% endraw %}
 ```
-
-Facebook Example: <a href="https://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=tomhohenstein"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo__blue_50.png"></a>
+Facebook Example: <a href="https://www.facebook.com/dialog/share?app_id=946372735391329&display=popup&href={{ site.url }}{{ page.url }}&redirect_uri={{ site.url }}{{ page.url }}"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo__blue_50.png">
+</a>
 
 ### LinkedIn
 
