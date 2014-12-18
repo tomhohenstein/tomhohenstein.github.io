@@ -22,6 +22,7 @@
 	$background-d: rgba(101, 101, 107, .5); 
 	$background-l: rgba(255, 255, 255, .9); 
 	$background-w: rgb(255, 255, 255); 
+	$background-b: rgb(185, 223, 224); 
 	$primary: rgb(0,0,0); 
 	$accent: rgb(195, 119, 65); 
 
@@ -84,14 +85,12 @@ body {
 	height: 100%; 
 }
 
-#body-wrapper, 
-footer {
+#body-wrapper {
 	max-width: $break-l;  
 }
 
 #body-wrapper {
-	margin-top: 135px;
-	margin-bottom: 200px; 
+	margin-top: 150px;
 	min-height: 100%;
 	padding: 0 10px;
 	@media (min-width: $break-m) {
@@ -106,12 +105,13 @@ footer {
 
 #body-wrapper:after, 
 footer {
-	heigh: 200px; 
+	height: 200px; 
 }
 
 footer {
+	background-color: $background-b; 
 	clear:both; 
-	margin: 50px 0; 
+	padding: 50px 0; 
 }
 
 .social-share {
@@ -137,7 +137,7 @@ footer {
 
 .navbar-default {
 	background-color: $background-l; 
-	border: none;
+	border-bottom: 3px solid $background-b;
 }
 
 .navbar-default .navbar-brand {
@@ -295,10 +295,10 @@ footer .footer-icon {
 }
 
 .carousel-indicators .active {
-	background-color: $primary; 
+	background-color: $background-b; 
 }
 .carousel-indicators li {
-	border: 1px solid $accent; 
+	border: 1px solid $background-b; 
 }
 
 .carousel-inner .item {

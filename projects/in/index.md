@@ -19,7 +19,7 @@ title: Instruction Network
   }
 </style>
 
-This project attempts to represent instructional statistics from [WPI's Gordon Library](http://www.wpi.edu/academics/library.html) as a network graph. I have two primary goals in undertaking this project: 
+This project attempts to represent instructional statistics from [WPI's Gordon Library](http://www.wpi.edu/academics/library.html) as a network graph and has two primary goals: 
 
 * To learn the process and skills necessary to create an interactive, online network graph  
 * To see what our "instructional network" looks like. 
@@ -32,17 +32,16 @@ I hope that reviewing our statistics as a network graph will help us ask questio
 
 Within the graph below the smaller "redish" circles, or nodes, depict faculty members while the larger "blueish" circles are librarians. The blue circles have been artificially enlarged to allow for easier interpretation (it is in no way a reflection on faculty members' importance! : ). Finally, the links, or edges, between each circle represents an instructional session. The darker lines are multiple instruction sessions with a particular faculty member. 
 
-While this project is far from finished, feel free to click and drag the circles. I am still working on highlighting nodes and relationships based on user interactions, as well as adding text data (although, in the public version it will be of little use but it would be a technical achievement.)
+While this project is far from finished, feel free to click and drag the circles. I am still working on highlighting nodes and relationships based on user interactions, as well as adding text data. Although, it will be of little use because it is all numerical, but it would be a technical achievement.
 
 <div id="svg"></div>
 
 ##Background
 
-Before starting, I need to thank a [series of posts](http://bl.ocks.org/sathomas/11550728) by [sathomas](http://bl.ocks.org/sathomas) on [bl.ocks.org](http://bl.ocks.org). I was completely lost before I found these posts and would probably still be. I would also like to think the [DST4L](http://altbibl.io/dst4l/) community that Chris Erdmann is building. The DST4L classes that I attended this fall were awesome and made it possible for me to get this little project off the ground. 
- 
+Before starting, I would like to thank a [series of posts](http://bl.ocks.org/sathomas/11550728) by [sathomas](http://bl.ocks.org/sathomas) on [bl.ocks.org](http://bl.ocks.org). I was completely lost before I found these posts and would probably still be. I would also like to think the [DST4L](http://altbibl.io/dst4l/) community that Chris Erdmann is building. The DST4L classes that I attended this fall were awesome and made it possible for me to get this little project off the ground. 
 
 ##Tools
-Here are the tools that I used for this project: 
+I used the following tools to build this project: 
 
 * Mike Bostock's [D3 javascript](http://d3js.org/) library, which can be found [on GitHub](https://github.com/mbostock/d3). 
 * [OpenRefine](http://openrefine.org/)
@@ -80,7 +79,7 @@ I converted my files into JSON as a personal preference. D3 does have the abilit
 
 ###Using D3
 
-Mike Bostock's [D3 javascript](http://d3js.org/) library is a really powerful library with more features and capacity than I could ever hope to explain. But, it also has very good [documentation](https://github.com/mbostock/d3/wiki) and lots of [examples](https://github.com/mbostock/d3/wiki/Gallery). 
+Mike Bostock's [D3 javascript](http://d3js.org/) library is a really powerful library with more features and capacity than I could ever hope to explain. But, it has very good [documentation](https://github.com/mbostock/d3/wiki) and lots of [examples](https://github.com/mbostock/d3/wiki/Gallery). 
 
 The basic procedure for creating a network graph are best explained by sathomas's [series of posts](http://bl.ocks.org/sathomas/11550728) on bl.ock.org. Below is some pseudo code to outline the process. 
 
@@ -119,7 +118,7 @@ The basic procedure for creating a network graph are best explained by sathomas'
                              .enter().append('circle')
                              .attr()
                              .style()
-                             .on("click" toms_function //event handler 
+                             .on("click" toms_function) 
                              .call();
 
         //use force.on() to iterate during each tick 
@@ -130,10 +129,14 @@ The basic procedure for creating a network graph are best explained by sathomas'
                 .attr('cy', function(d) { return d.y; });
 
             //update link location
-            link.attr('x1', function(d) { return d.source.x; })
-                .attr('y1', function(d) { return d.source.y; })
-                .attr('x2', function(d) { return d.target.x; })
-                .attr('y2', function(d) { return d.target.y; });
+            link.attr('x1', function(d) { 
+                                return d.source.x; })
+                .attr('y1', function(d) { 
+                                return d.source.y; })
+                .attr('x2', function(d) { 
+                                return d.target.x; })
+                .attr('y2', function(d) { 
+                                return d.target.y; });
         }); 
 
     //start the force 
@@ -144,8 +147,13 @@ The basic procedure for creating a network graph are best explained by sathomas'
     toms_function(){
         //do things when node is clicked
     }
-</script
+</script>
 ``` 
+
+##Code
+
+You can find the [code for this project on GitHub](https://github.com/tomhohenstein/tomhohenstein.github.io/tree/master/projects/in). If you have any questions, ideas, or improvements. Feel free to contact me (see footer). 
+
 <script src="{{ site.baseurl }}/projects/in/d3/d3.min.js"></script>
 <script>
 //canvas size 

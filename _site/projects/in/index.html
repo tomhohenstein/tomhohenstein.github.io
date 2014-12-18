@@ -55,7 +55,7 @@
   }
 </style>
 
-<p>This project attempts to represent instructional statistics from <a href="http://www.wpi.edu/academics/library.html">WPI’s Gordon Library</a> as a network graph. I have two primary goals in undertaking this project: </p>
+<p>This project attempts to represent instructional statistics from <a href="http://www.wpi.edu/academics/library.html">WPI’s Gordon Library</a> as a network graph and has two primary goals: </p>
 
 <ul>
   <li>To learn the process and skills necessary to create an interactive, online network graph  </li>
@@ -72,16 +72,16 @@
 
 <p>Within the graph below the smaller “redish” circles, or nodes, depict faculty members while the larger “blueish” circles are librarians. The blue circles have been artificially enlarged to allow for easier interpretation (it is in no way a reflection on faculty members’ importance! : ). Finally, the links, or edges, between each circle represents an instructional session. The darker lines are multiple instruction sessions with a particular faculty member. </p>
 
-<p>While this project is far from finished, feel free to click and drag the circles. I am still working on highlighting nodes and relationships based on user interactions, as well as adding text data (although, in the public version it will be of little use but it would be a technical achievement.)</p>
+<p>While this project is far from finished, feel free to click and drag the circles. I am still working on highlighting nodes and relationships based on user interactions, as well as adding text data. Although, it will be of little use because it is all numerical, but it would be a technical achievement.</p>
 
 <div id="svg"></div>
 
 <h2 id="background">Background</h2>
 
-<p>Before starting, I need to thank a <a href="http://bl.ocks.org/sathomas/11550728">series of posts</a> by <a href="http://bl.ocks.org/sathomas">sathomas</a> on <a href="http://bl.ocks.org">bl.ocks.org</a>. I was completely lost before I found these posts and would probably still be. I would also like to think the <a href="http://altbibl.io/dst4l/">DST4L</a> community that Chris Erdmann is building. The DST4L classes that I attended this fall were awesome and made it possible for me to get this little project off the ground. </p>
+<p>Before starting, I would like to thank a <a href="http://bl.ocks.org/sathomas/11550728">series of posts</a> by <a href="http://bl.ocks.org/sathomas">sathomas</a> on <a href="http://bl.ocks.org">bl.ocks.org</a>. I was completely lost before I found these posts and would probably still be. I would also like to think the <a href="http://altbibl.io/dst4l/">DST4L</a> community that Chris Erdmann is building. The DST4L classes that I attended this fall were awesome and made it possible for me to get this little project off the ground. </p>
 
 <h2 id="tools">Tools</h2>
-<p>Here are the tools that I used for this project: </p>
+<p>I used the following tools to build this project: </p>
 
 <ul>
   <li>Mike Bostock’s <a href="http://d3js.org/">D3 javascript</a> library, which can be found <a href="https://github.com/mbostock/d3">on GitHub</a>. </li>
@@ -122,7 +122,7 @@
 
 <h3 id="using-d3">Using D3</h3>
 
-<p>Mike Bostock’s <a href="http://d3js.org/">D3 javascript</a> library is a really powerful library with more features and capacity than I could ever hope to explain. But, it also has very good <a href="https://github.com/mbostock/d3/wiki">documentation</a> and lots of <a href="https://github.com/mbostock/d3/wiki/Gallery">examples</a>. </p>
+<p>Mike Bostock’s <a href="http://d3js.org/">D3 javascript</a> library is a really powerful library with more features and capacity than I could ever hope to explain. But, it has very good <a href="https://github.com/mbostock/d3/wiki">documentation</a> and lots of <a href="https://github.com/mbostock/d3/wiki/Gallery">examples</a>. </p>
 
 <p>The basic procedure for creating a network graph are best explained by sathomas’s <a href="http://bl.ocks.org/sathomas/11550728">series of posts</a> on bl.ock.org. Below is some pseudo code to outline the process. </p>
 
@@ -160,7 +160,7 @@
                              .enter().append('circle')
                              .attr()
                              .style()
-                             .on("click" toms_function //event handler 
+                             .on("click" toms_function) 
                              .call();
 
         //use force.on() to iterate during each tick 
@@ -171,10 +171,14 @@
                 .attr('cy', function(d) { return d.y; });
 
             //update link location
-            link.attr('x1', function(d) { return d.source.x; })
-                .attr('y1', function(d) { return d.source.y; })
-                .attr('x2', function(d) { return d.target.x; })
-                .attr('y2', function(d) { return d.target.y; });
+            link.attr('x1', function(d) { 
+                                return d.source.x; })
+                .attr('y1', function(d) { 
+                                return d.source.y; })
+                .attr('x2', function(d) { 
+                                return d.target.x; })
+                .attr('y2', function(d) { 
+                                return d.target.y; });
         }); 
 
     //start the force 
@@ -185,8 +189,13 @@
     toms_function(){
         //do things when node is clicked
     }
-&lt;/script
+&lt;/script&gt;
 </code></pre>
+
+<h2 id="code">Code</h2>
+
+<p>You can find the <a href="https://github.com/tomhohenstein/tomhohenstein.github.io/tree/master/projects/in">code for this project on GitHub</a>. If you have any questions, ideas, or improvements. Feel free to contact me (see footer). </p>
+
 <script src="/projects/in/d3/d3.min.js"></script>
 
 <script>
@@ -276,12 +285,11 @@ function dragstart(d) {
 	  	<a href="https://twitter.com/share?text=Instruction Network&url=/projects/in/index.html&via=tomhohenstein"><img alt="..." class="footer-icon" src="/assets/img/footer-icons/Twitter_logo_blue.png"></a>
 	  	<a href="https://plus.google.com/share?url=http://tomhohenstein.com/projects/in/index.html&hl=en-US" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img alt="..." class="footer-icon" src="/assets/img/social-icons/btn_white.png"></a>
 	  	<a href="http://www.linkedin.com/shareArticle?mini=true&url=/projects/in/index.html&title=Instruction Network&source=&summary="><img alt="..." class="footer-icon" src="/assets/img/footer-icons/LinkedIn-InBug-2CRev.png"></a>
-	  	<a href="https://www.facebook.com/dialog/share?app_id=946372735391329&display=popup&href=/projects/in/index.html&redirect_uri=/projects/in/index.html"><img alt="..." class="footer-icon" src="/assets/img/social-icons/FB-f-Logo__blue_50.png">
+	  	<a href="https://www.facebook.com/dialog/share?app_id=946372735391329&display=popup&href=/projects/in/index.html&redirect_uri=/projects/in/index.html"><img alt="..." class="footer-icon" src="/assets/img/social-icons/FB-f-Logo__blue_50.png"></a>
 	</div> 
 </article>
     </div>
     <footer class="row">
-    <hr>  
       <div>
         <p>Find me on</p>
         <a href="https://www.linkedin.com/in/hohenstein/"><img alt="..." class="footer-icon" src="/assets/img/footer-icons/LinkedIn-InBug-2CRev.png"></a> 

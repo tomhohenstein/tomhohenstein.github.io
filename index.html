@@ -11,22 +11,18 @@ javascript: carousel.swipe.js
 <div class="jumbotron" id="featured-post">
 	<div class="container">
 		<p>Featured post</p> 
-		{% assign featuredcount = '0' %}
-		{% for post in site.posts %}
+		{% for post in site.posts limit:1 %}
 			{% if post.featured %}
 				{% assign featuredcount = featuredcount | plus:'1' %}
 				<a href="{{ post.url }}" /><h2>{{ post.title }}</h2></a>
 				<p>{{ post.excerpt }}</p>
 			{% endif %}
 		{% endfor %}
-		{% if featuredcount == '0' %}
-		<h2>No posts has been featured yet</h2>
-		{% endif %}
 	</div>
 </div>  
 <div class="jumbotron" id="featured-project">
 	<div class="container">
-		<p>Recently Work</p> 
+		<p>Recent Work</p> 
 		<h2>Coming soon... </h2> 
 	</div> 
 </div>
@@ -41,46 +37,47 @@ javascript: carousel.swipe.js
 			</ol>
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
-			<div class="item active">
-		  		<img src="{{ site.baseurl }}/assets/img/timeline.jpg" > 
-		  		<div class="carousel-caption white">
-		  			<h2>Learning Timeline JS</h2> 
-		   			<p>Timeline JS caption</p> 
-		  		</div>
+				<div class="item active">
+			  		<img src="{{ site.baseurl }}/assets/img/timeline.jpg" > 
+			  		<div class="carousel-caption white">
+			  			<h2>Learning Timeline JS</h2> 
+			   			<p>Timeline JS caption</p> 
+			  		</div>
+				</div>
+				<div class="item">
+					<svg width="640" height="480">
+						<line class="link" x1="406" y1="245" x2="397" y2="165" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
+						<line class="link" x1="406" y1="245" x2="266" y2="162" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
+						<line class="link" x1="406" y1="245" x2="397" y2="169" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
+						<line class="link" x1="406" y1="245" x2="501" y2="171" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
+						<line class="link" x1="406" y1="245" x2="328" y2="24" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
+						<line class="link" x1="406" y1="245" x2="566" y2="106" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
+						<line class="link" x1="406" y1="245" x2="569" y2="193" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
+						<line class="link" x1="406" y1="245" x2="295" y2="47" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
+						<circle class="node" r="5" id="faculty" cx="266" cy="162" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
+						<circle class="node" r="5" id="faculty" cx="397" cy="169" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
+						<circle class="node" r="5" id="faculty" cx="501" cy="171" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
+						<circle class="node" r="5" id="faculty" cx="328" cy="24" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
+						<circle class="node" r="5" id="faculty" cx="566" cy="106" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
+						<circle class="node" r="5" id="faculty" cx="569" cy="193" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
+						<circle class="node" r="5" id="faculty" cx="295" cy="47" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
+						<circle class="node" r="10" id="librarian" cx="406" cy="245" style="fill: rgb(80, 98, 189); stroke: rgb(80, 98, 189);"></circle>
+					</svg> 
+			  		<div class="carousel-caption black">
+			  			<a href="/projects/in/"><h2>Instruction Network</h2>
+			    		<p>Instruction Network caption</p></a>
+			  		</div>
+				</div>
 			</div>
-			<div class="item">
-				<svg width="640" height="480">
-					<line class="link" x1="406" y1="245" x2="397" y2="165" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
-					<line class="link" x1="406" y1="245" x2="266" y2="162" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
-					<line class="link" x1="406" y1="245" x2="397" y2="169" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
-					<line class="link" x1="406" y1="245" x2="501" y2="171" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
-					<line class="link" x1="406" y1="245" x2="328" y2="24" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
-					<line class="link" x1="406" y1="245" x2="566" y2="106" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
-					<line class="link" x1="406" y1="245" x2="569" y2="193" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
-					<line class="link" x1="406" y1="245" x2="295" y2="47" style="stroke: rgb(25, 25, 25); stroke-width: .5px;"></line>
-					<circle class="node" r="5" id="faculty" cx="266" cy="162" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
-					<circle class="node" r="5" id="faculty" cx="397" cy="169" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
-					<circle class="node" r="5" id="faculty" cx="501" cy="171" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
-					<circle class="node" r="5" id="faculty" cx="328" cy="24" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
-					<circle class="node" r="5" id="faculty" cx="566" cy="106" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
-					<circle class="node" r="5" id="faculty" cx="569" cy="193" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
-					<circle class="node" r="5" id="faculty" cx="295" cy="47" style="fill: rgb(215, 103, 103); stroke: rgb(215, 103, 103);"></circle>
-					<circle class="node" r="10" id="librarian" cx="406" cy="245" style="fill: rgb(80, 98, 189); stroke: rgb(80, 98, 189);"></circle>
-				</svg> 
-		  		<div class="carousel-caption black">
-		  			<a href="/projects/in/"><h2>Instruction Network</h2>
-		    		<p>Instruction Network caption</p></a>
-		  		</div>
-			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#current-projects-carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#current-projects-carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
-		<!-- Controls -->
-		<a class="left carousel-control" href="#current-projects-carousel" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#current-projects-carousel" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-</div> 
+	</div> 
+</div>

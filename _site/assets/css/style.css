@@ -62,14 +62,12 @@ body {
   height: 100%;
 }
 
-#body-wrapper,
-footer {
+#body-wrapper {
   max-width: 1200px;
 }
 
 #body-wrapper {
-  margin-top: 135px;
-  margin-bottom: 200px;
+  margin-top: 150px;
   min-height: 100%;
   padding: 0 10px;
 }
@@ -86,12 +84,13 @@ footer {
 
 #body-wrapper:after,
 footer {
-  heigh: 200px;
+  height: 200px;
 }
 
 footer {
+  background-color: #b9dfe0;
   clear: both;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 .social-share {
@@ -116,7 +115,7 @@ footer {
 
 .navbar-default {
   background-color: rgba(255, 255, 255, 0.9);
-  border: none;
+  border-bottom: 3px solid #b9dfe0;
 }
 
 .navbar-default .navbar-brand {
@@ -270,11 +269,11 @@ footer .footer-icon {
 }
 
 .carousel-indicators .active {
-  background-color: black;
+  background-color: #b9dfe0;
 }
 
 .carousel-indicators li {
-  border: 1px solid #c37741;
+  border: 1px solid #b9dfe0;
 }
 
 .carousel-inner .item {
