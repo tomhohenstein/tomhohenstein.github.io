@@ -94,6 +94,10 @@ footer {
   margin: 50px 0;
 }
 
+.social-share {
+  float: right;
+}
+
 /************************
 
   Navigation  
@@ -212,7 +216,7 @@ footer > div {
 }
 
 footer .footer-icon {
-  margin: 2%;
+  margin: 0 2%;
 }
 
 /************************
