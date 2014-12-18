@@ -4,6 +4,7 @@ title: Learning Markdown
 excerpt: A markdown testing center 
 thumbnail: 
 featured: true
+shorturl: http://goo.gl/N7iu6p
 tags: [[learning, markdown]]
 ---
 
@@ -19,15 +20,16 @@ Resources:
 
 Let's start with some basics 
 
-# Heading 1 
+# Heading 1 ```# Heading 1```
 
-## Heading 2 
+## Heading 2 ```## Heading 2```
 
-### Heading 3
+### Heading 3 ```### Heading 3```
 
-#### Heading 4
+#### Heading 4 ```#### Heading 4```
 
-##### Heading 5
+##### Heading 5 ```##### Heading 5```
+
 
 ### Text Basics
 
@@ -36,17 +38,37 @@ This is on a new line in my text editor, but it should be in the same paragraph.
 
 Text separated by an empty lines start a new paragraph. 
 
+```
+Text separated by an empty lines start a new paragraph.
+
+```
+
 An unordered list:
 
 * item 
 * item 
 * item 
 
+```
+An unordered list:
+
+* item 
+* item 
+* item 
+```
 Ordered list:
  
 1. item 
 2. item 
 3. item 
+
+```
+Ordered list:
+ 
+1. item 
+2. item 
+3. item 
+```
 
 And a nested list: 
 
@@ -58,25 +80,35 @@ And a nested list:
   * sub-item 
 2. item 
 
+```
+And a nested list: 
 
-*italic text*
+1. item 
+  * sub-item 
+  * sub-item 
+    1. sub-sub-item 
+    2. sub-sub-item 
+  * sub-item 
+2. item 
+```
+*italic text* ```*italic text*```
 
-**bold text**
-
-~~strikethrough~~ ?!? - not really working right now 
+**bold text** ```**bold text**```
 
 Let's try to get a blockquote 
 
 > You are here and the time is now
 
-`as is text s p  a   c   i  n g` ?!? - shows up as code 
+```
+> You are here and the time is now
+```
 
 ### Linking
 
-http://tomhohenstein.com - This should be autolinked
-
 [Tom's website](http://tomhohenstein.com)
-
+```
+[Tom's website](http://tomhohenstein.com)
+```
 
 ### Code 
 

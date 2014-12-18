@@ -148,15 +148,15 @@
 
 &lt;p&gt;Let’s start with some basics &lt;/p&gt;
 
-&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+&lt;h1 id=&quot;heading-1--heading-1&quot;&gt;Heading 1 &lt;code&gt;# Heading 1&lt;/code&gt;&lt;/h1&gt;
 
-&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+&lt;h2 id=&quot;heading-2--heading-2&quot;&gt;Heading 2 &lt;code&gt;## Heading 2&lt;/code&gt;&lt;/h2&gt;
 
-&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
+&lt;h3 id=&quot;heading-3--heading-3&quot;&gt;Heading 3 &lt;code&gt;### Heading 3&lt;/code&gt;&lt;/h3&gt;
 
-&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;h4 id=&quot;heading-4--heading-4&quot;&gt;Heading 4 &lt;code&gt;#### Heading 4&lt;/code&gt;&lt;/h4&gt;
 
-&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
+&lt;h5 id=&quot;heading-5--heading-5&quot;&gt;Heading 5 &lt;code&gt;##### Heading 5&lt;/code&gt;&lt;/h5&gt;
 
 &lt;h3 id=&quot;text-basics&quot;&gt;Text Basics&lt;/h3&gt;
 
@@ -164,6 +164,10 @@
 This is on a new line in my text editor, but it should be in the same paragraph. &lt;/p&gt;
 
 &lt;p&gt;Text separated by an empty lines start a new paragraph. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Text separated by an empty lines start a new paragraph.
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;An unordered list:&lt;/p&gt;
 
@@ -173,6 +177,12 @@ This is on a new line in my text editor, but it should be in the same paragraph.
   &lt;li&gt;item &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;pre&gt;&lt;code&gt;An unordered list:
+
+* item 
+* item 
+* item 
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Ordered list:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -180,6 +190,13 @@ This is on a new line in my text editor, but it should be in the same paragraph.
   &lt;li&gt;item &lt;/li&gt;
   &lt;li&gt;item &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;Ordered list:
+ 
+1. item 
+2. item 
+3. item 
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And a nested list: &lt;/p&gt;
 
@@ -199,11 +216,19 @@ This is on a new line in my text editor, but it should be in the same paragraph.
   &lt;li&gt;item &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;em&gt;italic text&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;And a nested list: 
 
-&lt;p&gt;&lt;strong&gt;bold text&lt;/strong&gt;&lt;/p&gt;
+1. item 
+  * sub-item 
+  * sub-item 
+    1. sub-sub-item 
+    2. sub-sub-item 
+  * sub-item 
+2. item 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;italic text&lt;/em&gt; &lt;code&gt;*italic text*&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;~~strikethrough~~ ?!? - not really working right now &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;bold text&lt;/strong&gt; &lt;code&gt;**bold text**&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Let’s try to get a blockquote &lt;/p&gt;
 
@@ -211,13 +236,15 @@ This is on a new line in my text editor, but it should be in the same paragraph.
   &lt;p&gt;You are here and the time is now&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;code&gt;as is text s p  a   c   i  n g&lt;/code&gt; ?!? - shows up as code &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; You are here and the time is now
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;linking&quot;&gt;Linking&lt;/h3&gt;
 
-&lt;p&gt;http://tomhohenstein.com - This should be autolinked&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://tomhohenstein.com&quot;&gt;Tom’s website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tomhohenstein.com&quot;&gt;Tom’s website&lt;/a&gt;
+&lt;code&gt;
+[Tom&#39;s website](http://tomhohenstein.com)
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
 

@@ -51,15 +51,15 @@
 
 <p>Let’s start with some basics </p>
 
-<h1 id="heading-1">Heading 1</h1>
+<h1 id="heading-1--heading-1">Heading 1 <code># Heading 1</code></h1>
 
-<h2 id="heading-2">Heading 2</h2>
+<h2 id="heading-2--heading-2">Heading 2 <code>## Heading 2</code></h2>
 
-<h3 id="heading-3">Heading 3</h3>
+<h3 id="heading-3--heading-3">Heading 3 <code>### Heading 3</code></h3>
 
-<h4 id="heading-4">Heading 4</h4>
+<h4 id="heading-4--heading-4">Heading 4 <code>#### Heading 4</code></h4>
 
-<h5 id="heading-5">Heading 5</h5>
+<h5 id="heading-5--heading-5">Heading 5 <code>##### Heading 5</code></h5>
 
 <h3 id="text-basics">Text Basics</h3>
 
@@ -67,6 +67,10 @@
 This is on a new line in my text editor, but it should be in the same paragraph. </p>
 
 <p>Text separated by an empty lines start a new paragraph. </p>
+
+<pre><code>Text separated by an empty lines start a new paragraph.
+
+</code></pre>
 
 <p>An unordered list:</p>
 
@@ -76,6 +80,12 @@ This is on a new line in my text editor, but it should be in the same paragraph.
   <li>item </li>
 </ul>
 
+<pre><code>An unordered list:
+
+* item 
+* item 
+* item 
+</code></pre>
 <p>Ordered list:</p>
 
 <ol>
@@ -83,6 +93,13 @@ This is on a new line in my text editor, but it should be in the same paragraph.
   <li>item </li>
   <li>item </li>
 </ol>
+
+<pre><code>Ordered list:
+ 
+1. item 
+2. item 
+3. item 
+</code></pre>
 
 <p>And a nested list: </p>
 
@@ -102,11 +119,19 @@ This is on a new line in my text editor, but it should be in the same paragraph.
   <li>item </li>
 </ol>
 
-<p><em>italic text</em></p>
+<pre><code>And a nested list: 
 
-<p><strong>bold text</strong></p>
+1. item 
+  * sub-item 
+  * sub-item 
+    1. sub-sub-item 
+    2. sub-sub-item 
+  * sub-item 
+2. item 
+</code></pre>
+<p><em>italic text</em> <code>*italic text*</code></p>
 
-<p>~~strikethrough~~ ?!? - not really working right now </p>
+<p><strong>bold text</strong> <code>**bold text**</code></p>
 
 <p>Let’s try to get a blockquote </p>
 
@@ -114,13 +139,15 @@ This is on a new line in my text editor, but it should be in the same paragraph.
   <p>You are here and the time is now</p>
 </blockquote>
 
-<p><code>as is text s p  a   c   i  n g</code> ?!? - shows up as code </p>
+<pre><code>&gt; You are here and the time is now
+</code></pre>
 
 <h3 id="linking">Linking</h3>
 
-<p>http://tomhohenstein.com - This should be autolinked</p>
-
-<p><a href="http://tomhohenstein.com">Tom’s website</a></p>
+<p><a href="http://tomhohenstein.com">Tom’s website</a>
+<code>
+[Tom's website](http://tomhohenstein.com)
+</code></p>
 
 <h3 id="code">Code</h3>
 
