@@ -63,26 +63,9 @@ body {
 }
 
 #body-wrapper {
-  max-width: 1200px;
-}
-
-#body-wrapper {
-  margin-top: 150px;
   min-height: 100%;
-  padding: 0 10px;
-}
-@media (min-width: 992px) {
-  #body-wrapper {
-    padding: 0 50px;
-  }
 }
 
-#body-wrapper:after {
-  content: "";
-  display: block;
-}
-
-#body-wrapper:after,
 footer {
   height: 200px;
 }
@@ -91,6 +74,14 @@ footer {
   background-color: #b9dfe0;
   clear: both;
   padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.pattern {
+  height: 140px;
 }
 
 .social-share {
@@ -133,7 +124,6 @@ footer {
   float: left;
   padding: 0 0 15px 15px;
   width: 100%;
-  max-width: 1200px;
 }
 
 .navbar-header ul {
@@ -141,7 +131,7 @@ footer {
   list-style: none;
   margin-bottom: 0;
   float: right;
-  padding: 10px 0 0 0;
+  padding: 10px 20px 0 0;
 }
 
 .navbar-header ul li {
@@ -156,9 +146,13 @@ footer {
 }
 /************************
 
-  Blog List
+  Blog  and Blog List
 
 *************************/
+article {
+  max-width: 700px;
+}
+
 .blog-list-img {
   display: none;
 }
@@ -216,117 +210,4 @@ footer > div {
 
 footer .footer-icon {
   margin: 0 2%;
-}
-
-/************************
-
-  Home Page  
-
-*************************/
-#featured-post {
-  background-color: white;
-}
-
-#featured-post,
-#featured-project,
-#current-projects {
-  text-align: center;
-}
-
-#featured-post > div > p:first-child,
-#current-projects > div > p:first-child {
-  color: #c37741;
-  font-size: 25px;
-  font-style: italic;
-}
-
-#featured-project {
-  background-color: white;
-}
-
-#featured-project > div > p:first-child {
-  color: black;
-  font-size: 25px;
-}
-
-#current-projects {
-  background-color: white;
-}
-
-.carousel-control {
-  display: none;
-}
-@media (min-width: 992px) {
-  .carousel-control {
-    display: inline;
-  }
-}
-
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-  background-color: white;
-}
-
-.carousel-indicators .active {
-  background-color: #b9dfe0;
-}
-
-.carousel-indicators li {
-  border: 1px solid #b9dfe0;
-}
-
-.carousel-inner .item {
-  height: auto;
-}
-
-.carousel-inner .item img {
-  margin: 0 auto;
-}
-
-.carousel-caption {
-  text-shadow: none;
-}
-
-.carousel-inner .carousel-caption.white h2,
-.carousel-inner .carousel-caption.white p {
-  color: white;
-}
-
-/************************
-
-  About Page  
-
-*************************/
-#about-content h2,
-#about-content p {
-  text-align: center;
-}
-
-#about-content h4 {
-  font-size: 22px;
-}
-
-#about-content ul {
-  padding: 0 20px;
-}
-
-.resume-location {
-  display: block;
-  margin: 10px 0;
-}
-@media (min-width: 992px) {
-  .resume-location {
-    display: inline;
-    float: right;
-    margin: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  #resume-experience > h3,
-  #resume-education > h3,
-  #resume-additional > h3 {
-    margin-left: 8.33333333%;
-  }
 }

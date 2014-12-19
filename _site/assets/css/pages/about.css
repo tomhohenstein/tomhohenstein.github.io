@@ -1,0 +1,42 @@
+
+/************************
+
+  About Page  
+
+*************************/
+
+#body-wrapper {
+	max-width: 1000px;
+	margin: 0 2%;
+}
+
+#about-content h2, 
+#about-content p {
+	text-align: center; 
+}
+
+#about-content h4 {
+	font-size: 22px; 
+}
+
+#about-content ul {
+	padding: 0 20px; 
+}
+
+.resume-location {
+	display: block; 
+	margin: 10px 0; 
+	@media (min-width: $break-m) {
+		display: inline; 
+		float: right; 
+		margin: 0; 
+	}
+}
+
+#resume-experience > h3,
+#resume-education > h3, 
+#resume-additional > h3 {
+	@media (min-width: $break-m) {
+		margin-left: 8.33333333%; 
+	}
+}

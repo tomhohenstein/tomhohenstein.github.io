@@ -16,6 +16,10 @@
     <!-- add bootstrap --> 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
+    
+      <link href="/assets/css/pages/home.css" rel="stylesheet">
+    
+    
    </head>
 
   <body>
@@ -34,23 +38,25 @@
         </div>
       </div><!-- /.container-fluid -->
     </nav>
+    <div class="pattern "></div> 
     <div id="body-wrapper">
-    <div class="jumbotron">
-	<div class="container">
-		<p>Welcome, feel free to stay while I build this out : ) </p>
-	</div>
-</div>	
-<div class="jumbotron" id="featured-post">
-	<div class="container">
+    <div class="jumbotron" id="featured-post">
+
+	
+	<script>
+		var linkElement = document.createElement("link");
+		linkElement.rel = "stylesheet";
+		linkElement.href = "/assets/css/patterns/pattern-stripe.css";
+		document.head.appendChild(linkElement);
+	</script>		
+	<div class="container pattern-stripe">
 		<p>Featured post</p> 
 		
-			
-				
-				<a href="/Jekyll-Custom-Share-Buttons/" /><h2>Jekyll - Custom Share Buttons</h2></a>
-				<p>Learn how to make custom share buttons use Jekyll</p>
-			
-		
+		<a href="/Learning-Markdown/" /><h2>Learning Markdown</h2></a>
+		<p>A markdown testing center</p>				
 	</div>
+	
+
 </div>  
 <div class="jumbotron" id="featured-project">
 	<div class="container">
