@@ -125,17 +125,17 @@ The basic procedure for creating a network graph are best explained by sathomas'
         force.on('tick', function(){
 
             //update node location 
-            node.attr('cx', function(d) { return d.x; })
-                .attr('cy', function(d) { return d.y; });
+            node.attr('cx', function(d){ return d.x; })
+                .attr('cy', function(d){ return d.y; });
 
             //update link location
-            link.attr('x1', function(d) { 
+            link.attr('x1', function(d){ 
                                 return d.source.x; })
-                .attr('y1', function(d) { 
+                .attr('y1', function(d){ 
                                 return d.source.y; })
-                .attr('x2', function(d) { 
+                .attr('x2', function(d){ 
                                 return d.target.x; })
-                .attr('y2', function(d) { 
+                .attr('y2', function(d){ 
                                 return d.target.y; });
         }); 
 
@@ -154,7 +154,7 @@ The basic procedure for creating a network graph are best explained by sathomas'
 
 You can find the [code for this project on GitHub](https://github.com/tomhohenstein/tomhohenstein.github.io/tree/master/projects/in). If you have any questions, ideas, or improvements. Feel free to contact me (see footer). 
 
-<script src="{{ site.baseurl }}/projects/in/d3/d3.min.js"></script>
+<script src="{{ site.baseurl }}/projects/instruction-network/d3/d3.min.js"></script>
 <script>
 //canvas size 
 var width = 800,
