@@ -7,16 +7,9 @@ title: Blog
   {% for post in site.posts %}
   <div class="blog-list row">
     <div>
-      {% if post.thumbnail == FALSE %}
-          <a class="img-link" href="{{ post.url }}">
-              <span class="date-holder">{{ post.date | date: "%b. %e, %Y" }}</span>
-          </a>
-        {% else %} 
-          <a class="img-link" href="{{ post.url }}">
-            <span class="date-holder">{{ post.date | date: "%b. %e, %Y" }}</span>
-            <img alt="..." class="blog-list-img img-rounded" height="150" src="{{ site.baseurl }}/assets/img/{{ post.thumbnail }}" width="150">
-          </a>
-        {% endif %}
+        <a href="{{ post.url }}">
+          <span class="date-holder">{{ post.date | date: "%b. %e, %Y" }}</span>
+        </a>
         <div class="caption">
           <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
           <p> {{ post.excerpt | remove: '<p>' | remove: '</p>' }} </p>
