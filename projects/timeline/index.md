@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Timeline JS
+category: project
 css: timeline
 ---
 

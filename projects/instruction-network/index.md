@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Instruction Network
+project: true
+category: project
 css: instruction-network
 ---
 
