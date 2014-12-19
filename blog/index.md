@@ -2,8 +2,8 @@
 layout: default
 title: Blog
 ---
-<div class="blog-wrapper col-sm-8 col-sm-offset-1">
-  <h1 id="blog-title">Some Thoughts</h1>
+<div class="blog-wrapper col-md-6 col-md-offset-3">
+  <h1 id="blog-title">My Posts</h1>
   {% for post in site.posts %}
   <div class="blog-list row">
     <div>
