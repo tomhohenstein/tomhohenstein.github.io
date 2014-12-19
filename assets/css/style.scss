@@ -1,5 +1,5 @@
 ---
-# My base styles 
+# Fundation styles 
 ---
 @import 'sass_vars';
 
@@ -52,27 +52,32 @@ article {
 	max-width: 700px; 
 }
 
-html, 
-body {
-	height: 100%; 
-}
-
 #body-wrapper {
 	min-height: 100%;
 } 
- 
-footer {
-	height: 200px; 
+
+.container {
+	width: 100%; 
 }
 
 footer {
 	background-color: $background-b; 
 	clear:both; 
+	height: 200px; 
 	padding: 50px 0; 
 }
 
-.container {
-	width: 100%; 
+footer > div {
+	text-align: center; 
+}
+
+footer .footer-icon {
+	margin: 0 2%; 
+}
+
+html, 
+body {
+	height: 100%; 
 }
 
 .pattern {
@@ -134,24 +139,9 @@ footer {
 	padding: 5px 0; 
 }
 
-
 /* fix some bootstap styles to match */ 
 @media (min-width: $break-s) {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
  		margin-left: 25px;
 	}
-}
-
-/************************
-
-  Footer  
-
-*************************/
-
-footer > div {
-	text-align: center; 
-}
-
-footer .footer-icon {
-	margin: 0 2%; 
 }
