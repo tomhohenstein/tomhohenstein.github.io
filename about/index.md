@@ -7,9 +7,7 @@ css: about
 
 If you've landed here, you're probably wondering who I am and the purpose of this site. 
 
-## Purpose 
-
-This site is my playpen, a place for some self-promotion, and documentation center. My interests range from libraries, to historical research, to data visualization. As such, sharing my ideas normally involves some html, css, and a bit of javascript. If you're interested in collaborating or like something you see, feel free to [check me out on GitHub](https://github.com/tomhohenstein).
+This site is my playpen, a place for some self-promotion, and documentation center. My interests range from libraries, to historical research, to data visualization. As such, sharing my ideas normally involves some html, css, and a bit of javascript. If you're interested in collaborating or like something you see, feel free to [check me out on GitHub](https://github.com/tomhohenstein). Below you'll find a draft of my resume and a timeline about me. 
 
 <div role="tabpanel">
 
