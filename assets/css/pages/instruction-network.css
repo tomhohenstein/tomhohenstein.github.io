@@ -1,0 +1,17 @@
+---
+# Sytles for instruction-network project
+---
+
+.link {
+    stroke: rgb(25, 25, 25);
+    stroke-width: 0.5px;
+}
+.node {
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 5px;
+}
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+  }

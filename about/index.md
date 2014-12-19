@@ -120,7 +120,7 @@ This site is my playpen, a place for some self-promotion, and documentation cent
     </div>
     <div role="tabpanel" class="tab-pane" id="profile">
     	<h2>Because a resume doesn't capture it all (still drafting)</h2> 
-        <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0At6NjQiEuW11dDlTdmEzVVhHQzM5clFzellkQXpldXc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=700' width='100%' height='700' frameborder='0'></iframe>
+        <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0At6NjQiEuW11dDlTdmEzVVhHQzM5clFzellkQXpldXc&font=Bevan-PotanoSans&maptype=roadmap&lang=en&height=700' width='100%' height='700' frameborder='0'></iframe>
     </div>
   </div>
 </div> 

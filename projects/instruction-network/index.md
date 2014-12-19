@@ -1,23 +1,9 @@
 ---
 layout: post
 title: Instruction Network
+css: instruction-network
 ---
-<style>
-.link {
-    stroke: rgb(25, 25, 25);
-    stroke-width: 0.5px;
-}
-.node {
-    fill: #ccc;
-    stroke: #fff;
-    stroke-width: 5px;
-}
 
-.node text {
-  pointer-events: none;
-  font: 10px sans-serif;
-  }
-</style>
 
 This project attempts to represent instructional statistics from [WPI's Gordon Library](http://www.wpi.edu/academics/library.html) as a network graph and has two primary goals: 
 
