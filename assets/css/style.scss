@@ -48,6 +48,9 @@ code {
 	w/sticky footer 
 
 *************************/ 
+article {
+	max-width: 700px; 
+}
 
 html, 
 body {
@@ -141,61 +144,6 @@ footer {
 
 /************************
 
-  Blog  and Blog List
-
-*************************/ 
-
-article {
-	max-width: 700px; 
-}
-
-.blog-list-img {
-	display: none; 
-	@media (min-width: $break-s) {
-		clear: left;
-		display: inline-block; 
-		float: left; 
-		margin: 0px 15px 0 0; 
-	}
-}
-
-.blog-list {
-	padding: 0 0 10px 20px; 
-}
-
-.blog-wrapper h1 {
-	text-align: center; 
-}
-
-.caption {
-	@media (min-width: $break-s) {
-		margin-left: 175px; 
-	}
-}
-
-.caption .btn-lg {
-	font-size: $font-size+2px; 
-	padding: 10px 16px 10px 16px; 
-}
-
-.caption .btn-lg:hover {
-
-}
-
-.date-holder {
-	display: none; 
-	@media (min-width: $break-s) {
-		border-radius: 5px; 
-		display: inline-block; 
-		float: left; 
-		margin: 0px 15px 0 0;  
-		text-align: center; 
-		width: 150px; 
-	}	
-}
-
-/************************
-
   Footer  
 
 *************************/
@@ -207,5 +155,3 @@ footer > div {
 footer .footer-icon {
 	margin: 0 2%; 
 }
-
-
