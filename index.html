@@ -5,24 +5,27 @@ css: home
 pattern:
 javascript: carousel.swipe.js
 ---	
-<div class="jumbotron" id="featured-post">
+
 {% for post in site.posts limit:1 %}
 	{% if post.featured %}
-	<script>
-		var linkElement = document.createElement("link");
-		linkElement.rel = "stylesheet";
-		linkElement.href = "{{ site.baseurl }}/assets/css/patterns/{{ post.pattern }}.css";
-		document.head.appendChild(linkElement);
-	</script>		
-	<div class="container {{ post.pattern }}">
-		<p>Featured post</p> 
-		{% assign featuredcount = featuredcount | plus:'1' %}
-		<a href="{{ post.url }}" /><h2>{{ post.title }}</h2></a>
-		<p>{{ post.excerpt }}</p>				
-	</div>
+	<div class="pattern {{ post.pattern }}"></div> 
+	<div class="jumbotron {{ post.pattern }}" id="featured-post">
+		<script>
+			var linkElement = document.createElement("link");
+			linkElement.rel = "stylesheet";
+			linkElement.href = "{{ site.baseurl }}/assets/css/patterns/{{ post.pattern }}.css";
+			document.head.appendChild(linkElement);
+		</script>		
+		<div class="container">
+			<p>Featured post</p> 
+			{% assign featuredcount = featuredcount | plus:'1' %}
+			<a href="{{ post.url }}" /><h2>{{ post.title }}</h2></a>
+			<p>{{ post.excerpt }}</p>				
+		</div>
+	</div> 	
 	{% endif %}
 {% endfor %}
-</div>  
+ 
 <div class="jumbotron" id="featured-project">
 	<div class="container">
 		<p>Recent Work</p> 
