@@ -147,6 +147,7 @@ You can find the [code for this project on GitHub](https://github.com/tomhohenst
 //canvas size 
 var width = 800,
     height = 500,
+    radius = 6, //used for bounding box 
     data;
 
 //add svg to dom 
@@ -164,13 +165,19 @@ d3.json("node.json", function(error, nodes){
 		//links are the json file 
 		var force = d3.layout.force()
 	        .size([width, height]) //size
-	        .gravity(0.5) //gravity
-	        .charge(-700) //charge between elements
-	        .linkStrength(0.8) // link strength, rigidity 
+	        .gravity(0.3) //gravity
+	        .charge(function(node){
+                if(node.label == "faculty"){
+                    return -15
+                } else {
+                    return -8000; 
+                }
+            }) //charge between elements
+	        .linkStrength(0.5) // link strength, rigidity 
 	        .nodes(nodes) // adds nodes
 	        .links(links); // adds links 
 	    //set the link distance 
-	    force.linkDistance(20);
+	    force.linkDistance(15);
 	    //enable dragging of nodes
 	    var drag = force.drag()
     		.on("dragstart", dragstart);
@@ -195,8 +202,8 @@ d3.json("node.json", function(error, nodes){
 		//turn force on and sent function for each tick
 		force.on('tick', function(){
 			//update node location
-		  	node.attr('cx', function(d) { return d.x; })
-		       .attr('cy', function(d) { return d.y; });
+		  	node.attr('cx', function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
+		       .attr('cy', function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
 		    //update link location
 		    link.attr('x1', function(d) { return d.source.x; })
 		        .attr('y1', function(d) { return d.source.y; })
