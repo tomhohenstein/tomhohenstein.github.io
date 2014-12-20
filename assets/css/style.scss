@@ -35,10 +35,15 @@ span {
 }
 
 pre,
-code {
+code, 
+pre > code,
+pre code  {
 	color: $text-p; 
 	background-color: #D5FFE7; 
 	font-size: $font-size - 2; 
+	overflow-wrap: normal;
+	word-wrap: normal;
+	white-space: pre;
 }
 
 /************************
