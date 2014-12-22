@@ -236,10 +236,12 @@ d3.json("node.json", function(error, nodes){
 			.style('fill',function(d) {return d.color})
 			.style('stroke',function(d) {return d.color})
 			.attr('r',function(d) {return d.size})
-			.attr('id', function(d) {return d.label})
-			.on("click", click)
-			.on("dblclick", dblclick)
+			.attr('class', function(d) {return d.label})
+            .on("mouseover", mouseover)
+            .on("mouseout", mouseout)
 			.call(drag);
+            //.on("dblclick", dblclick)
+            //.on("click", click)
 
 		//turn force on and sent function for each tick
 		force.on('tick', function(){
@@ -252,24 +254,36 @@ d3.json("node.json", function(error, nodes){
 		        .attr('x2', function(d) { return d.target.x; })
 		        .attr('y2', function(d) { return d.target.y; });
 		});
+
+        //force functions 
+        function dragstart(d) {
+          d3.select(this).classed("fixed", d.fixed = true);
+        }
+
+        function mouseover(d) {
+            console.log("mouseover"); 
+            console.log(d.label); 
+            d3.select(this).style("fill", "blue")
+                            .style("stroke", "blue");
+            link.style('stroke', function(l) {
+                if (d === l.source || d === l.target)
+                  return "blue";
+                else
+                  return "#191919";
+            });
+        }
+
+        function mouseout(d){
+            console.log("mouseout"); 
+            console.log(d.label); 
+            d3.select(this).style("fill",function(d) {return d.color})
+                    .style("stroke",function(d) {return d.color});
+            link.style('stroke', "#191919"); 
+        }
+
 		force.start(); 
 	});
 });
-//force functions 
-function click(d) {
-	console.log(d);  
-	d3.select(this).append("text")
-		.attr("x", 12)
-		.attr("dy", ".4em")
-		.text(d.label); 
-	d3.select(this).append("text")
-}
-function dblclick(d) {
-  d3.select(this).classed("fixed", d.fixed = false);
-}
-function dragstart(d) {
-  d3.select(this).classed("fixed", d.fixed = true);
-}
 </script>
 
 
