@@ -144,8 +144,21 @@ You can find the [code for this project on GitHub](https://github.com/tomhohenst
 
 <script src="{{ site.baseurl }}/projects/instruction-network/d3/d3.min.js"></script>
 <script>
+
+var window_size; 
+  if(window.outerHeight){
+      window_size = window.outerWidth;
+  }
+  else {
+      window_size = document.body.clientWidth;
+  }
+
+  if(window_size > 700){
+    window_size = 700; 
+  }
+
 //canvas size 
-var width = 800,
+var width = window_size,
     height = 500,
     radius = 6, //used for bounding box 
     data;
