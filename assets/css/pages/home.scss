@@ -8,41 +8,14 @@
   Home Page  
 
 *************************/
-.jumbotron {
-	background: rgb(255, 255, 255); 
+#body-wrapper { 
+	margin: 0; 
 }
 
+#current-projects,
 #featured-post, 
-#featured-project,
-#current-projects {
+#featured-project {
 	text-align: center;  
-}
-
-#featured-post > div > p:first-child {
-	font-size: 40px; 
-	font-style: italic; 
-	margin-top: 50px; 
-}
-
-#featured-post h2 {
-	font-size: 60px; 
-	margin-bottom: 40px; 
-}
-
-#featured-post > div > p:last-child {
-	font-size: 30px;  
-	margin-bottom: 50px; 
-}
-
-#current-projects > div > p:first-child {
-	color: $accent; 
-	font-size: 25px; 
-	font-style: italic; 
-}
-
-#featured-project > div > p:first-child {
-	color: $primary;
-	font-size: 25px; 
 }
 
 .carousel-control {
@@ -80,4 +53,35 @@
 .carousel-inner .carousel-caption.white h2,
 .carousel-inner .carousel-caption.white p {
 	color: $background-w; 
+}
+
+#current-projects > div > p:first-child {
+	color: $accent; 
+	font-size: 25px; 
+	font-style: italic; 
+}
+
+#featured-post > div > p:first-child {
+	font-size: 40px; 
+	font-style: italic; 
+	margin-top: 50px; 
+}
+
+#featured-post h2 {
+	font-size: 60px; 
+	margin-bottom: 40px; 
+}
+
+#featured-post > div > p:last-child {
+	font-size: 30px;  
+	margin-bottom: 50px; 
+}
+
+#featured-project > div > p:first-child {
+	color: $primary;
+	font-size: 25px; 
+}
+
+.jumbotron {
+	background: rgb(255, 255, 255); 
 }
