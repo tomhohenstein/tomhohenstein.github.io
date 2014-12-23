@@ -28,6 +28,13 @@
 	padding: 0 20px; 
 }
 
+#about-timeline {
+	display:none; 
+	@media (min-width: $break-m) {
+		display: block; 
+	}
+}
+
 .resume-location {
 	display: block; 
 	margin: 10px 0; 
@@ -45,3 +52,5 @@
 		margin-left: 8.33333333%; 
 	}
 }
+
+

@@ -14,7 +14,7 @@ This site is my playpen, a place for some self-promotion, and documentation cent
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" id="about-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Resume</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Timeline</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" id="about-timeline">Timeline</a></li>
   </ul>
 
   <!-- Tab panes -->
