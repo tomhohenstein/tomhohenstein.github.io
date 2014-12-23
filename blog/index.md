@@ -3,7 +3,6 @@ layout: default
 title: Blog
 css: blog-list
 ---
-<div class="row">
 <div class="blog-wrapper col-md-6 col-md-offset-2">
   <h1 id="blog-title">My Posts</h1>
   {% for post in site.posts %}
@@ -26,5 +25,4 @@ css: blog-list
     </div>
   </div>
   {% endfor %}
-</div>
 </div>
