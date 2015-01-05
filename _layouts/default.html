@@ -17,7 +17,7 @@
     <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
     {% for css in page.css %}
-      <link href="{{ site.baseurl }}/assets/css/pages/{{ css }}.css" rel="stylesheet">
+      <link href="{{ site.baseurl }}/assets/css/{{ css }}" rel="stylesheet">
     {% endfor %}
     
     {% for css in page.pattern %}
