@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blog
-css: blog-list
+css: pages/blog-list.css
 ---
 <div class="blog-wrapper col-md-8 col-md-offset-2">
   <h1 id="blog-title">My Posts</h1>

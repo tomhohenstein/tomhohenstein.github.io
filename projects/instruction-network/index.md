@@ -3,7 +3,7 @@ layout: post
 title: Instruction Network
 project: true
 category: project
-css: instruction-network
+css: pages/instruction-network.css
 ---
 This project attempts to represent instructional statistics from [WPI's Gordon Library](http://www.wpi.edu/academics/library.html) as a network graph and has two primary goals: 
 

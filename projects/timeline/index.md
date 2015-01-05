@@ -2,7 +2,7 @@
 layout: post
 title: Timeline JS
 category: project
-css: timeline
+css:
 ---
 
 [Timeline JS](http://timeline.knightlab.com/) is one of the easiest ways to create great looking timelines on the web. This project's goal is to create an easy timeline that I can add to my [about page](/about/).  
