@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-css: about
+css: pages/about.css
 ---
 # Welcome, 
 
