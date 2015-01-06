@@ -4,7 +4,7 @@ title: Jekyll - Custom Share Buttons
 excerpt: Learn how to make custom share buttons use Jekyll
 thumbnail: 
 featured: true
-pattern: background-orange
+background: background-orange
 shorturl: http://goo.gl/DzkdrT
 tags: [[learning, Jekyll]]
 ---

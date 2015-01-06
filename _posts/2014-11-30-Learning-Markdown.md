@@ -5,7 +5,7 @@ excerpt: A markdown testing center
 thumbnail: 
 featured: true
 shorturl: http://goo.gl/N7iu6p
-pattern: pattern-stripe
+background: pattern-stripe
 tags: [[learning, markdown]]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Bar Chart
 project: true
 category: project
-css: pages/barchart.css
+css: p/barchart.css
 javascript: 
 - d3.min.js
 - p/barchart.js

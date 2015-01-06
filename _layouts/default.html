@@ -14,14 +14,14 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- add bootstrap --> 
-    <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/l/bootstrap.min.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
     {% for css in page.css %}
       <link href="{{ site.baseurl }}/assets/css/{{ css }}" rel="stylesheet">
     {% endfor %}
     
-    {% for css in page.pattern %}
-      <link href="{{ site.baseurl }}/assets/css/patterns/{{ css }}.css" rel="stylesheet">
+    {% for css in page.background %}
+      <link href="{{ site.baseurl }}/assets/css/b/{{ css }}.css" rel="stylesheet">
     {% endfor %}
    </head>
   <body>
@@ -46,8 +46,7 @@
               <li><a class="custom-navbar-link" href="{{ site.baseurl }}/projects/">Projects</a></li>
             </ul>
           </div>
-
-         
+    
          </div>
       </div><!-- /.container-fluid -->
     </nav>

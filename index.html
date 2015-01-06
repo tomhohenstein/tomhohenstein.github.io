@@ -1,19 +1,19 @@
 ---
 layout: default
 title: Welcome
-css: pages/home.css
+css: p/home.css
 pattern:
 javascript: l/carousel.swipe.js
 ---	
 
 {% for post in site.posts limit:1 %}
 	{% if post.featured %}
-	<div class="pattern {{ post.pattern }}"></div> 
-	<div class="jumbotron {{ post.pattern }}" id="featured-post">
+	<div class="pattern {{ post.background }}"></div> 
+	<div class="jumbotron {{ post.background }}" id="featured-post">
 		<script>
 			var linkElement = document.createElement("link");
 			linkElement.rel = "stylesheet";
-			linkElement.href = "{{ site.baseurl }}/assets/css/patterns/{{ post.pattern }}.css";
+			linkElement.href = "{{ site.baseurl }}/assets/css/b/{{ post.background }}.css";
 			document.head.appendChild(linkElement);
 		</script>		
 		<div class="container">
