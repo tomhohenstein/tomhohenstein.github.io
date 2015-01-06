@@ -2,132 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Tom Hohenstein</title>
-		<description></description>		
+		<description>A place for my experiments</description>		
 		<link>http://tomhohenstein.com</link>
 		<atom:link href="http://tomhohenstein.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Jekyll - Custom Share Buttons</title>
-				<description>&lt;p&gt;As I continue building out this site, I thought it would be a good idea to write posts as I develop features and solve problems. This post is on how to build custom share buttons for posts and pages. &lt;/p&gt;
-
-&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
-&lt;p&gt;I found the following posts very useful on how to best use Jekyll to create custom share buttons for social media platforms: &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://zhangwenli.com/&quot;&gt;Wenli Zhang’s&lt;/a&gt; &lt;em&gt;&lt;a href=&quot;http://zhangwenli.com/blog/2014/08/03/make-your-own-social-sharing-bar-with-jekyll/&quot;&gt;Make Your Own Social Shareing Bar with Jekyll&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://scottndecker.com/Contact/&quot;&gt;Scott N Decker’s&lt;/a&gt; &lt;em&gt;&lt;a href=&quot;http://scottndecker.com/blog/2014/06/29/How-to-Make-Custom-Share-Buttons-with-Jekyll/&quot;&gt;How to Make Custom Share Buttons with Jekyll&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Eric Lagergren’s &lt;em&gt;&lt;a href=&quot;http://www.ericlagergren.com/blog/dynamic-sharing-buttons/&quot;&gt;Dynamic Sharing for Jekyll&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;platforms-and-tactics&quot;&gt;Platforms and Tactics&lt;/h2&gt;
-
-&lt;p&gt;As a relative newbee to creating social media share buttons, it is probably best to focus on only a few platforms, rather than create a “social media sharing kitchen sink.” I am only going to focus on: &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dev.twitter.com/web/tweet-button&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.facebook.com/docs/sharing/reference/share-dialog&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.linkedin.com/plugins/share-plugin-generator&quot;&gt;LinkedIn’s “official”&lt;/a&gt;; and &lt;a href=&quot;https://developer.linkedin.com/documents/share-linkedin&quot;&gt;the url way&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.google.com/+/web/share/&quot;&gt;Google+&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The basic tactic is to use each platform’s share via url feature. Each platform has buttons and other gadgets for sharing content, but I want to keep it simple and went with the simplest solution.  &lt;/p&gt;
-
-&lt;h3 id=&quot;twitter&quot;&gt;Twitter&lt;/h3&gt;
-
-&lt;p&gt;Before building a custom Twitter share link, it is important to review &lt;a href=&quot;https://about.twitter.com/press/brand-assets&quot;&gt;Twitter’s branding guidelines&lt;/a&gt;. &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;!--the Twitter base 
-    https://twitter.com/share --&amp;gt; 
-
-&amp;lt;a href=&quot;https://twitter.com/share?
-    text={{ page.title }}
-    &amp;amp;url={{ page.shorturl }}
-    &amp;amp;via=tomhohenstein&quot;&amp;gt;
-
-    &amp;lt;!-- use the twitter logo for the link --&amp;gt; 
-    &amp;lt;img alt=&quot;...&quot; 
-        class=&quot;footer-icon&quot; 
-        src=&quot;{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png&quot;&amp;gt;
-
-&amp;lt;/a&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Twitter example: &lt;a href=&quot;https://twitter.com/share?text=Jekyll - Custom Share Buttons&amp;amp;url=http://goo.gl/DzkdrT&amp;amp;via=tomhohenstein&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/footer-icons/Twitter_logo_blue.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;facebook&quot;&gt;Facebook&lt;/h3&gt;
-
-&lt;p&gt;Again, here are the &lt;a href=&quot;https://www.facebookbrand.com/&quot;&gt;branding guidelines for Facebook&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;!--the Facebook base 
-    https://www.facebook.com/dialog/share? --&amp;gt; 
-
-&amp;lt;a href=&quot;https://www.facebook.com/dialog/share
-    ?app_id=946372735391329&amp;amp;display=popup
-    &amp;amp;href={{ site.url }}{{ page.url }}
-    &amp;amp;redirect_uri={{ site.url }}{{ page.url }}&quot;&amp;gt;
-
-    &amp;lt;!-- use the facebook logo for the link --&amp;gt; 
-    &amp;lt;img 
-        alt=&quot;...&quot; 
-        class=&quot;footer-icon&quot; 
-        src=&quot;{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo__blue_50.png&quot;&amp;gt;
-&amp;lt;/a&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Facebook Example: &lt;a href=&quot;https://www.facebook.com/dialog/share?app_id=946372735391329&amp;amp;display=popup&amp;amp;href=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;redirect_uri=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/social-icons/FB-f-Logo__blue_50.png&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;linkedin&quot;&gt;LinkedIn&lt;/h3&gt;
-
-&lt;p&gt;Here are &lt;a href=&quot;https://developer.linkedin.com/documents/branding-guidelines&quot;&gt;LinkedIn’s branding guidelines&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;!--the LinkedIn base url 
-    http://www.linkedin.com/shareArticle?mini=true --&amp;gt; 
-
-&amp;lt;a href=&quot;http://www.linkedin.com/shareArticle
-    ?mini=true
-    &amp;amp;url={{ site.url }}{{ page.url }}
-    &amp;amp;title={{ page.title }}
-    &amp;amp;source={{ site.title }}&quot;&amp;gt;
-
-    &amp;lt;!-- use the linkedin logo for the link --&amp;gt; 
-    &amp;lt;img alt=&quot;...&quot; 
-        class=&quot;footer-icon&quot;
-        src=&quot;{{ site.baseurl }}/assets/img/footer-icons/LinkedIn-InBug-2CRev.png&quot;&amp;gt;
-
-&amp;lt;/a&amp;gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;LinkedIn example: &lt;a href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;title=Jekyll - Custom Share Buttons&amp;amp;source=&amp;amp;summary=&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/footer-icons/LinkedIn-InBug-2CRev.png&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;h3 id=&quot;google&quot;&gt;Google+&lt;/h3&gt;
-
-&lt;p&gt;Finally, the &lt;a href=&quot;https://developers.google.com/+/branding-guidelines&quot;&gt;Google+ branding guidelines&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;!--the Google+ link url; 
-    base = https://plus.google.com/share? --&amp;gt; 
-
-&amp;lt;a href=&quot;https://plus.google.com/share?
-    url=http://tomhohenstein.com{{ page.url }}
-    &amp;amp;hl=en-US&quot; 
-    onclick=&quot;javascript:window.open(this.href,&#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#39;);return false;&quot;&amp;gt;
-
-    &amp;lt;!-- use the google+ logo for the link --&amp;gt; 
-    &amp;lt;img 
-        alt=&quot;...&quot; 
-        class=&quot;footer-icon&quot; 
-        src=&quot;{{ site.baseurl }}/assets/img/social-icons/btn_white.png&quot;&amp;gt;
-&amp;lt;/a&amp;gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Google+ Example: &lt;a href=&quot;https://plus.google.com/share?url=http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/&amp;amp;hl=en-US&quot; onclick=&quot;javascript:window.open(this.href,&#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#39;);return false;&quot;&gt;&lt;img alt=&quot;...&quot; class=&quot;footer-icon&quot; src=&quot;/assets/img/social-icons/btn_white.png&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;final-product&quot;&gt;Final Product&lt;/h2&gt;
-</description>
+				<description>Learn how to make custom share buttons use Jekyll</description>
 				<pubDate>Fri, 19 Dec 2014 00:00:00 -0500</pubDate>
 				<link>http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</link>
 				<guid isPermaLink="true">http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</guid>
@@ -135,141 +16,7 @@
 		
 			<item>
 				<title>Learning Markdown</title>
-				<description>&lt;p&gt;While I enjoy marking up text with HTML, it is in my interest to learn, and master, markdown. This post is a little playpen for me to learn and document learning markdowns. &lt;/p&gt;
-
-&lt;p&gt;Resources: &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown/&quot;&gt;GitHub Flavored Markdown&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot;&gt;Markdown Basics&lt;/a&gt; &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let’s start with some basics &lt;/p&gt;
-
-&lt;h1 id=&quot;heading-1--heading-1&quot;&gt;Heading 1 &lt;code&gt;# Heading 1&lt;/code&gt;&lt;/h1&gt;
-
-&lt;h2 id=&quot;heading-2--heading-2&quot;&gt;Heading 2 &lt;code&gt;## Heading 2&lt;/code&gt;&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-3--heading-3&quot;&gt;Heading 3 &lt;code&gt;### Heading 3&lt;/code&gt;&lt;/h3&gt;
-
-&lt;h4 id=&quot;heading-4--heading-4&quot;&gt;Heading 4 &lt;code&gt;#### Heading 4&lt;/code&gt;&lt;/h4&gt;
-
-&lt;h5 id=&quot;heading-5--heading-5&quot;&gt;Heading 5 &lt;code&gt;##### Heading 5&lt;/code&gt;&lt;/h5&gt;
-
-&lt;h3 id=&quot;text-basics&quot;&gt;Text Basics&lt;/h3&gt;
-
-&lt;p&gt;Now for a paragraph of text. I have written a few sentences of text. &lt;br /&gt;
-This is on a new line in my text editor, but it should be in the same paragraph. &lt;/p&gt;
-
-&lt;p&gt;Text separated by an empty lines start a new paragraph. &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Text separated by an empty lines start a new paragraph.
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;An unordered list:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;item &lt;/li&gt;
-  &lt;li&gt;item &lt;/li&gt;
-  &lt;li&gt;item &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;An unordered list:
-
-* item 
-* item 
-* item 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Ordered list:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;item &lt;/li&gt;
-  &lt;li&gt;item &lt;/li&gt;
-  &lt;li&gt;item &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;Ordered list:
- 
-1. item 
-2. item 
-3. item 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And a nested list: &lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;item 
-    &lt;ul&gt;
-      &lt;li&gt;sub-item &lt;/li&gt;
-      &lt;li&gt;sub-item 
-        &lt;ol&gt;
-          &lt;li&gt;sub-sub-item &lt;/li&gt;
-          &lt;li&gt;sub-sub-item &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;sub-item &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;item &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;And a nested list: 
-
-1. item 
-  * sub-item 
-  * sub-item 
-    1. sub-sub-item 
-    2. sub-sub-item 
-  * sub-item 
-2. item 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;italic text&lt;/em&gt; &lt;code&gt;*italic text*&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;bold text&lt;/strong&gt; &lt;code&gt;**bold text**&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Let’s try to get a blockquote &lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You are here and the time is now&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; You are here and the time is now
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;linking&quot;&gt;Linking&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://tomhohenstein.com&quot;&gt;Tom’s website&lt;/a&gt;
-&lt;code&gt;
-[Tom&#39;s website](http://tomhohenstein.com)
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;Basic syntax &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;	var tom = okay; 
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We can also do &lt;code&gt;var this = inline&lt;/code&gt; if we want. &lt;/p&gt;
-
-&lt;p&gt;Declare a language (not working yet)&lt;/p&gt;
-
-&lt;p&gt;Python&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;x = 0 
-for x in this:
-  do something 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;JavaScript &lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;if (here)
-  return true; 
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+				<description>A markdown testing center</description>
 				<pubDate>Sun, 30 Nov 2014 00:00:00 -0500</pubDate>
 				<link>http://tomhohenstein.com/Learning-Markdown/</link>
 				<guid isPermaLink="true">http://tomhohenstein.com/Learning-Markdown/</guid>
@@ -277,8 +24,7 @@ for x in this:
 		
 			<item>
 				<title>Hello Again</title>
-				<description>&lt;p&gt;This is my second post. It is normally useful to have a few posts up when designing a blog’s layout. I wouldn’t read this one : ) &lt;/p&gt;
-</description>
+				<description>Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue</description>
 				<pubDate>Tue, 25 Nov 2014 00:00:00 -0500</pubDate>
 				<link>http://tomhohenstein.com/Hello-Again/</link>
 				<guid isPermaLink="true">http://tomhohenstein.com/Hello-Again/</guid>
@@ -286,8 +32,7 @@ for x in this:
 		
 			<item>
 				<title>Hello World</title>
-				<description>&lt;p&gt;This is my first post written in markdown, processed via jekyll, and hosted on GitHub. It is going to be a bit of a project, but everything seems to be coming along one step at a time.  &lt;/p&gt;
-</description>
+				<description>My first post</description>
 				<pubDate>Sun, 16 Nov 2014 00:00:00 -0500</pubDate>
 				<link>http://tomhohenstein.com/Hello-World/</link>
 				<guid isPermaLink="true">http://tomhohenstein.com/Hello-World/</guid>
