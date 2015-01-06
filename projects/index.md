@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Projects
-css: projects
+css: pages/projects.css
 ---
 # Coming soon ... 
