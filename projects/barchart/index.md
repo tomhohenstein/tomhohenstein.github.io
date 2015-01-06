@@ -5,7 +5,7 @@ project: true
 category: project
 css: p/barchart.css
 javascript: 
-- d3.min.js
+- l/d3.min.js
 - p/barchart.js
 ---
 
