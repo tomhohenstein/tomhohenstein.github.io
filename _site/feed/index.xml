@@ -8,9 +8,7 @@
 		
 			<item>
 				<title>Timeline JS</title>
-				<description>&lt;p&gt;&lt;a href=&quot;http://timeline.knightlab.com/&quot;&gt;Timeline JS&lt;/a&gt; is one of the easiest ways to create great looking timelines on the web. This post’s goal is to create an easy timeline that I can add to my &lt;a href=&quot;/about/&quot;&gt;about page&lt;/a&gt;.  &lt;/p&gt;
-
-</description>
+				<description>Learn to use Timeline JS via iframe</description>
 				<pubDate>Sun, 04 Jan 2015 00:00:00 -0500</pubDate>
 				<link>http://tomhohenstein.com/Timeline-JS/</link>
 				<guid isPermaLink="true">http://tomhohenstein.com/Timeline-JS/</guid>

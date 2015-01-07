@@ -74,7 +74,8 @@
 
 #featured-post > div > p:last-child {
 	font-size: 30px;  
-	margin-bottom: 50px; 
+	margin: 0 auto 50px; 
+	max-width: 600px; 
 }
 
 #featured-project > div > p:first-child {
