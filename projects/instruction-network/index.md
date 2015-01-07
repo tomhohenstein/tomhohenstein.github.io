@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Instruction Network
-project: true
-category: project
 css: p/instruction-network.css
 javascript: 
 - l/d3.min.js

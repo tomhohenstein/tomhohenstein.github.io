@@ -2,7 +2,6 @@
 layout: post
 title: Hello Again
 excerpt: Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue Need to fix excerpt wrap issue 
-thumbnail: 
 tags: [[learning, test]]
 ---
 

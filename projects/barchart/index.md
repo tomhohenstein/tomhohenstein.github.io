@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Bar Chart
-project: true
-category: project
 css: p/barchart.css
 javascript: 
 - l/d3.min.js

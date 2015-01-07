@@ -2,7 +2,6 @@
 layout: post
 title: Hello World
 excerpt: My first post
-thumbnail: hello-world.jpg
 tags: [[learning, test]]
 ---
 

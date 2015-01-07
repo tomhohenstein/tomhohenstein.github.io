@@ -2,7 +2,6 @@
 layout: post
 title: Learning Markdown 
 excerpt: A markdown testing center 
-thumbnail: 
 featured: true
 shorturl: http://goo.gl/N7iu6p
 background: pattern-stripe
