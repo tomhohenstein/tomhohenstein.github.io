@@ -141,13 +141,11 @@ body {
 #brand-holder .navbar-brand {
 	border-radius: 0 0 60px 60px;
 	float: none; 
+	font-size: 35px; 
 	margin: 0 25px;
 	padding: 15px 40px 40px 40px;
 }
 
-#brand-holder .navbar-brand:hover {
-	background-color: $background-b;
-}
 
 .navbar-header {
     float: left;
