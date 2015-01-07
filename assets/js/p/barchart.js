@@ -39,8 +39,7 @@ $( document ).ready(function (){
     	//add chart
     	var chart = d3.select("#chart")
 						.attr("width", 600 + margin.right + margin.left)
-						.attr("height", barHeight * obj.length + margin.top + margin.bottom)
-						.style("fill", "red");
+						.attr("height", barHeight * obj.length + margin.top + margin.bottom);
 
 		//add bars
     	var bar = chart.selectAll(".bar")
