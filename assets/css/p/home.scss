@@ -21,12 +21,8 @@
 	margin-bottom: 0; 
 }
 
-
-
-
 #current-projects,
-#featured-post, 
-#featured-project {
+#featured-post {
 	text-align: center;  
 }
 
@@ -64,4 +60,26 @@
 
 .jumbotron {
 	background: rgb(255, 255, 255); 
+}
+
+.panel-body {
+	text-align: center; 
+}
+
+#recent-work > div > p:first-child {	
+	float: left;
+	font-size: 40px;
+	font-style: italic;
+	transform: rotate(-90deg);
+	margin: 50px 0;
+	text-align: center;
+	
+}
+
+.work a {
+	padding: 15px;
+border: 1px solid;
+/* width: 100%; */
+display: block;
+text-align: center;
 }
