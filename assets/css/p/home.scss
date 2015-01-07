@@ -22,10 +22,7 @@
 }
 
 
-#current-projects > div > div > p:first-child {
-	font-size: 40px; 
-	font-style: italic;
-}
+
 
 #current-projects,
 #featured-post, 
@@ -36,6 +33,11 @@
 .current-text {
 	padding: 7% 5% 0; 
 	text-align: left; 
+}
+
+.current-text > p:first-child {
+	font-size: 40px; 
+	font-style: italic;
 }
 
 #featured-post > div > p:first-child {
