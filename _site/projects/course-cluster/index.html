@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    <title>Welcome – Tom Hohenstein – A place for my experiments</title>
+    <title>Course Cluster – Tom Hohenstein – A place for my experiments</title>
 
     <meta name="author" content="Tom Hohenstein" />
     <meta name="description" content="A place for my experiments">
@@ -17,7 +17,7 @@
     <link href="/assets/css/l/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
     
-      <link href="/assets/css/p/home.css" rel="stylesheet">
+      <link href="/assets/css/p/course.cluster.css" rel="stylesheet">
     
     
     
@@ -49,51 +49,42 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div id="body-wrapper">
-    
-	
-	<div class="pattern background-lavender"></div> 
-	<div class="jumbotron background-lavender" id="featured-post">
-		<script>
-			var linkElement = document.createElement("link");
-			linkElement.rel = "stylesheet";
-			linkElement.href = "/assets/css/b/background-lavender.css";
-			document.head.appendChild(linkElement);
-		</script>		
-		<div class="container">
-			<p>Featured post</p> 
-			
-			<a href="/Timeline-JS/" /><h2>Timeline JS</h2></a>
-			<p>Learn to use Timeline JS via iframe</p>				
-		</div>
-	</div> 	
-	
+    <article class="post col-md-6 col-md-offset-3">
+	<h1>Course Cluster</h1>
+	<div class="entry">
+		<p>This project should be a fun one. I have always wanted to see what classes first year students take and how that is distributed by subject. Are a lot of first year students taking clasess in math? biology? history? If this project is successful, we will accomplish just that feat. </p>
 
- 
-<div class="jumbotron" id="featured-project">
-	<div class="container">
-		<p>Recent Work</p> 
-		<h2>Coming soon... </h2> 
-	</div> 
-</div>
-<div class="jumbotron" id="current-projects">
-	<div class="container">
-		<div class="row">
-		<p>Current Project</p> 
-			<div class="col-md-5 col-md-offset-1 current-text">
-				<h2>Course Cluster</h2>
-				<div> 
-					<p>My goal is to create a D3 cluster force layout from academic course infomration</p>
-					<a class="btn btn-primary btn-lg" href="http://bl.ocks.org/mbostock/7882658" role="button">Example</a>
-					<a class="btn btn-default btn-lg" href="/projects/course-cluster/" role="button">Status</a>
-				</div>
+<div id="svg"></div>
 
-			</div>
-			<div class="col-md-6">
-				<img alt="An anvil icon" class="current-icon" src="/assets/img/anvil.svg">
-			</div>
-		</div>
+<h2 id="resources">Resources:</h2>
+
+<ul>
+  <li><a href="http://bl.ocks.org/mbostock/1747543">Mike Bostock’s Clustered Force Layout 1</a> on bl.ocks.org</li>
+  <li><a href="http://stackoverflow.com/questions/23022429/create-node-clusters-focal-points-by-data-attribute-in-d3">Stackoverflow Question anwser</a></li>
+</ul>
+
+<p>Tasks: Build a demo cluster graph</p>
+
+<h2 id="structuring-the-data">Structuring the Data</h2>
+
+<p>Detail how the data is structured </p>
+
+<h2 id="javascript-tips">JavaScript tips</h2>
+
+<p>Dynamically locating the largest node within a cluster </p>
+
+<p>Moving nodes of a same cluster towards each other. </p>
+
+
+	</div>
+  	<div class="social-share">
+	  	<span>Share:</span>
+	  	<a href="https://twitter.com/share?text=Course Cluster&url=http://tomhohenstein.com/projects/course-cluster/index.html&via=tomhohenstein"><img alt="..." class="footer-icon" src="/assets/img/social-icons/twitter.png"></a>
+	  	<a href="https://plus.google.com/share?url=http://tomhohenstein.com/projects/course-cluster/index.html&hl=en-US" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img alt="..." class="footer-icon" src="/assets/img/social-icons/google.png"></a>
+	  	<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://tomhohenstein.com/projects/course-cluster/index.html&title=Course Cluster&source=&summary="><img alt="..." class="footer-icon" src="/assets/img/social-icons/linkedin.png"></a>
+	  	<a href="https://www.facebook.com/dialog/share?app_id=946372735391329&display=popup&href=http://tomhohenstein.com/projects/course-cluster/index.html&redirect_uri=http://tomhohenstein.com/projects/course-cluster/index.html"><img alt="..." class="footer-icon" src="/assets/img/social-icons/facebook.png"></a>
 	</div> 
-</div>
+</article>
     </div>
     <footer class="row">
       <div>
@@ -117,7 +108,9 @@
       ga('send', 'pageview');
     </script>
     
-      <script src="/assets/js/l/carousel.swipe.js"></script>
+      <script src="/assets/js/l/d3.min.js"></script>
+    
+      <script src="/assets/js/p/course.cluster.js"></script>
     
   </body>
 </html>

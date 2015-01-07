@@ -1,45 +1,3 @@
----
-layout: post
-title: Year Group Clustering 
-project: true
-category: project
-css: 
-javascript:
----
-This project should be a fun one. I have always wanted to see what classes first year students take and how that is distributed by subject. Are a lot of first year students taking clasess in math? biology? history? If this project is successful, we will accomplish just that feat. 
-
-Resources: 
-
-* [Mike Bostock's Clustered Force Layout 1](http://bl.ocks.org/mbostock/1747543) on bl.ocks.org
-* [Stackoverflow Question anwser](http://stackoverflow.com/questions/23022429/create-node-clusters-focal-points-by-data-attribute-in-d3)
-
-Tasks: Build a demo cluster graph
-
-
-<div id="svg"></div>
-
-## Structuring the Data 
-
-Detail how the data is structured 
-
-## JavaScript tips 
-
-Dynamically locating the largest node within a cluster 
-
-Moving nodes of a same cluster towards each other. 
-
-<style>
-.link {
-    stroke: #777;
-    stroke-width: 2px;
-}
-</style>
-
-
-
-<!-- load d3 --> 
-<script src="{{ site.baseurl }}/projects/instruction-network/d3/d3.min.js"></script>
-<script>
 //canvas size 
 var width = 500,
     height = 500,
@@ -201,5 +159,3 @@ var data = {
 		//alert(data.nodes);
 	}
 	// Move d to be adjacent to the cluster node.
-
-</script>

@@ -12,53 +12,30 @@
 	margin: 0; 
 }
 
+.current-icon {
+	width: 70%; 
+}
+
+#current-projects {
+	background-color: rgba(122, 182, 102, 0.57); 
+	margin-bottom: 0; 
+}
+
+
+#current-projects > div > div > p:first-child {
+	font-size: 40px; 
+	font-style: italic;
+}
+
 #current-projects,
 #featured-post, 
 #featured-project {
 	text-align: center;  
 }
 
-.carousel-control {
-	display: none; 
-	@media (min-width: $break-m) {
-		display: inline; 
-	}
-}
-
-.carousel-control.left,
-.carousel-control.right {
-	background-image: none; 
-	background-color: $background-w;	
-}
-
-.carousel-indicators .active {
-	background-color: $background-b; 
-}
-.carousel-indicators li {
-	border: 1px solid $background-b; 
-}
-
-.carousel-inner .item {
-	height: auto; 
-}
-
-.carousel-inner .item img {
-	margin: 0 auto; 
-}
-
-.carousel-caption {
-	text-shadow: none; 
-}
-
-.carousel-inner .carousel-caption.white h2,
-.carousel-inner .carousel-caption.white p {
-	color: $background-w; 
-}
-
-#current-projects > div > p:first-child {
-	color: $accent; 
-	font-size: 25px; 
-	font-style: italic; 
+.current-text {
+	padding: 7% 5% 0; 
+	text-align: left; 
 }
 
 #featured-post > div > p:first-child {
