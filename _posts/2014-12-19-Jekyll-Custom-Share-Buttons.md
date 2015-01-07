@@ -51,7 +51,7 @@ Before building a custom Twitter share link, it is important to review [Twitter'
 </a>
 {% endraw %}
 ```
-Twitter example: <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.shorturl }}&via=tomhohenstein"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/footer-icons/Twitter_logo_blue.png"></a>
+Twitter example: <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.shorturl }}&via=tomhohenstein"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/twitter.png"></a>
 
 ### Facebook 
 
@@ -75,7 +75,7 @@ Again, here are the [branding guidelines for Facebook](https://www.facebookbrand
 </a>
 {% endraw %}
 ```
-Facebook Example: <a href="https://www.facebook.com/dialog/share?app_id=946372735391329&display=popup&href={{ site.url }}{{ page.url }}&redirect_uri={{ site.url }}{{ page.url }}"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/FB-f-Logo__blue_50.png">
+Facebook Example: <a href="https://www.facebook.com/dialog/share?app_id=946372735391329&display=popup&href={{ site.url }}{{ page.url }}&redirect_uri={{ site.url }}{{ page.url }}"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/facebook.png">
 </a>
 
 ### LinkedIn
@@ -101,7 +101,7 @@ Here are [LinkedIn's branding guidelines](https://developer.linkedin.com/documen
 </a> 
 {% endraw %}
 ```
-LinkedIn example: <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}&summary="><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/footer-icons/LinkedIn-InBug-2CRev.png"></a> 
+LinkedIn example: <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}&summary="><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/linkedin.png"></a> 
 
 ### Google+ 
 
@@ -125,6 +125,6 @@ Finally, the [Google+ branding guidelines](https://developers.google.com/+/brand
 </a> 
 {% endraw %}
 ```
-Google+ Example: <a href="https://plus.google.com/share?url=http://tomhohenstein.com{{ page.url }}&hl=en-US" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/btn_white.png"></a> 
+Google+ Example: <a href="https://plus.google.com/share?url=http://tomhohenstein.com{{ page.url }}&hl=en-US" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/google.png"></a> 
 
 ## Final Product
