@@ -5,7 +5,7 @@ excerpt: Learn to use Timeline JS via iframe
 background: background-lavender
 featured: true
 shorturl: http://goo.gl/STh6Gm
-tags: [[timline-js, javascript]]
+tags: [[timeline js, javascript]]
 ---
 [Timeline JS](http://timeline.knightlab.com/) is one of the easiest ways to create great looking timelines on the web. This post's goal is to create an easy timeline that I can add to my [about page](/about/).  
 
