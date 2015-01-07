@@ -9,6 +9,9 @@ tags: [[D3, javascript, bar chart ]]
 css:
 javascript: 
 ---
+<div class="demo">
+  <a class="btn btn-success btn-lg" href="/projects/barchart/" role="button">Demo</a>
+</div>
 Creating my first [D3](http://d3js.org/) bar chart was both a lot of fun and a bit more work than I anticipated. However, I think the results are [well worth the effort](http://tomhohenstein.com/projects/barchart/). 
 
 ## Resources
