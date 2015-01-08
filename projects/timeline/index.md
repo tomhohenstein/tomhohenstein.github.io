@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Timeline
+tags: project
 css: p/timeline.css
 ---
 # My Demo timeline 

@@ -2,11 +2,11 @@
 layout: post
 title: Bar Chart
 css: p/barchart.css
-javascript: 
+tags: project, javascript, D3
+javascript:
 - l/d3.min.js
 - p/barchart.js
 ---
-
 <div class="dropdown">
   <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
     Sort Options

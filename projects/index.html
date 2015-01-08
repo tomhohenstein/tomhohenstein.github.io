@@ -1,0 +1,14 @@
+---
+layout: post
+title: Projects
+css: p/projects.css
+---
+
+{% for p in site.pages %}
+
+	{% if p.tags contains "project" %}
+		<h3> {{ p.title }}</h3>
+		<a href={{ p.url }}>Link</a>	
+	{% endif %}
+
+{% endfor %}
