@@ -26,14 +26,12 @@
 	text-align: center;  
 }
 
-.current-text {
-	padding: 7% 5% 0; 
-	text-align: left; 
+#current-projects .row {
+	padding: 0 3%; 
 }
 
-.current-text > p:first-child {
-	font-size: 40px; 
-	font-style: italic;
+.current-text { 
+	text-align: left; 
 }
 
 #featured-post > div > p:first-child {
@@ -67,19 +65,23 @@
 }
 
 #recent-work > div > p:first-child {	
-	float: left;
 	font-size: 40px;
 	font-style: italic;
-	transform: rotate(-90deg);
-	margin: 50px 0;
 	text-align: center;
-	
+}
+
+#recent-work .work {
+	margin-top: 10px;
 }
 
 .work a {
 	padding: 15px;
-border: 1px solid;
-/* width: 100%; */
-display: block;
-text-align: center;
+	border: 1px solid rgb(178, 212, 167);
+	border-radius: 3px; 
+	display: block;
+	text-align: center;
+}
+
+.work a:hover {
+	background-color: rgb(178, 212, 167);
 }
