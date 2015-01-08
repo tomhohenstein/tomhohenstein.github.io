@@ -12,7 +12,7 @@ $( document ).ready(function (){
 		}
 		//sort obj by key
 		obj.sort(function(a, b) { return d3.ascending(a.d, b.d);})
-
+		
 		//set width of chart and height of each bar
 		var margin = {top: 40, right: 40, bottom: 40, left: 40}, //set margins
 		barHeight = 30, //set bar height 
@@ -22,7 +22,7 @@ $( document ).ready(function (){
 		//set linear scale 
 		var x = d3.scale.linear()
 					.domain([0, d3.max(obj, function(d) { return d.v })])
-					.range([0, width-30]);
+					.range([0, 600-30]);
 
 		var y = d3.scale.ordinal()
 					.domain(obj.map(function(d){ return d.d }))

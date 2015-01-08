@@ -2,6 +2,7 @@
 layout: post
 title: Course Cluster 
 css: p/course.cluster.css
+tags:
 javascript:
 - l/d3.min.js
 - p/course.cluster.js
