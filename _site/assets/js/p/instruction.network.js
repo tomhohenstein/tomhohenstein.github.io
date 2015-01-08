@@ -10,12 +10,11 @@ var svg = d3.select("#svg").append("svg")
     .attr("height", height);
 
 //load node json file
-d3.json("node.json", function(error, nodes){
+d3.json("/projects/instruction-network/node.json", function(error, nodes){
 	if(error) return console.warn(error);
 	//load edge json file
-	d3.json("edge.json", function(error, links){
+	d3.json("/projects/instruction-network/edge.json", function(error, links){
 		if(error) return console.warn(error);
-
 		//links are the json file 
 		var force = d3.layout.force()
 	        .size([width, height]) //size

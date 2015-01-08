@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Instruction Network
+excerpt: My first D3 Force Layout
+featured: true
+background: background-light-red
+shorturl:
+tags: [[D3, javascript, force layout]]
 css: p/instruction-network.css
 javascript: 
 - l/d3.min.js
@@ -19,7 +24,7 @@ I hope that reviewing our statistics as a network graph will help us ask questio
 * Are we too dependent on some relationships? 
 * Are there gaps in our instruction network? 
 
-Within the graph below the smaller "redish" circles, or nodes, depict faculty members while the larger "blueish" circles are librarians. The blue circles have been artificially enlarged to allow for easier interpretation (it is in no way a reflection on faculty members' importance! : ). The links, or edges, between each circle represents an instructional session. The darker lines are multiple instruction sessions with a particular faculty member. Finally, hovering over each node highlights that node and its respective edges. 
+Within the graph above the smaller "redish" circles, or nodes, depict faculty members while the larger "blueish" circles are librarians. The blue circles have been artificially enlarged to allow for easier interpretation (it is in no way a reflection on faculty members' importance! : ). The links, or edges, between each circle represents an instructional session. The darker lines are multiple instruction sessions with a particular faculty member. Finally, hovering over each node highlights that node and its respective edges. 
 
 While I could add more to this project, such as text and css effects, feel free to click around, drag the circles, and generally play. If you break it, [let me know!](https://github.com/tomhohenstein/tomhohenstein.github.io/issues)
 
