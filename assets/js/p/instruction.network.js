@@ -1,17 +1,5 @@
-var window_size; 
-  if(window.outerHeight){
-      window_size = window.outerWidth;
-  }
-  else {
-      window_size = document.body.clientWidth;
-  }
-
-  if(window_size > 700){
-    window_size = 700; 
-  }
-
 //canvas size 
-var width = window_size,
+var width = $("#svg").width(),
     height = 500,
     radius = 6, //used for bounding box 
     data;

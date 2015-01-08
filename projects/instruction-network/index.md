@@ -6,6 +6,8 @@ javascript:
 - l/d3.min.js
 - p/instruction.network.js
 ---
+<div id="svg"></div>
+
 This project attempts to represent instructional statistics from [WPI's Gordon Library](http://www.wpi.edu/academics/library.html) as a network graph and has two primary goals: 
 
 * To learn the process and skills necessary to create an interactive, online network graph  
@@ -20,8 +22,6 @@ I hope that reviewing our statistics as a network graph will help us ask questio
 Within the graph below the smaller "redish" circles, or nodes, depict faculty members while the larger "blueish" circles are librarians. The blue circles have been artificially enlarged to allow for easier interpretation (it is in no way a reflection on faculty members' importance! : ). The links, or edges, between each circle represents an instructional session. The darker lines are multiple instruction sessions with a particular faculty member. Finally, hovering over each node highlights that node and its respective edges. 
 
 While I could add more to this project, such as text and css effects, feel free to click around, drag the circles, and generally play. If you break it, [let me know!](https://github.com/tomhohenstein/tomhohenstein.github.io/issues)
-
-<div id="svg"></div>
 
 ##Background
 
