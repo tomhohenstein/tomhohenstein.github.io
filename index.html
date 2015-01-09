@@ -22,21 +22,25 @@ javascript:
 		</div>
 	</div> 	
 	{% endif %}
-{% endfor %}
- 
+{% endfor %} 
 <div class="jumbotron" id="recent-work">
 	<div class="container">
-		<p>Recent Work</p> 
+		<p>Recent Work</p>
 		<div class="row">	
-			<div class="col-md-4 work">
-    			<a href="projects/timeline/">Timeline JS</a>
-			</div>
-			<div class="col-md-4 work">
-    			<a href="projects/barchart/">Bar Chart</a> 
-			</div>
-			<div class="col-md-4 work">
-    			<a href="projects/instruction-network/">Instruction Network</a>
+		{% for p in site.pages %}
+			{% if p.tags contains "project" %}
+			<div class="col-md-4 project">
+				<a href="{{ p.url }}"><div>
+					{% if p.tags contains "python" %}
+						<img alt="python icon" src="/assets/img/python.svg">
+					{% else %}
+						<img alt="code icon" src="/assets/img/code.svg">
+					{% endif %}
+					<h3>{{ p.title }}</h3>
+				</div></a>
 			</div>	
+			{% endif %}
+		{% endfor %}	
 		</div>
 	</div>
 </div>

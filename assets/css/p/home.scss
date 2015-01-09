@@ -2,6 +2,7 @@
 # Home styles 
 ---
 @import 'sass_vars';
+@import 'projects';
 
 /************************
 
@@ -68,20 +69,4 @@
 	font-size: 40px;
 	font-style: italic;
 	text-align: center;
-}
-
-#recent-work .work {
-	margin-top: 10px;
-}
-
-.work a {
-	padding: 15px;
-	border: 1px solid rgb(178, 212, 167);
-	border-radius: 3px; 
-	display: block;
-	text-align: center;
-}
-
-.work a:hover {
-	background-color: rgb(178, 212, 167);
 }
