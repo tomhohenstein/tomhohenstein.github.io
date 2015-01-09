@@ -13,7 +13,7 @@ Below is a gathering of my projects. Enjoy!
 		{% for p in site.pages %}
 			{% if p.tags contains "project" %}
 			<div class="col-md-4 project">
-				<a href="{{ p.url }}"><h3>{% if p.tags contains "python" %}<img alt="python icon" src="/assets/img/python.svg">{% else %}<img alt="code icon" src="/assets/img/code.svg">{% endif %}{{ p.title }}</h3></a>	
+				<a href="{{ p.url }}"><h3><div>{{ p.title }}</div>{% if p.tags contains "python" %}<img alt="python icon" src="/assets/img/python.svg">{% else %}<img alt="code icon" src="/assets/img/code.svg">{% endif %}</h3></a>	
 			</div>	
 			{% endif %}
 		{% endfor %}	

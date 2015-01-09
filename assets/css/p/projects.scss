@@ -12,6 +12,14 @@
 	background-color: white; 
 }
 
+.project div {
+	float: right; 
+	line-height: 50px; 
+	overflow-x: hidden;
+	white-space: nowrap; 
+	width: 73%;
+}
+
 .project h3 {
 	border: 1px solid $background-b; 
 	border-radius: 3px; 
