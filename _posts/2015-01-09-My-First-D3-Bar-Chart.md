@@ -4,7 +4,7 @@ title: My First D3 Bar Chart
 excerpt: A few tips and tricks for creating your first D3 bar chart
 featured: true
 background: background-aqua
-shorturl: 
+shorturl: http://goo.gl/FjTRPG
 tags: [[D3, javascript, bar chart ]]
 css:
 javascript: 
@@ -25,7 +25,7 @@ To accomplish this task I used for the following resources:
 
 ## Process 
 
-The process seems easy enough, tell D3 to load some data and then build the bar chart. However, between adding the x and y axes, making the bar chart sortable, and using some decent transitions, the process can be a bit complicated. You can find the [full JavaScript source on my GitHub account](https://github.com/tomhohenstein/tomhohenstein.github.io/blob/master/assets/js/p/barchart.js), but I highly recommend reading [Mike Bostock's posts](http://bost.ocks.org/mike/bar/).  Below is some pseudocode of the process to get you started.  
+The process seems easy enough, tell D3 to load some data and then build the bar chart. However, between adding the x and y axes, making the bar chart sortable, and incorporating transitions, the process can be a bit complicated. You can find the [full JavaScript source on my GitHub account](https://github.com/tomhohenstein/tomhohenstein.github.io/blob/master/assets/js/p/barchart.js), but I highly recommend reading [Mike Bostock's posts](http://bost.ocks.org/mike/bar/).  Below is some pseudocode of the process to get you started.  
 
 ```javascript
 //load data
