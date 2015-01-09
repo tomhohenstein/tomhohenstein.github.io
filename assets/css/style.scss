@@ -125,6 +125,10 @@ body {
 	text-align: right; 
 }
 
+.hide {
+	display: none; 
+}
+
 .navbar-default {
 	background-color: $background-l; 
 	border-bottom: 3px solid $background-b;
