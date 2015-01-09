@@ -2,7 +2,6 @@
 # About stlyes 
 ---
 @import 'sass_vars'; 
- 
 
 /************************
 
@@ -53,4 +52,10 @@
 	}
 }
 
+#text-timeline {
+	display: none; 
+	@media (min-width: $break-m) {
+		display: inline; 
+	}
+}
 
