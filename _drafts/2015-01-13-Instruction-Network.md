@@ -4,7 +4,7 @@ title: Instruction Network
 excerpt: My first D3 Force Layout
 featured: true
 background: background-light-red
-shorturl:
+shorturl: http://goo.gl/E5uSW0
 tags: [[D3, javascript, force layout]]
 css: p/instruction-network.css
 javascript: 
