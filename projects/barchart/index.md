@@ -7,7 +7,7 @@ javascript:
 - l/d3.min.js
 - p/barchart.js
 ---
-<a class="btn btn-default btn-lg" href="/my-first-d3-bar-chart/" role="button">Read the Post</a>
+<a class="btn btn-default btn-lg" href="/My-First-D3-Bar-Chart/" role="button">Read the Post</a>
 
 <div class="dropdown">
   <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
