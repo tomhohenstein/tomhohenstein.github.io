@@ -7,6 +7,14 @@
 		<atom:link href="http://tomhohenstein.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Instruction Network</title>
+				<description>My first D3 Force Layout</description>
+				<pubDate>Tue, 13 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/Instruction-Network/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Instruction-Network/</guid>
+			</item>
+		
+			<item>
 				<title>My First D3 Bar Chart</title>
 				<description>A few tips and tricks for creating your first D3 bar chart</description>
 				<pubDate>Fri, 09 Jan 2015 00:00:00 -0500</pubDate>
