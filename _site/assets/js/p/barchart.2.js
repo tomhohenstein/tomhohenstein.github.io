@@ -1,4 +1,4 @@
-var obj = []
+var obj = [] // for exploring in the console 
 
 $( document ).ready(function (){
 
@@ -12,8 +12,6 @@ $( document ).ready(function (){
 
 		//for outside access 
 		obj = data; 
-
-		console.log(data); 
 
 		//set widths, heights, and margins
 		var barheight = 50,
@@ -54,7 +52,7 @@ $( document ).ready(function (){
 			//add x axis
 			chart.append("g")
 					.attr("class", "axis")
-					.attr("transform", "translate(" + margin.left + "," + 250 + ")")
+					.attr("transform", "translate(" + margin.left + "," + Number(height-100) + ")")
 					.call(xAxis);
 			//add y axis 
 			chart.append("g")
