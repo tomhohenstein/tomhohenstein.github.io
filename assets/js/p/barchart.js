@@ -59,7 +59,7 @@ $( document ).ready(function (){
 
 			bar.append("rect")
 				.attr("width", function(d) { return x(d.v)})
-				.attr("height", barHeight - 1);
+				.attr("height", barHeight - 1)
 
 			bar.append("text")
 				.attr("x", function(d) { return x(d.v) + 3; })

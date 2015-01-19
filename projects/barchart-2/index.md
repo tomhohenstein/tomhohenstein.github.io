@@ -8,4 +8,4 @@ javascript:
 - p/barchart.2.js
 ---
 
-<svg id="chart"></svg>
+<div id="chart"></div>
