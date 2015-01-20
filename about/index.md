@@ -3,11 +3,11 @@ layout: default
 title: About
 css: p/about.css
 ---
-# Welcome, 
+# Welcome!
 
-If you've landed here, you're probably wondering who I am and the purpose of this site. 
+If you've landed here, you're probably wondering who I am and what the purpose of this site is. 
 
-This site is my playpen, a place for some self-promotion, and documentation center. My interests range from libraries, to historical research, to data visualization. As such, sharing my ideas normally involves some HTML, CSS, and a bit of JavaScript. If you're interested in collaborating or like something you see, [check me out on GitHub](https://github.com/tomhohenstein). Below is a draft of my resume<span id="text-timeline"> and an entertaining timeline</span>. 
+This site is my playpen, a place for some self-promotion, and documentation center. My interests range from libraries to historical research to data visualization. As such, sharing my ideas normally involves some HTML, CSS, and a bit of JavaScript. If you're interested in collaborating or like something you see, [check me out on GitHub](https://github.com/tomhohenstein). Below is a draft of my resume<span id="text-timeline"> and an informal timeline some (mis)adventures</span>. 
 
 <div role="tabpanel">
 

@@ -53,84 +53,133 @@
   
   <url>
     <loc>http://tomhohenstein.com/blog/2015-01-13-Instruction-Network.html</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/notebooks/gps-majors-2010-2013/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/about/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/barchart/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/blog/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/course-cluster/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/instruction-network/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/barchart-2/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/timeline/</loc>
+<<<<<<< Updated upstream
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
+<<<<<<< Updated upstream
     <loc>http://tomhohenstein.com/projects/piechart/</loc>
     <lastmod>2015-01-19T20:05:24-05:00</lastmod>
+=======
+    <loc>http://tomhohenstein.com/projects/sheetsee/</loc>
+    <lastmod>2015-01-15T14:20:14-05:00</lastmod>
+>>>>>>> Stashed changes
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -272,6 +321,114 @@
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test.html</loc>
     <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/demos/demo-chart.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/demos/demo-map.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/demos/demo-table.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/demos/demo-chart.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/demos/demo-map.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/demos/demo-table.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/about.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/basics.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/building.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/changelog.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/custom-charts.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/fork-n-go.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/sheetsee-charts.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/sheetsee-core.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/sheetsee-maps.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/sheetsee-tables.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/tips.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/master/site/index.html</loc>
+    <lastmod>2015-01-03T10:49:14Z</lastmod>
     <priority>0.6</priority>
   </url>
   
