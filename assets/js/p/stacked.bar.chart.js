@@ -55,7 +55,6 @@ $( document ).ready(function (){
 	var s_data = d3.layout.stack();
 		s_data(stacked); 
 		console.log(stacked);  
-	
 
 	//set some initial vars
 	var barwidth = 50,
@@ -68,14 +67,11 @@ $( document ).ready(function (){
 
 	//set x and y scales
 	var x = d3.scale.ordinal()
-				.domain(data.map(function(d) { return d.person }))
+				.domain(d3.range(stacked[0].length)) // not sure about this
 				.rangeBands([0, inWidth], .1);
 
 	var y = d3.scale.linear()
-				.domain([d3.max(data, function(d) {
-						t = d.a + d.b + d.c + d.d;
-						return t;  	
-				}), 0])
+				.domain() // not sure about this 
 				.range([0, inWidth]);			
 	
 	//prep the x and y axes 
@@ -107,13 +103,13 @@ $( document ).ready(function (){
     			.call(yAxis); 
 
     person = chart.selectAll(".person")
-    			.data(data)
+    			.data(stacked)
     			.enter()
     			.append("rect")
     			.attr("width", barwidth)
-    			.attr("height", function(d){ return d.a })
-    			.attr("x", function(d){ return (x(d.person) + margin.left) })
-    			.attr("y", function(d){ return (y(d.a) + margin.top + margin.bottom) }); 
+    			.attr("height", function(d){ return d.y0 })
+    			.attr("x", function(d, i){ return x(i) })
+    			.attr("y", function(d){ return y(d.y) }); 
 
 
 }); // .ready() 
