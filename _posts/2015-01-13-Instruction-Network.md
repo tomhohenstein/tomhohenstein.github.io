@@ -16,7 +16,7 @@ javascript:
 This project attempts to represent instructional statistics from [WPI's Gordon Library](http://www.wpi.edu/academics/library.html) as a network graph and has two primary goals: 
 
 * To learn the process and skills necessary to create an interactive, online network graph  
-* To see what our "instructional network" looks like. 
+* To see what our "instructional network" looks like 
 
 I hope that reviewing our statistics as a network graph will help us ask questions like: 
 
@@ -26,7 +26,7 @@ I hope that reviewing our statistics as a network graph will help us ask questio
 
 Within the graph above the smaller "redish" circles, or nodes, depict faculty members while the larger "blueish" circles are librarians. The blue circles have been artificially enlarged to allow for easier interpretation (it is in no way a reflection on faculty members' importance! : ). The links, or edges, between each circle represents an instructional session. The darker lines are multiple instruction sessions with a particular faculty member. Finally, hovering over each node highlights that node and its respective edges. 
 
-While I could add more to this project, such as text and css effects, feel free to click around, drag the circles, and generally play. If you break it, [let me know!](https://github.com/tomhohenstein/tomhohenstein.github.io/issues)
+I could add more to this project, such as text and css effects, but I am happy with the current result. Feel free to click around, drag the circles, and generally play. If you break it, [let me know!](https://github.com/tomhohenstein/tomhohenstein.github.io/issues)
 
 ##Background
 
@@ -67,7 +67,7 @@ I ignored/deleted all the data except library coordinator and faculty instructor
 
 ###Converting to JSON 
 
-I converted my files into JSON as a personal preference. [D3 javascript](http://d3js.org/) does have the ability to [parse csv](https://github.com/mbostock/d3/wiki/CSV) data but I would rather work with JSON. I used [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) to transform my csv to JSON. There are other tools that can perform the same task, [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) just happened to show up higher on my [Google search](https://www.google.com?q=csv%20to%20json). Here is an [example of a JSON file](http://bl.ocks.org/mbostock/4062045#miserables.json) from [Mike Bostock's](https://github.com/mbostock) [Les Miserable's data visualization](http://bl.ocks.org/mbostock/4062045#miserables.json).
+I converted my files into JSON as a personal preference. [D3 javascript](http://d3js.org/) does have the ability to [parse csv](https://github.com/mbostock/d3/wiki/CSV) data but I would rather work with JSON. I used [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) to transform my csv to JSON. There are other tools that can perform the same task, [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) just happened to show up higher on my [Google search](https://www.google.com?q=csv%20to%20json).
 
 ###Using D3
 

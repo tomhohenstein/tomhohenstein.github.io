@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My First D3 Bar Chart
-excerpt: A few tips and tricks for creating your first D3 bar chart
+excerpt: Resources and pseudocode from creating my first D3 bar chart
 featured: true
 background: background-aqua
 shorturl: http://goo.gl/FjTRPG
@@ -21,7 +21,7 @@ To accomplish this task I used for the following resources:
 * Mike Bostock's series of posts titled *[Let's Make a Bar Chart](http://bost.ocks.org/mike/bar/)* and his *[Sortable Bar Chart](http://bl.ocks.org/mbostock/3885705)*
 * The [D3 API reference](https://github.com/mbostock/d3/wiki/API-Reference)
 * [jQuery's API](http://api.jquery.com/)
-* Scott Murray's *[Making a bar chart](http://alignedleft.com/tutorials/d3/making-a-bar-chart)*
+* Scott Murray's *[Making a Bar Chart](http://alignedleft.com/tutorials/d3/making-a-bar-chart)*
 
 ## Process 
 
