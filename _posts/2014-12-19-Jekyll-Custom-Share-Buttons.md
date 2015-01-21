@@ -8,25 +8,25 @@ shorturl: http://goo.gl/DzkdrT
 tags: [[learning, Jekyll]]
 ---
 
-As I continue building out this site, I thought it would be a good idea to write posts as I develop features and solve problems. This post is on how to build custom share buttons for posts and pages. 
+As I continue building this website, I thought it would be a good idea to write about the site's features and the problems I encounter. This post is on how to build custom share buttons for posts and pages. 
 
 ## Resources
-I found the following posts very useful on how to best use Jekyll to create custom share buttons for social media platforms: 
+I found the following resources very useful as I learned how to use Jekyll to create custom share buttons for social media platforms: 
 
-* [Wenli Zhang's](http://zhangwenli.com/) *[Make Your Own Social Shareing Bar with Jekyll](http://zhangwenli.com/blog/2014/08/03/make-your-own-social-sharing-bar-with-jekyll/)*
+* [Wenli Zhang's](http://zhangwenli.com/) *[Make Your Own Social Sharing Bar with Jekyll](http://zhangwenli.com/blog/2014/08/03/make-your-own-social-sharing-bar-with-jekyll/)*
 * [Scott N Decker's](http://scottndecker.com/Contact/) *[How to Make Custom Share Buttons with Jekyll](http://scottndecker.com/blog/2014/06/29/How-to-Make-Custom-Share-Buttons-with-Jekyll/)*
 * Eric Lagergren's *[Dynamic Sharing for Jekyll](http://www.ericlagergren.com/blog/dynamic-sharing-buttons/)*
 
 ## Platforms and Tactics
 
-As a relative newbee to creating social media share buttons, it is probably best to focus on only a few platforms, rather than create a "social media sharing kitchen sink." I am only going to focus on: 
+As a relative newbie to creating social media buttons, I decided it was best to focus on only a few platforms, rather than create a "social media sharing kitchen sink." For now I am only going to build icons for: 
 
 * [Twitter](https://dev.twitter.com/web/tweet-button)
 * [Facebook](https://developers.facebook.com/docs/sharing/reference/share-dialog)
 * [LinkedIn's "official"](https://developer.linkedin.com/plugins/share-plugin-generator); and [the url way](https://developer.linkedin.com/documents/share-linkedin)
 * [Google+](https://developers.google.com/+/web/share/)
 
-The basic tactic is to use each platform's share via url feature. Each platform has buttons and other gadgets for sharing content, but I want to keep it simple and went with the simplest solution.  
+My approach is to use each platform's ""share via url feature. Each platform has buttons and other gadgets for sharing content, but I want to keep it simple and went with the simplest solution.  
 
 ### Twitter 
 
