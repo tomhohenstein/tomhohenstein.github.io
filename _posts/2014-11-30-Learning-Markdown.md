@@ -36,10 +36,10 @@ Let's start with some basics
 Now for a paragraph of text. I have written a few sentences of text. 
 This is on a new line in my text editor, but it should be in the same paragraph. 
 
-Text separated by an empty lines start a new paragraph. 
+Text separated by an empty line will start a new paragraph. 
 
 ```
-Text separated by an empty lines start a new paragraph.
+Text separated by an empty line will start a new paragraph.
 
 ```
 
