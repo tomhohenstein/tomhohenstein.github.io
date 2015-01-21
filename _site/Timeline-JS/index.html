@@ -59,13 +59,13 @@
 </div>
 <p><a href="http://timeline.knightlab.com/">Timeline JS</a> is one of the easiest ways to create great looking timelines on the web. This post’s goal is to create an easy timeline that I can add to my <a href="/about/">about page</a>.  </p>
 
-<p><a href="http://timeline.knightlab.com/">Timeline JS</a> can be implemented using custom methods via JavaScript or via a simple iframe. To start with, I’m going to opt for the iframe method and let <a href="http://timeline.knightlab.com/">Timeline JS</a> do the work for me. Hopefully, I’ll update this later on but for right now, I am more interested in getting the timeline up and running. </p>
+<p><a href="http://timeline.knightlab.com/">Timeline JS</a> can be implemented using custom JavaScript methods or via a simple iframe. To start with, I’m going to opt for the iframe method and let <a href="http://timeline.knightlab.com/">Timeline JS</a> do the work for me. Hopefully, I’ll update this later on but for right now, I am interested in building an easy, functional, timeline. </p>
 
 <h2 id="process">Process</h2>
 
-<p><a href="http://timeline.knightlab.com/">Timeline JS</a> can be driven by a published Google Doc spreadsheet. They provide an <a href="https://drive.google.com/previewtemplate?id=0AppSVxABhnltdEhzQjQ4MlpOaldjTmZLclQxQWFTOUE&amp;mode=public">excellent example spreadsheet</a> for getting started. The template works great and all you need to add images is provide a url that ends in .jpg, .png, or .gif. <a href="https://www.dropbox.com/">Dropbox</a>, <a href="https://www.flickr.com/">flickr</a>, or a simple website should all work fine. Google map integration was as easy as copying a link into the spreadsheet. </p>
+<p><a href="http://timeline.knightlab.com/">Timeline JS</a> can be driven by data published in a Google Doc. They provide an <a href="https://drive.google.com/previewtemplate?id=0AppSVxABhnltdEhzQjQ4MlpOaldjTmZLclQxQWFTOUE&amp;mode=public">excellent example spreadsheet</a> for getting started (which works great). To add images provide a url that ends in .jpg, .png, or .gif. <a href="https://www.dropbox.com/">Dropbox</a>, <a href="https://www.flickr.com/">Flickr</a>, or a simple website url should all work fine. Integrating Google Maps was as easy as copying a link into the spreadsheet and letting Timeline JS work its magic. </p>
 
-<p>Once I filled out the text, added images, and filled out the content. Adding the timeline to my about page was as simple as dropping in the the iframe </p>
+<p>Once I drafted the content, adding the timeline to my about page was as simple as adding an iframe to my markup. </p>
 
 <pre><code>&lt;iframe 
 	src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html
@@ -78,7 +78,7 @@
 	height='700' 
 	frameborder='0'&gt;&lt;/iframe&gt;
 </code></pre>
-<p>I didn’t play with the variables too much, but I did change the maptype to roadmap. All of the <a href="https://github.com/NUKnightLab/TimelineJS#map-style-types">configurations options are listed in Timeline JS’s GitHub account</a>. </p>
+<p>I didn’t play with the variables too much, but I did change the maptype to roadmap. All of the <a href="https://github.com/NUKnightLab/TimelineJS#map-style-types">custom configuration options are listed in Timeline JS’s GitHub account</a>. </p>
 
 <p>Deciding the content was the most difficult aspect of the entire project. I did play around with the tags and era features, both of which are nice. All in all, the process is very easy, especially given the <a href="http://tomhohenstein.com/about/">great results</a>.</p>
 
