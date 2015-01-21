@@ -4,7 +4,7 @@ title: Sharing IPython Notebooks
 excerpt: A tidbit about publishing my first IPython Notebook
 featured: Yes
 background: background-orange 
-shorturl: 
+shorturl: http://goo.gl/gNKJnN
 tags: [[ipython, learning ]]
 css:
 javascript: 
