@@ -1,5 +1,3 @@
-var obj = [];
-
 $( document ).ready(function (){ 
 	//the data for my pie chart 
 	var data = [{
@@ -31,8 +29,6 @@ $( document ).ready(function (){
 				"d": "11",
 				}];
 
-	obj = data; 
-
 	//ensure data points are numbers 
 	data.forEach(function(d){ 
 		d.a = +d.a; 
@@ -44,34 +40,36 @@ $( document ).ready(function (){
 	var stacked = [];
 	for(i in data ){
 		stacked[i] = [];	 
-	}
-	for(i in data){
-		stacked[0].push({x: i , y: data[i].a });
- 		stacked[1].push([{x: i , y: data[i].b }]);
-		stacked[2].push([{x: i , y: data[i].c }]);
-		stacked[3].push([{x: i , y: data[i].d }]);
-	}
-
-	var s_data = d3.layout.stack();
-		s_data(stacked); 
-		console.log(stacked);  
+	} 
 
 	//set some initial vars
-	var barwidth = 50,
+	var barwidth = 50, 
 		margin = {top: 40, right: 40, bottom: 40, left:30},
 		width = width = $("article").width(), 
 		height = 600,
 		inWidth = width - margin.right - margin.left, //inner width
 		inHeight = height - margin.top - margin.bottom, //inner height	 
-		colors = d3.scale.category10();
+		colors = d3.scale.ordinal()
+					.range(["#1f77b4", "#ff7f0e", "#2ca02c", " #d62728"]);
+
+	//make data stackable 
+	data.forEach(function(d){
+		var y0 = 0;
+		d.vals = colors.domain().map(function(key) {   
+							return { key: key, y0: y0, y1: (y0 += +d[key]) }; 
+				}); 
+		console.log(d.vals); 
+		console.log(d); 
+	});
+
 
 	//set x and y scales
 	var x = d3.scale.ordinal()
-				.domain(d3.range(stacked[0].length)) // not sure about this
+				.domain(data.map(function(d){ return d.person; })) // not sure about this
 				.rangeBands([0, inWidth], .1);
 
 	var y = d3.scale.linear()
-				.domain() // not sure about this 
+				.domain([0, d3.max(data, function(d){ return d.total; })]) // not sure about this 
 				.range([0, inWidth]);			
 	
 	//prep the x and y axes 
@@ -81,7 +79,8 @@ $( document ).ready(function (){
 
 	var yAxis = d3.svg.axis()
 				.scale(y)
-				.orient("left");
+				.orient("left")
+				.tickFormat(d3.format(".2s"));
 
 	//create the chart 
 	var chart = d3.select("#chart")
@@ -103,13 +102,13 @@ $( document ).ready(function (){
     			.call(yAxis); 
 
     person = chart.selectAll(".person")
-    			.data(stacked)
+    			.data(data)
     			.enter()
     			.append("rect")
     			.attr("width", barwidth)
     			.attr("height", function(d){ return d.y0 })
     			.attr("x", function(d, i){ return x(i) })
-    			.attr("y", function(d){ return y(d.y) }); 
+    			.attr("y", function(d){ return y(0) }); 
 
 
 }); // .ready() 
