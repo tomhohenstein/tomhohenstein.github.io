@@ -12,21 +12,22 @@ $( document ).ready(function (){
     			.projection(projection)
     			.pointRadius(1);
 
-	var map = d3.select("#map").append("svg")
+	var map = d3.select("#clinic").append("svg")
     				.attr("width", width)
     				.attr("height", height);				
 
 	queue()
     	.defer(d3.json, "/projects/map/us.json")
-    	.defer(d3.tsv, "/projects/map/airports.tsv")
+    	.defer(d3.csv, "/projects/map/clinics.csv")
     	.await(ready);
 
-	function ready(error, us, airports) {
-		  map.append("path")
+	function ready(error, us, clinics) {
+
+		map.append("path")
     	  	.datum(topojson.feature(us, us.objects.land))
       		.attr("class", "land")
       		.attr("d", path)
-      		.attr("style", "fill: rgb(27, 28, 121)");   
+      		.attr("style", "fill: rgb(6, 6, 6)");   
 
       	map.append("g")
       		.attr("class", "state")
@@ -35,11 +36,11 @@ $( document ).ready(function (){
       		.enter()
       		.append("path") 
       		.attr("d", path)
-      		.attr("style", "fill: rgb(210, 204, 204)"); 
-
+      		.attr("style", "fill: rgb(162, 244, 244)"); 
+      
       	map.append("path")
-      		.datum({type: "MultiPoint", coordinates: airports})
-          .attr("class", "points")
+      		.datum({type: "MultiPoint", coordinates: clinics})
+           	.attr("class", "points")
       		.attr("d", path); 
 }
 
