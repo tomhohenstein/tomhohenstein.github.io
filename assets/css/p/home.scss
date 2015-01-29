@@ -35,6 +35,15 @@
 	text-align: left; 
 }
 
+.current-text a.btn:visited {
+	color: $text-w; 
+}
+
+#featured-post a:visited, 
+#recent-work a:visited {
+	color: $text-p; 
+}
+
 #featured-post > div > p:first-child {
 	font-size: 40px; 
 	font-style: italic; 
