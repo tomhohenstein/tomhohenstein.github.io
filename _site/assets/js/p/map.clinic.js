@@ -23,7 +23,8 @@ $( document ).ready(function (){
 
 	function ready(error, us, clinics) {
 console.log(clinics); 
-
+	console.log(us);
+	
 		map.append("path")
     	  	.datum(topojson.feature(us, us.objects.land))
       		.attr("class", "land")
