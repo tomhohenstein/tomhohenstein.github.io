@@ -22,6 +22,7 @@ $( document ).ready(function (){
     	.await(ready);
 
 	function ready(error, us, clinics) {
+console.log(clinics); 
 
 		map.append("path")
     	  	.datum(topojson.feature(us, us.objects.land))
