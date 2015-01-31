@@ -1,6 +1,5 @@
 $( document ).ready(function (){ 
 	
-	//declare vars
 	var width = $("article").width(),
 		height = 500;  
 	
@@ -18,16 +17,12 @@ $( document ).ready(function (){
 
 	queue()
       .defer(d3.json, "/projects/map/us.json")
-    	.defer(d3.json, "/projects/map/state.topo.clinics.json")
     	.defer(d3.csv, "/projects/map/clinics.csv")
     	.await(ready);
 
-	function ready(error, us, state, clinics) {
- 
-	//console.log(us);
-  console.log(state.objects.state.geometries[0].properties.count);
-  //console.log(clinics);
+	function ready(error, us, clinics) {
 	
+
 		map.append("path")
     	  	.datum(topojson.feature(us, us.objects.land))
       		.attr("class", "land")
@@ -37,7 +32,7 @@ $( document ).ready(function (){
       	map.append("g")
       		.attr("class", "state")
       		.selectAll("path")
-      		.data(topojson.feature(state, state.objects.state).features)
+      		.data(topojson.feature(us, us.objects.states).features)
       		.enter()
       		.append("path") 
       		.attr("d", path)
@@ -48,5 +43,4 @@ $( document ).ready(function (){
            	.attr("class", "points")
       		.attr("d", path); 
 }
-
 }); // end .ready() 

@@ -61,112 +61,119 @@
   
   <url>
     <loc>http://tomhohenstein.com/blog/2015-01-13-Instruction-Network.html</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/notebooks/gps-majors-2010-2013/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://tomhohenstein.com/about/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://tomhohenstein.com/blog/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://tomhohenstein.com/projects/barchart-2/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/instruction-network/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/projects/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://tomhohenstein.com/projects/barchart/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://tomhohenstein.com/projects/map/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <loc>http://tomhohenstein.com/about/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/instruction-force/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/projects/sheetsee/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <loc>http://tomhohenstein.com/projects/choropleth-map/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/projects/timeline/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <loc>http://tomhohenstein.com/projects/barchart/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://tomhohenstein.com/projects/piechart/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <loc>http://tomhohenstein.com/projects/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/map/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/course-cluster/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/piechart/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/stacked-bar-chart/</loc>
-    <lastmod>2015-01-31T11:46:22-05:00</lastmod>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/timeline/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/barchart-2/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/projects/sheetsee/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://tomhohenstein.com/blog/</loc>
+    <lastmod>2015-01-31T14:19:34-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -175,247 +182,247 @@
   
   <url>
     <loc>http://tomhohenstein.com/presentations/bu/index.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:44Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/boilerplate.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:44Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/extensions/goto/deck.goto.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:44Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/extensions/navigation/deck.navigation.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:44Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/extensions/status/deck.status.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:44Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/introduction/index.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:44Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/test/fixtures/empty.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/test/fixtures/nesteds.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/test/fixtures/standard.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/test/index.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/index.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/plugin/markdown/example.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/plugin/notes/notes.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/plugin/notes-server/notes.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/plugin/postmessage/example.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/examples/barebones.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/examples/embedded-media.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/examples/math.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/examples/slide-backgrounds.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test-markdown-element-attributes.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test-markdown-slide-attributes.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test-markdown.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-06T19:42:45Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/demos/demo-chart.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/demos/demo-map.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/demos/demo-table.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/demos/demo-chart.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/demos/demo-map.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/demos/demo-table.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/about.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/basics.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/building.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/changelog.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/custom-charts.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/fork-n-go.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/sheetsee-charts.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/sheetsee-core.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/sheetsee-maps.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/sheetsee-tables.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/docs/tips.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://tomhohenstein.com/projects/sheetsee/master/site/index.html</loc>
-    <lastmod>2015-01-29T09:30:10Z</lastmod>
+    <lastmod>2015-01-20T19:25:42Z</lastmod>
     <priority>0.6</priority>
   </url>
   
