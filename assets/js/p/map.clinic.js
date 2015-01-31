@@ -17,13 +17,16 @@ $( document ).ready(function (){
     				.attr("height", height);				
 
 	queue()
-    	.defer(d3.json, "/projects/map/us.json")
+      .defer(d3.json, "/projects/map/us.json")
+    	.defer(d3.json, "/projects/map/state.topo.clinics.json")
     	.defer(d3.csv, "/projects/map/clinics.csv")
     	.await(ready);
 
-	function ready(error, us, clinics) {
-console.log(clinics); 
-	console.log(us);
+	function ready(error, us, state, clinics) {
+ 
+	//console.log(us);
+  console.log(state.objects.state.geometries[0].properties.count);
+  //console.log(clinics);
 	
 		map.append("path")
     	  	.datum(topojson.feature(us, us.objects.land))
@@ -34,7 +37,7 @@ console.log(clinics);
       	map.append("g")
       		.attr("class", "state")
       		.selectAll("path")
-      		.data(topojson.feature(us, us.objects.states).features)
+      		.data(topojson.feature(state, state.objects.state).features)
       		.enter()
       		.append("path") 
       		.attr("d", path)
