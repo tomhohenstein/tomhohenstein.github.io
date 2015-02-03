@@ -1,14 +1,14 @@
 ---
 layout: post
-title: My first D3 Map 
+title: D3 Map 1
 css:
-tags: library juice, javascript, D3
+tags: project, library juice, javascript, D3
 javascript:
 - l/d3.min.js
 - l/queue.v1.min.js
 - l/topojson.v1.min.js
-- p/map.clinic.js
 - p/map.js
+- p/map.2.js
 ---
 
 <div id="clinic"></div> 
