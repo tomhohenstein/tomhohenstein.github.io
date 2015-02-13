@@ -1,0 +1,35 @@
+d3.csv("dc.data.csv", function(csv){
+	var data = crossfilter(csv);  
+	var question_half_hour = data.dimension(function (d){
+			return d.question_half_hour; 
+		}),
+		question_weekday = data.dimension(function (d){
+			return d.question_weekday; 
+		})
+	question_half_hour_group = question_half_hour.group().reduceCount(); 
+	question_weekday_group = question_weekday.group().reduceCount(); 
+
+	var question_half_hour_chart = dc.rowChart("#question_half_hour")
+		.width(700) 
+		.height(900)
+		.margins({top:10, left:10, right:10, bottom:30})
+		.dimension(question_half_hour)
+		.group(question_half_hour_group)
+		.label(function(d){ return d.key; })
+		.colors(d3.scale.category20c())
+		.elasticX(true)
+		.xAxis().ticks(4); 
+
+	var question_weekday = dc.rowChart("#question_weekday")
+		.width(300) 
+		.height(500)
+		.margins({top:10, left:10, right:10, bottom:30})
+		.dimension(question_weekday)
+		.group(question_weekday_group)
+		.label(function(d){ return d.key; })
+		.colors(["#edf8fb", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#005824"])
+		.elasticX(true)
+		.xAxis().ticks(4); 
+	
+	dc.renderAll(); 
+})
