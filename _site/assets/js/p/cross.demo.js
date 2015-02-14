@@ -42,7 +42,7 @@ d3.csv("dc.data.csv", function(csv){
 		.dimension(location_name)
 		.group(location_name_group)
 		.radius([100])
-		.innerRadius([90])  
+		.innerRadius([50])
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"]);
  
 	dc.renderAll(); 

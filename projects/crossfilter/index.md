@@ -7,7 +7,7 @@ javascript:
 - l/d3.min.js
 - l/crossfilter.v1.min.js
 - l/dc.min.js
-- p/cross.demo.js
+- p/cross.demo.js 
 ---
 
 <div id="question_half_hour"></div>
