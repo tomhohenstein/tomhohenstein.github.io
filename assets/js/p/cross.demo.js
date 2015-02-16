@@ -26,7 +26,7 @@ d3.csv("dc.data.csv", function(csv){
 		.label(function(d){ return d.key; })
 		.colors(d3.scale.category20c())
 		.elasticY(true)
-		.x(d3.scale.ordinal().domain(["13:00", "13:30", "14:00"])
+		.x(d3.scale.ordinal().domain(question_half_hour_group))
         .xUnits(dc.units.ordinal)
         .renderHorizontalGridLines(true)
         .yAxis().ticks(4);
