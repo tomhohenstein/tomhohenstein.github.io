@@ -35,8 +35,9 @@ d3.csv("dc.data.csv", function(csv){
 		.group(question_weekday_group)
 		.label(function(d){ return d.key; })
 		.colors(["#edf8fb", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#005824"])
-		.elasticX(true)
-		.xAxis().ticks(4); 
+		.elasticY(true)
+		.x(d3.scale.linear().domain([0, 25]))
+        .renderHorizontalGridLines(true) 
 	
 	var location_name_chart = dc.pieChart("#location_name")
 		.dimension(location_name)
