@@ -3,7 +3,7 @@ d3.csv("dc.data.csv", function(csv){
 	//set dimension vars
 	var question_half_hour = data.dimension(function (d){
 			console.log(d.question_half_hour)
-			return new Date(d.question_half_hour; 
+			return d.question_half_hour; 
 		}),
 		question_weekday = data.dimension(function (d){
 			return d.question_weekday; 
