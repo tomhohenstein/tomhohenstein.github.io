@@ -16,10 +16,7 @@ d3.csv("dc.data.csv", function(csv){
 	question_weekday_group = question_weekday.group().reduceCount(); 
 	location_name_group = location_name.group().reduceCount(); 
 	
-	question_half_hour.dimension(function(d){
-		console.log(d);
-		
-	})
+	console.log(question_half_hour.all())
 
 	var question_half_hour_chart = dc.barChart("#question_half_hour")
 		.width(1000) 
@@ -30,7 +27,7 @@ d3.csv("dc.data.csv", function(csv){
 		.label(function(d){ return d.key; })
 		.colors(d3.scale.category20c())
 		.elasticY(true)
-		.x(d3.scale.ordinal().domain())
+		.x(d3.scale.ordinal().domain([0, 10]))
         .xUnits(dc.units.ordinal)
         .renderHorizontalGridLines(true)
         .yAxis().ticks(4);
