@@ -27,7 +27,7 @@ d3.csv("dc.data.csv", function(csv){
 		.elasticX(true)
 		.xAxis().ticks(4); 
 
-	var question_weekday = dc.rowChart("#question_weekday")
+	var question_weekday = dc.barChart("#question_weekday")
 		.width(300) 
 		.height(500)
 		.margins({top:10, left:10, right:10, bottom:30})
@@ -42,7 +42,7 @@ d3.csv("dc.data.csv", function(csv){
 		.dimension(location_name)
 		.group(location_name_group)
 		.radius([100])
-		.innerRadius([50])
+		.innerRadius([10])
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"]);
  
 	dc.renderAll(); 

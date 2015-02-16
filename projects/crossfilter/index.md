@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Crossfilter
 css:
 tags: library juice, javascript, D3

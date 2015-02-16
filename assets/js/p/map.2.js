@@ -1,5 +1,5 @@
 $( document ).ready(function (){ 
-	
+
 	var width = $("article").width(),
 		height = 500;  
 	
