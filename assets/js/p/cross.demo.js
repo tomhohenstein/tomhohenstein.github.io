@@ -38,8 +38,7 @@ d3.csv("dc.data.csv", function(csv){
 		.label(function(d){ return d.key; })
 		.colors(["#edf8fb", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#005824"])
 		.elasticX(true)
-		.xAxis().ticks(4)
-		.renderVerticalGridLines(true);
+		.xAxis().ticks(4);
 
 	
 	var location_name_chart = dc.pieChart("#location_name")
