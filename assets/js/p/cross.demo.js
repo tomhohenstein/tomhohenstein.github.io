@@ -29,8 +29,7 @@ d3.csv("dc.data.csv", function(csv){
 		.x(d3.scale.ordinal().domain(question_half_hour_group))
         .xUnits(dc.units.ordinal)
         .renderHorizontalGridLines(true)
-        .yAxis().ticks(4)
-        .attr("transform", "rotate(-90)");
+        .yAxis().ticks(4);
 
 	var question_weekday = dc.rowChart("#question_weekday")
 		.width(250) 
