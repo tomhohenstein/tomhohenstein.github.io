@@ -9,6 +9,11 @@ javascript:
 - l/dc.min.js
 - p/cross.demo.js 
 ---
+<style>
+	#question_half_hour {
+		text-align: center; 
+	}
+</style>
 <div class="jumbotron">
 	<div id="question_half_hour"></div>
 </div>	
