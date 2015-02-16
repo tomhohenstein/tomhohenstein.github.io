@@ -2,6 +2,7 @@ d3.csv("dc.data.csv", function(csv){
 	var data = crossfilter(csv);  
 	//set dimension vars
 	var question_half_hour = data.dimension(function (d){
+			console.log(d)
 			return d.question_half_hour; 
 		}),
 		question_weekday = data.dimension(function (d){
@@ -15,8 +16,6 @@ d3.csv("dc.data.csv", function(csv){
 	question_half_hour_group = question_half_hour.group().reduceCount(); 
 	question_weekday_group = question_weekday.group().reduceCount(); 
 	location_name_group = location_name.group().reduceCount(); 
-	
-	console.log(question_half_hour)
 
 	var question_half_hour_chart = dc.barChart("#question_half_hour")
 		.width(1000) 
