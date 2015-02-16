@@ -77,12 +77,12 @@
 
 <p>While I could add more to this project, such as text and css effects, feel free to click around, drag the circles, and generally play. If you break it, <a href="https://github.com/tomhohenstein/tomhohenstein.github.io/issues">let me know!</a></p>
 
-<p>##Background</p>
+<h2 id="background">Background</h2>
 
 <p>Before starting, I would like to thank a <a href="http://bl.ocks.org/sathomas/11550728">series of posts</a> by <a href="http://bl.ocks.org/sathomas">sathomas</a> on <a href="http://bl.ocks.org">bl.ocks.org</a>. I was completely lost before I found these posts and would probably still be. I would also like to think the <a href="http://altbibl.io/dst4l/">DST4L</a> community that <a href="https://twitter.com/libcce">Chris Erdmann</a> is building. The <a href="http://altbibl.io/dst4l/">DST4L</a> classes that I attended this fall were awesome and made it possible for me to get this little project off the ground. </p>
 
-<p>##Tools<br />
-I used the following tools to build this project: </p>
+<h2 id="tools">Tools</h2>
+<p>I used the following tools to build this project: </p>
 
 <ul>
   <li>Mike Bostock’s <a href="http://d3js.org/">D3 javascript</a> library, which can be found <a href="https://github.com/mbostock/d3">on GitHub</a>. </li>
@@ -92,12 +92,12 @@ I used the following tools to build this project: </p>
   <li><a href="http://products.office.com/en-us/excel">Excel</a></li>
 </ul>
 
-<p>##Basic Process </p>
+<h2 id="basic-process">Basic Process</h2>
 
 <p>Like many libraries we keep rather detailed instruction statistics. However, outside of doing some basic counting with them - number of sessions, number of student contacts, number of session per department - we don’t do too much with the data. </p>
 
-<p>###Our Data<br />
-Our statistics are entered into a form - Google Docs or Qualtrics - and ported into <a href="http://products.office.com/en-us/excel">Excel</a> at the end of each term. The result is a spreadsheet has the following data: </p>
+<h3 id="our-data">Our Data</h3>
+<p>Our statistics are entered into a form - Google Docs or Qualtrics - and ported into <a href="http://products.office.com/en-us/excel">Excel</a> at the end of each term. The result is a spreadsheet has the following data: </p>
 
 <ul>
   <li>Library Coordinator  </li>
@@ -114,15 +114,15 @@ Our statistics are entered into a form - Google Docs or Qualtrics - and ported i
   <li>Is this the first time we have worked with this faculty member?</li>
 </ul>
 
-<p>###Cleaning with OpenRefine</p>
+<h3 id="cleaning-with-openrefine">Cleaning with OpenRefine</h3>
 
 <p>I ignored/deleted all the data except library coordinator and faculty instructor. Next, I moved the spreadsheet into <a href="http://openrefine.org/">OpenRefine</a> and cleaned it. As one might imagine our statistics had small typos, variations in faculty names, and other small undesirable data features. However, with <a href="http://openrefine.org/">OpenRefine</a> I was able to quickly clean our data and transform it into two csv documents. One document for the nodes and one for the edges, or links. 	</p>
 
-<p>###Converting to JSON </p>
+<h3 id="converting-to-json">Converting to JSON</h3>
 
 <p>I converted my files into JSON as a personal preference. <a href="http://d3js.org/">D3 javascript</a> does have the ability to <a href="https://github.com/mbostock/d3/wiki/CSV">parse csv</a> data but I would rather work with JSON. I used <a href="http://www.convertcsv.com/csv-to-json.htm">convertcsv.com</a> to transform my csv to JSON. There are other tools that can perform the same task, <a href="http://www.convertcsv.com/csv-to-json.htm">convertcsv.com</a> just happened to show up higher on my <a href="https://www.google.com?q=csv%20to%20json">Google search</a>. Here is an <a href="http://bl.ocks.org/mbostock/4062045#miserables.json">example of a JSON file</a> from <a href="https://github.com/mbostock">Mike Bostock’s</a> <a href="http://bl.ocks.org/mbostock/4062045#miserables.json">Les Miserable’s data visualization</a>.</p>
 
-<p>###Using D3</p>
+<h3 id="using-d3">Using D3</h3>
 
 <p>Mike Bostock’s <a href="http://d3js.org/">D3 javascript</a> library is a really powerful library with more features and capacity than I could ever hope to explain. But, it has very good <a href="https://github.com/mbostock/d3/wiki">documentation</a> and lots of <a href="https://github.com/mbostock/d3/wiki/Gallery">examples</a>. </p>
 
@@ -194,7 +194,7 @@ Our statistics are entered into a form - Google Docs or Qualtrics - and ported i
 &lt;/script&gt;
 </code></pre>
 
-<p>##Code</p>
+<h2 id="code">Code</h2>
 
 <p>You can find the <a href="https://github.com/tomhohenstein/tomhohenstein.github.io/tree/master/projects/instruction-network">code for this project on GitHub</a>. If you have any questions, ideas, or improvements. Feel free to <a href="https://twitter.com/tomhohenstein">contact me</a>. </p>
 

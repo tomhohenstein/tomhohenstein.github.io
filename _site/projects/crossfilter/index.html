@@ -49,9 +49,21 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div id="body-wrapper">
-    <div id="question_half_hour"></div>
-<div id="question_weekday"></div>
-<div id="location_name"></div>
+    <style>
+	#question_half_hour {
+		text-align: center; 
+	}
+</style>
+
+<div class="jumbotron">
+	<div id="question_half_hour"></div>
+</div>
+<div class="row">
+	<div class="col-md-3" id="question_weekday"></div>
+	<div class="col-md-3" id="location_name"></div>
+	<div class="col-md-3" id="patron_type"></div>
+	<div class="col-md-3" id="time_spent"></div>
+</div>
 
 <p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this crossfilter dashboard for my last assignment (which was also late :).</p>
 
