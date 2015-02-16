@@ -30,8 +30,8 @@ d3.csv("dc.data.csv", function(csv){
         .renderHorizontalGridLines(true);
 
 	var question_weekday = dc.rowChart("#question_weekday")
-		.width(300) 
-		.height(500)
+		.width(250) 
+		.height(250)
 		.margins({top:10, left:10, right:10, bottom:30})
 		.dimension(question_weekday)
 		.group(question_weekday_group)
