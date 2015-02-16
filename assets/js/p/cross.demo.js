@@ -16,7 +16,7 @@ d3.csv("dc.data.csv", function(csv){
 	question_weekday_group = question_weekday.group().reduceCount(); 
 	location_name_group = location_name.group().reduceCount(); 
 	
-	console.log(question_half_hour.all())
+	console.log(question_half_hour)
 
 	var question_half_hour_chart = dc.barChart("#question_half_hour")
 		.width(1000) 
