@@ -25,7 +25,7 @@ d3.csv("dc.data.csv", function(csv){
 		.label(function(d){ return d.key; })
 		.colors(d3.scale.category20c())
 		.elasticY(true)
-		.x(d3.scale.linear().domain([, 25]))
+		.x(d3.scale.ordinal().domain(function(d){ console.log(d); return d.key })
         .renderHorizontalGridLines(true) 
 
 	var question_weekday = dc.rowChart("#question_weekday")
