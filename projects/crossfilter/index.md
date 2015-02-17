@@ -40,7 +40,7 @@ javascript:
 </style>
 <h1>LibStats Question Data Visualized</h1>
 <div class="jumbotron">
-	<h4>Questions by half hour</h4>
+	<h4>Questions by Half Hour</h4>
 	<div id="question_half_hour"></div>
 </div>	
 <div class="row" id="small-charts">

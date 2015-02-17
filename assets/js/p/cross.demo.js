@@ -33,7 +33,7 @@ d3.csv("dc.data.csv", function(csv){
 		.group(question_half_hour_group)
 		.label(function(d){ return d.key; })
 		.colors(["rgb(49, 130, 189)"])
-		.elasticY(true)
+		.elasticY(false)
 		.x(d3.scale.ordinal().domain(question_half_hour_group))
         .xUnits(dc.units.ordinal)
         .yAxis().ticks(4);
@@ -49,7 +49,8 @@ d3.csv("dc.data.csv", function(csv){
 		.renderTitle(true)
 		.colors(["rgb(65, 174, 118)"])
 		.elasticX(true)
-		.xAxis().ticks(4);
+		.xAxis().ticks(4)
+		.yAxis();
 	
 	var location_name_chart = dc.pieChart("#location_name")
 		.dimension(location_name)
