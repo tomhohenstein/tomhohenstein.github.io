@@ -6,10 +6,10 @@ d3.csv("dc.data.csv", function(csv){
 			return d.question_half_hour; 
 		}),
 		question_weekday = data.dimension(function (d){
-			var day = d.question_weekday;
-			var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-			//return d.question_weekday; 
-			return day+"."+name[day]; 
+			//var day = d.question_weekday;
+			//var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+			return d.question_weekday; 
+			//return day+"."+name[day]; 
 		}),
 		location_name = data.dimension(function (d){
 			return d.location_name; 
@@ -53,7 +53,8 @@ d3.csv("dc.data.csv", function(csv){
 		.renderTitle(true)
 		.colors(["rgb(65, 174, 118)"])
 		.elasticX(true)
-		.xAxis().ticks(4);
+		.xAxis().ticks(4)
+		.y(d3.scale.ordinal().domain([["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]]));
 	
 	var location_name_chart = dc.pieChart("#location_name")
 		.dimension(location_name)
