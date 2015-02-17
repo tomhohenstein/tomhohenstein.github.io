@@ -44,7 +44,10 @@ d3.csv("dc.data.csv", function(csv){
 		.elasticY(false)
 		.x(d3.scale.ordinal().domain(question_half_hour_group))
         .xUnits(dc.units.ordinal)
-        .yAxis().ticks(4);
+        .yAxis().ticks(4)
+        .renderlet(function(chart){
+        	console.log('in rederlet');
+        });
 
 	var question_weekday_chart = dc.rowChart("#question_weekday")
 		.width(250) 
