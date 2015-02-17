@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Crossfilter
-css:
+css: l/dc.css
 tags: library juice, javascript, D3
 javascript:
 - l/d3.min.js
