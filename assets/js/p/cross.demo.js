@@ -95,10 +95,10 @@ d3.csv("dc.data.csv", function(csv){
 
 	dc.renderAll();
 
-	d3.select("#question_weekday_chart").selectAll("rect")
-	.on("mouseover", function(d){
-		console.log(d); 
-	}) 
+	question_weekday_chart.selectAll("rect")
+		.on("mouseover", function(d){
+			console.log(d); 
+			}) 
 })
 
 
