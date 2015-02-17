@@ -110,14 +110,16 @@ d3.csv("dc.data.csv", function(csv){
 		})
 	var row = d3.selectAll("#question_weekday .row")
 		.on("mouseover", function(d){
+			d3.select(this).select("text").attr("class", "hide");
 			d3.select(this).append("text")
 				.text(function(d){ return d.value})
 				.attr("class", "rect-text")
 				.attr("x", d3.select(this).select("rect").attr("width"))
-				.attr("y", "15") ;	
+				.attr("y", "15");
+					
 		})
 		.on("mouseout", function(){
-			//$(".rect-text").remove()
+			$(".rect-text").remove()
 		})
 })
 
