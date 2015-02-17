@@ -18,7 +18,7 @@ javascript:
 	#location_name,
 	#patron_type,
 	#time_spent,
-	.jumbotron a {
+	.jumbotron {
 		text-align: center; 
 	}
 	#question_half_hour {
