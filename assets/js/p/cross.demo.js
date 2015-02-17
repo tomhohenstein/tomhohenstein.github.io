@@ -106,7 +106,7 @@ d3.csv("dc.data.csv", function(csv){
    				.text(d.value)
 			console.log(d.value); 
 		})
-		.on("mouseoff", function(){
+		.on("mouseout", function(){
 			$(".center-text").remove()
 		})
 	d3.selectAll(".row rect").on("mouseover", function(d){console.log(d.value);} )
