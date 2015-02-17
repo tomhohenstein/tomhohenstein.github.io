@@ -72,7 +72,7 @@ javascript:
 		<h4>Weekday <a class="btn btn-default btn-sm" href="javascript:question_weekday_chart.filterAll();question_weekday_chart.renderAll();">Reset</a></h4>
 	</div>
 	<div class="col-md-3" id="location_name">
-		<h4>Department <a class="btn btn-default btn-sm" href="javascript:dc.filterAll();dc.renderAll();">Reset</a></h4>
+		<h4>Department <a class="btn btn-default btn-sm" href="javascript:location_name_chart.filterAll(); location_name_chart.redraw()">Reset</a></h4>
 	</div>
 	<div class="col-md-3" id="patron_type">
 		<h4>Patron Type <a class="btn btn-default btn-sm" href="javascript:dc.filterAll();dc.renderAll();">Reset</a></h4>
