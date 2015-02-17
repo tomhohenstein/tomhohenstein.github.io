@@ -62,7 +62,7 @@ javascript:
 </style>
 <h1>LibStats Question Data Visualized</h1>
 <div class="jumbotron">
-<a class="btn btn-warning" href="javascript:dc.filterAll();dc.renderAll();">reset</a>
+<a class="btn btn-warning btn-lg" href="javascript:dc.filterAll();dc.renderAll();">Reset All</a>
 	<h4>Questions by Half Hour</h4>
 	<div id="question_half_hour"></div>
 </div>	
