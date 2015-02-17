@@ -57,7 +57,7 @@ d3.csv("dc.data.csv", function(csv){
 		.radius([100])
 		.innerRadius([50])
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"])
-		.legend(dc.legend().x(400).y(10).itemHeight(13).gap(5));
+		.legend(dc.legend().x(10).y(10));
  
 	var patron_type_chart = dc.rowChart("#patron_type")
 		.width(250) 
