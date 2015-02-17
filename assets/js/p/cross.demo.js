@@ -26,7 +26,7 @@ d3.csv("dc.data.csv", function(csv){
 		});
 
 	//set group vars 
-	var question_half_hour_group = question_half_hour.group().reduceCount(), 
+		question_half_hour_group = question_half_hour.group().reduceCount(), 
 		question_weekday_group = question_weekday.group().reduceCount(),
 		location_name_group = location_name.group().reduceCount(), 
 		patron_type_group = patron_type.group().reduceCount(),
