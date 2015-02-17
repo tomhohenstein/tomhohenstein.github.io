@@ -44,10 +44,7 @@ d3.csv("dc.data.csv", function(csv){
 		.elasticY(false)
 		.x(d3.scale.ordinal().domain(question_half_hour_group))
         .xUnits(dc.units.ordinal)
-        .yAxis().ticks(4)
-        .renderlet(function(chart){
-        	console.log('in rederlet');
-        });
+        .yAxis().ticks(4);
 
 	var question_weekday_chart = dc.rowChart("#question_weekday")
 		.width(250) 
@@ -60,7 +57,10 @@ d3.csv("dc.data.csv", function(csv){
 		.renderTitle(true)
 		.colors(["rgb(65, 174, 118)"])
 		.elasticX(true)
-		.xAxis().ticks(4);
+		.xAxis().ticks(4)
+		.renderlet(function(chart){
+        	console.log('in rederlet');
+        });
 		
 	var location_name_chart = dc.pieChart("#location_name")
 		.radius([100])
