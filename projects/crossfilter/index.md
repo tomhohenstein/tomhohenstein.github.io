@@ -7,6 +7,7 @@ javascript:
 - l/d3.min.js
 - l/crossfilter.v1.min.js
 - l/dc.min.js
+- l/d3.tooltip.js
 - p/cross.demo.js 
 ---
 <style>
