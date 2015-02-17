@@ -25,12 +25,6 @@ d3.csv("dc.data.csv", function(csv){
 			return d.time_spent;
 		});
 
-	//set tooltip
-	var tip = d3.tip()
-	  .attr('class', 'd3-tip')
-	  .html(function(d) { return d; });
-
-
 	//set group vars 
 	var question_half_hour_group = question_half_hour.group().reduceCount(), 
 		question_weekday_group = question_weekday.group().reduceCount(),
@@ -97,10 +91,6 @@ d3.csv("dc.data.csv", function(csv){
 		.colors(["rgb(242, 130, 110)"])
 		.elasticX(true)
 		.xAxis().ticks(4);
-
-		d3.selectAll("g.row").call(tip);
-          d3.selectAll("g.row").on('mouseover', tip.show)
-              .on('mouseout', tip.hide);
 
 	dc.renderAll();
 })
