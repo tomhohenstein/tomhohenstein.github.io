@@ -18,6 +18,8 @@ d3.csv("dc.data.csv", function(csv){
 			return d.time_spent;
 		});
 
+console.log(question_weekday);
+
 	//set group vars 
 	var question_half_hour_group = question_half_hour.group().reduceCount(), 
 		question_weekday_group = question_weekday.group().reduceCount(),
