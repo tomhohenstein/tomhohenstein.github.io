@@ -42,7 +42,7 @@ d3.csv("dc.data.csv", function(csv){
         .xUnits(dc.units.ordinal)
         .yAxis().ticks(4);
 
-	var question_weekday_chart = dc.rowChart("#question_weekday")
+	var question_weekday_chart = dc.barChart("#question_weekday")
 		.width(250) 
 		.height(250)
 		.margins({top:10, left:10, right:10, bottom:30})
@@ -53,8 +53,8 @@ d3.csv("dc.data.csv", function(csv){
 		.renderTitle(true)
 		.colors(["rgb(65, 174, 118)"])
 		.elasticX(true)
-		.xAxis().ticks(4)
-		.y(d3.scale.ordinal().domain([["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]]));
+		.yAxis().ticks(4)
+		.x(d3.scale.ordinal().domain([["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]]));
 	
 	var location_name_chart = dc.pieChart("#location_name")
 		.dimension(location_name)
