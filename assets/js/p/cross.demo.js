@@ -59,7 +59,10 @@ d3.csv("dc.data.csv", function(csv){
 		.label(function(d){ return d.key; })
 		.renderLabel(true)
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"])
-		.legend(dc.legend().x(10).y(10).itemHeight(12).gap(5));
+		.legend(dc.legend().x(10).y(10).itemHeight(12).gap(5))
+		.renderlet(function(chart){
+			console.log('here');
+		});
  
 	var patron_type_chart = dc.rowChart("#patron_type")
 		.width(250) 
