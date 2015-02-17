@@ -7,7 +7,8 @@ d3.csv("dc.data.csv", function(csv){
 		}),
 		question_weekday = data.dimension(function (d){
 			var day = d.question_weekday;
-			var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+			var name[] = day; 
+			//var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 			//return d.question_weekday;
 			console.log(day + "  " + name[day]  + "  " + name[0] + "  " + name["Sunday"]);
 			//console.log(day+"."+name[day])
