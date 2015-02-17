@@ -48,7 +48,7 @@ d3.csv("dc.data.csv", function(csv){
 		.margins({top:10, left:10, right:10, bottom:30})
 		.dimension(question_weekday)
 		.group(question_weekday_group)
-		.label(function(d){ return d.key.split(".")[1]; })
+		.label(function(d){ return d.key; })
 		.title(function(d){ return d.value; })
 		.renderTitle(true)
 		.colors(["rgb(65, 174, 118)"])
