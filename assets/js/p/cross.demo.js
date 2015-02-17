@@ -35,7 +35,7 @@ d3.csv("dc.data.csv", function(csv){
 		.margins({top:10, left:50, right:10, bottom:80})
 		.dimension(question_half_hour)
 		.group(question_half_hour_group)
-		.label(function(d){ return d.key; })
+		.label(function(d){ return d.key.split(".")[1]; })
 		.colors(["rgb(49, 130, 189)"])
 		.elasticY(false)
 		.x(d3.scale.ordinal().domain(question_half_hour_group))
