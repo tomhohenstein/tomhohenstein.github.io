@@ -8,9 +8,15 @@ d3.csv("dc.data.csv", function(csv){
 		question_weekday = data.dimension(function (d){
 			var day = d.question_weekday;
 			if(day == "Sunday") return 0+"."+day;
-
+			else if(day == "Monday") return 1+"."+day
+			else if(day == "Tuesday") return 2+"."+day
+			else if(day == "Wednesday") return 3+"."+day
+			else if(day == "Thursday") return 4+"."+day
+			else if(day == "Friday") return 5+"."+day
+			else if(day == "Saturday") return 6+"."+day
+			//else if(day == "") return 1+"."+day	
 			//var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-			return d.question_weekday;
+			//return d.question_weekday;
 			//console.log(day + "  " + name[day]  + "  " + name[0] + "  " + name["Sunday"]);
 			//console.log(day+"."+name[day])
 			//return day+"."+name[day]; 
