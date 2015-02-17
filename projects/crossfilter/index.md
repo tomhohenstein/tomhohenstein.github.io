@@ -56,6 +56,9 @@ javascript:
 	svg:not(:root) {
 		overflow: overlay;
 	}
+	.hide {
+		display: none; 
+	}
 </style>
 <h1>LibStats Question Data Visualized</h1>
 <div class="jumbotron">
