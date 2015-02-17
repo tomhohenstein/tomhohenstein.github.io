@@ -9,7 +9,7 @@ d3.csv("dc.data.csv", function(csv){
 			var day = d.question_weekday;
 			var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 			//return d.question_weekday;
-			console.log(day + "  " + name[day]);
+			console.log(day + "  " + name[day]  + "  " + name[0]);
 			//console.log(day+"."+name[day])
 			return day+"."+name[day]; 
 		}),
@@ -62,7 +62,7 @@ d3.csv("dc.data.csv", function(csv){
 		.innerRadius([50])
 		.dimension(location_name)
 		.group(location_name_group)
-		.label(function(d){return d.key; })
+		.label(function(d){ return d.key; })
 		.renderLabel(true)
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"])
 		.legend(dc.legend().x(10).y(10).itemHeight(12).gap(5));
