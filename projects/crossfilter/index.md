@@ -20,6 +20,7 @@ javascript:
 		text-align: center; 
 	}
 	#question_half_hour {
+		background-color: white; 
 		float:none;
 	}
 	#small-charts {
