@@ -125,8 +125,6 @@ d3.csv("dc.data.csv", function(csv){
 	//add bar chart mouse events 
 	var bar = d3.selectAll(".bar")
 		.on("mouseover", function(d){
-			console.log(d.data.value);
-			console.log(d3.select(this).attr("height"));
 			d3.select(".stack").append("text")
 				.text(d.data.value)
 				.attr("class", "bar-text")
