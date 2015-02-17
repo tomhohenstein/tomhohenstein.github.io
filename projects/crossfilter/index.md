@@ -53,6 +53,9 @@ javascript:
 	.center-text {
 		font-size: 20px; 
 	}
+	svg:not(:root) {
+		overflow: overlay;
+	}
 </style>
 <h1>LibStats Question Data Visualized</h1>
 <div class="jumbotron">
