@@ -97,7 +97,7 @@ d3.csv("dc.data.csv", function(csv){
 
 	$("#question_half_hour rect").hover(function(){
 		console.log($(this).text()); 
-		$(this).after("<text>" + $(this).text() + </text>")
+		$(this).after("<text>" + $(this).text() + "</text>")
 	})
 
 })
