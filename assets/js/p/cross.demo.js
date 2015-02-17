@@ -14,12 +14,6 @@ d3.csv("dc.data.csv", function(csv){
 			else if(day == "Thursday") return 4+"."+day
 			else if(day == "Friday") return 5+"."+day
 			else if(day == "Saturday") return 6+"."+day
-			//else if(day == "") return 1+"."+day	
-			//var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-			//return d.question_weekday;
-			//console.log(day + "  " + name[day]  + "  " + name[0] + "  " + name["Sunday"]);
-			//console.log(day+"."+name[day])
-			//return day+"."+name[day]; 
 		}),
 		location_name = data.dimension(function (d){
 			return d.location_name; 
@@ -58,7 +52,7 @@ d3.csv("dc.data.csv", function(csv){
 		.margins({top:10, left:10, right:10, bottom:30})
 		.dimension(question_weekday)
 		.group(question_weekday_group)
-		.label(function(d){ return d.key; })
+		.label(function(d){ return d.key.split(".")[1]; })
 		.title(function(d){ return d.value; })
 		.renderTitle(true)
 		.colors(["rgb(65, 174, 118)"])
