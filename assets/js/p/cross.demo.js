@@ -108,7 +108,7 @@ d3.csv("dc.data.csv", function(csv){
 		.on("mouseout", function(){
 			$(".center-text").remove()
 		})
-	var row = d3.selectAll("#question_weekday .row")
+	var row = d3.selectAll(".row")
 		.on("mouseover", function(d){
 			d3.select(this).select("text").attr("class", "hide");
 			d3.select(this).append("text")
@@ -118,7 +118,7 @@ d3.csv("dc.data.csv", function(csv){
 				.attr("y", "15");			
 		})
 		.on("mouseout", function(){
-			$(".hide").removeClass(); 
+			d3.select(this).select("text").classed("hide", false)
 			$(".rect-text").remove();
 		})
 })
