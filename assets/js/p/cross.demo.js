@@ -100,6 +100,8 @@ d3.csv("dc.data.csv", function(csv){
 			pie.append("text")
    				.attr("text-anchor", "middle")
     			.attr("dy", ".35em")
+    			.attr("x", $("#location_name svg").width()/2) 
+    			.attr("y", $("#location_name svg").height()/2)
    				.attr("class", "center-text")
    				.text(d.value)
 			console.log(d.value); 
