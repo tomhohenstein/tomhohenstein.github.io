@@ -23,7 +23,7 @@ d3.csv("dc.data.csv", function(csv){
 				    return "5.Fri";
 				  case 6:
 				    return "6.Sat";
-
+			}
 			//var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 			//return d.question_weekday;
 			//console.log(day + "  " + name[day]  + "  " + name[0] + "  " + name["Sunday"]);
