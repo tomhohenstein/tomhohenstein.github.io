@@ -94,9 +94,9 @@ d3.csv("dc.data.csv", function(csv){
 
 	dc.renderAll();
 
-	d3.selectAll("path").on("mouseover", function(d){ 
-			
-		var pie =d3.select("#location_name svg");
+	d3.selectAll("path")
+		.on("mouseover", function(d){ 
+			var pie =d3.select("#location_name svg");
 			pie.append("text")
    				.attr("text-anchor", "middle")
     			.attr("dy", ".35em")
@@ -105,7 +105,10 @@ d3.csv("dc.data.csv", function(csv){
    				.attr("class", "center-text")
    				.text(d.value)
 			console.log(d.value); 
-		});
+		})
+		.on("mouseoff", function(){
+			$(".center-text").remove()
+		})
 	d3.selectAll(".row rect").on("mouseover", function(d){console.log(d.value);} )
 })
 
