@@ -9,8 +9,8 @@ d3.csv("dc.data.csv", function(csv){
 			var day = d.question_weekday;
 			var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 			//return d.question_weekday;
-			console.log(name[day]);
-			console.log(day+"."+name[day])
+			console.log(day + "  " + name[day]);
+			//console.log(day+"."+name[day])
 			return day+"."+name[day]; 
 		}),
 		location_name = data.dimension(function (d){
