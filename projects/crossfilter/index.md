@@ -13,6 +13,18 @@ javascript:
 	#question_half_hour {
 		text-align: center; 
 	}
+	rect.selected,
+	.pie-slice.selected {
+		opacity: 1; 
+	}
+	rect.deselected,
+	.pie-slice.deselected {
+		opacity: .4; 
+	}
+	.x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+	}
 </style>
 <div class="jumbotron">
 	<div id="question_half_hour"></div>
