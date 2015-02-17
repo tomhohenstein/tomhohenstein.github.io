@@ -50,7 +50,7 @@ d3.csv("dc.data.csv", function(csv){
 		.colors(["rgb(65, 174, 118)"])
 		.elasticX(true)
 		.xAxis().ticks(4)
-		.yAxis();
+		.yAxis().ticks(7);
 	
 	var location_name_chart = dc.pieChart("#location_name")
 		.dimension(location_name)
