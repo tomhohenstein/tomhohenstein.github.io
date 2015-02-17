@@ -34,11 +34,14 @@ javascript:
 		opacity: .4; 
 	}
 	.x.axis text {
-    text-anchor: end !important;
-    transform: rotate(-45deg);
+    	text-anchor: end !important;
+    	transform: rotate(-45deg);
 	}
 	.dc-chart .selected path {
 		stroke: #FFF;
+	}
+	.dc-chart g.row text {
+		fill: rgb(5, 5, 5);
 	}
 </style>
 <h1>LibStats Question Data Visualized</h1>
