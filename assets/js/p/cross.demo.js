@@ -54,7 +54,7 @@ d3.csv("dc.data.csv", function(csv){
 		.colors(["rgb(65, 174, 118)"])
 		.elasticX(true)
 		.yAxis().ticks(4)
-		.x(d3.scale.ordinal().domain([["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]]));
+		.x(d3.scale.ordinal().domain(["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]));
 	
 	var location_name_chart = dc.pieChart("#location_name")
 		.dimension(location_name)
