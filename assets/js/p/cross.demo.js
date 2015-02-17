@@ -93,10 +93,12 @@ d3.csv("dc.data.csv", function(csv){
 		.elasticX(true)
 		.xAxis().ticks(4);
 
-	dc.renderAll(); 
-})
+	dc.renderAll();
 
-d3.select("#question_weekday_chart").selectAll("rect")
+	d3.select("#question_weekday_chart").selectAll("rect")
 	.on("mouseover", function(d){
 		console.log(d); 
-	})
+	}) 
+})
+
+
