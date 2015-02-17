@@ -28,7 +28,7 @@ d3.csv("dc.data.csv", function(csv){
 	var question_half_hour_chart = dc.barChart("#question_half_hour")
 		.width($("#question_half_hour").width()) 
 		.height(300)
-		.margins({top:10, left:50, right:40, bottom:80})
+		.margins({top:10, left:10, right:10, bottom:80})
 		.dimension(question_half_hour)
 		.group(question_half_hour_group)
 		.label(function(d){ return d.key; })
