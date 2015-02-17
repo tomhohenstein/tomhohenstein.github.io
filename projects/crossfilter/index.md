@@ -24,6 +24,9 @@ javascript:
 	}
 	.jumbotron {
 		background-color: white; 
+		margin-bottom: 0px; 
+		padding-bottom: 0px;
+
 	}
 	#small-charts {
 		clear:both;
