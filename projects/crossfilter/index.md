@@ -19,6 +19,9 @@ javascript:
 	#time_spent {
 		text-align: center; 
 	}
+	#question_half_hour {
+		float:none;
+	}
 	#small-charts {
 		clear:both;
 	}
