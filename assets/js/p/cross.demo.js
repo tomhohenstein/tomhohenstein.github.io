@@ -1,7 +1,7 @@
 d3.csv("dc.data.csv", function(csv){
 	var data = crossfilter(csv);  
 	//set dimension vars
-	var question_half_hour = data.dimension(function (d){
+	question_half_hour = data.dimension(function (d){
 			//console.log(d.question_half_hour)
 			return d.question_half_hour; 
 		}),
