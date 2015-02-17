@@ -56,6 +56,7 @@ d3.csv("dc.data.csv", function(csv){
 		.group(location_name_group)
 		.radius([100])
 		.innerRadius([50])
+		.label(function(d){ return d.key; })
 		.renderLabel(false)
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"])
 		.legend(dc.legend().x(10).y(10));
