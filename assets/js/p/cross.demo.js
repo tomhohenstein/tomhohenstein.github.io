@@ -24,9 +24,9 @@ d3.csv("dc.data.csv", function(csv){
 		location_name_group = location_name.group().reduceCount(), 
 		patron_type_group = patron_type.group().reduceCount(),
 		time_spent_group = time_spent.group().reduceCount();  
-
+//$("#question_half_hour").width()
 	var question_half_hour_chart = dc.barChart("#question_half_hour")
-		.width($("#question_half_hour").width()) 
+		.width(1000) 
 		.height(300)
 		.margins({top:10, left:50, right:10, bottom:80})
 		.dimension(question_half_hour)
