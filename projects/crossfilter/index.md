@@ -10,7 +10,13 @@ javascript:
 - p/cross.demo.js 
 ---
 <style>
-	#question_half_hour {
+	h1, 
+	h4,
+	#question_half_hour,
+	#question_weekday,
+	#location_name,
+	#patron_type,
+	#time_spent {
 		text-align: center; 
 	}
 	rect.selected,
