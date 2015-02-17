@@ -6,9 +6,10 @@ d3.csv("dc.data.csv", function(csv){
 			return d.question_half_hour; 
 		}),
 		question_weekday = data.dimension(function (d){
-			var day = d.question_weekday.getDay();
+			var day = d.question_weekday;
 			var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 			//return d.question_weekday; 
+			console.log(day+"."+name[day])
 			return day+"."+name[day]; 
 		}),
 		location_name = data.dimension(function (d){
