@@ -94,7 +94,7 @@ d3.csv("dc.data.csv", function(csv){
 
 	dc.renderAll();
 
-	d3.selectAll("path")
+	d3.selectAll(".pie-slice path")
 		.on("mouseover", function(d){ 
 			var pie =d3.select("#location_name svg");
 			pie.append("text")
@@ -109,7 +109,16 @@ d3.csv("dc.data.csv", function(csv){
 		.on("mouseout", function(){
 			$(".center-text").remove()
 		})
-	d3.selectAll(".row rect").on("mouseover", function(d){console.log(d.value);} )
+	var row = d3.selectAll(".row")
+		.on("mouseover", function(d){
+			
+			console.log(d.value);
+			console.log("row event");
+			
+		})
+		.on("mouseout", function(){
+			//$(".rect-text").remove()
+		})
 })
 
 
