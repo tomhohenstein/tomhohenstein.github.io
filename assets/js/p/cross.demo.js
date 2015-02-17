@@ -94,7 +94,7 @@ d3.csv("dc.data.csv", function(csv){
 
 	dc.renderAll();
 
-	d3.selectAll("rect").on("mouseover", function(d){console.log(d.value);} )
+	d3.selectAll(".row rect").on("mouseover", function(d){console.log(d.value);} )
 })
 
 
