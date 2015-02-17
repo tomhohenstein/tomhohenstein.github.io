@@ -37,6 +37,9 @@ javascript:
     text-anchor: end !important;
     transform: rotate(-45deg);
 	}
+	.dc-chart .selected path {
+		stroke: #FFF;
+	}
 </style>
 <h1>LibStats Question Data Visualized</h1>
 <div class="jumbotron">
