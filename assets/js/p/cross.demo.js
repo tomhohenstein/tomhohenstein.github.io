@@ -115,11 +115,11 @@ d3.csv("dc.data.csv", function(csv){
 				.text(function(d){ return d.value})
 				.attr("class", "rect-text")
 				.attr("x", d3.select(this).select("rect").attr("width"))
-				.attr("y", "15");
-					
+				.attr("y", "15");			
 		})
 		.on("mouseout", function(){
-			$(".rect-text").remove()
+			$(".hide").removeClass(); 
+			$(".rect-text").remove();
 		})
 })
 
