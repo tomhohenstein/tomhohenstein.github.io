@@ -26,7 +26,7 @@ d3.csv("dc.data.csv", function(csv){
 		time_spent_group = time_spent.group().reduceCount();  
 
 	var question_half_hour_chart = dc.barChart("#question_half_hour")
-		.width(1000) 
+		.width($("#question_half_hour").width()) 
 		.height(300)
 		.margins({top:10, left:50, right:10, bottom:80})
 		.dimension(question_half_hour)
