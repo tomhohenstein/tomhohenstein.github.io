@@ -49,7 +49,10 @@ d3.csv("dc.data.csv", function(csv){
 		.renderTitle(true)
 		.colors(["rgb(65, 174, 118)"])
 		.elasticX(true)
-		.xAxis().ticks(4);
+		.xAxis().ticks(4)
+		.ordering(function(d){
+			console.log(d); 
+		});
 	
 	var location_name_chart = dc.pieChart("#location_name")
 		.dimension(location_name)
