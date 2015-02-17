@@ -6,7 +6,10 @@ d3.csv("dc.data.csv", function(csv){
 			return d.question_half_hour; 
 		}),
 		question_weekday = data.dimension(function (d){
-			return d.question_weekday; 
+			var day = d.question_weekday;
+			var name = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+			//return d.question_weekday; 
+			return day+"."+name[day]; 
 		}),
 		location_name = data.dimension(function (d){
 			return d.location_name; 
@@ -18,7 +21,6 @@ d3.csv("dc.data.csv", function(csv){
 			return d.time_spent;
 		});
 
-console.log(question_weekday);
 
 	//set group vars 
 	var question_half_hour_group = question_half_hour.group().reduceCount(), 
