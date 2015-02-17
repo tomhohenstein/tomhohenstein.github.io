@@ -32,8 +32,8 @@ javascript:
     transform: rotate(-45deg);
 	}
 </style>
+<h1>LibStats Question Data Visualized</h1>
 <div class="jumbotron">
-	<h1>LibStats Question Data Visualized</h1>
 	<h4>Questions by half hour</h4>
 	<div id="question_half_hour"></div>
 </div>	
