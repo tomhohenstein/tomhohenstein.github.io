@@ -104,12 +104,11 @@ d3.csv("dc.data.csv", function(csv){
     			.attr("y", $("#location_name svg").height()/2)
    				.attr("class", "center-text")
    				.text(d.value)
-			console.log(d.value); 
 		})
 		.on("mouseout", function(){
 			$(".center-text").remove()
 		})
-	var row = d3.selectAll(".row")
+	var row = d3.selectAll("#question_weekday .row")
 		.on("mouseover", function(d){
 			
 			console.log(d.value);
