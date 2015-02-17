@@ -69,16 +69,16 @@ javascript:
 </div>	
 <div class="row" id="small-charts">
 	<div class="col-md-3" id="question_weekday">
-		<h4>Weekday</h4>
+		<h4>Weekday <a class="reset btn btn-warning btn-sm" href="javascript:dc.filterAll();dc.renderAll();">Reset</a></h4>
 	</div>
 	<div class="col-md-3" id="location_name">
-		<h4>Department</h4>
+		<h4>Department <a class="reset btn btn-warning btn-sm" href="javascript:dc.filterAll();dc.renderAll();">Reset</a></h4>
 	</div>
 	<div class="col-md-3" id="patron_type">
-		<h4>Patron Type</h4>
+		<h4>Patron Type <a class="reset btn btn-warning btn-sm" href="javascript:dc.filterAll();dc.renderAll();">Reset</a></h4>
 	</div>
 	<div class="col-md-3" id="time_spent">
-		<h4>Time spent</h4>
+		<h4>Time spent <a class="reset btn btn-warning btn-sm" href="javascript:dc.filterAll();dc.renderAll();">Reset</a></h4>
 	</div>
 </div> 	
 
