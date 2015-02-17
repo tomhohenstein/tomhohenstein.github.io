@@ -94,11 +94,6 @@ d3.csv("dc.data.csv", function(csv){
 		.xAxis().ticks(4);
 
 	dc.renderAll();
-
-	question_weekday_chart.selectAll("rect")
-		.on("mouseover", function(d){
-			console.log(d); 
-			}) 
 })
 
 
