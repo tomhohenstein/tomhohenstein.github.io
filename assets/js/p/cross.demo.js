@@ -95,8 +95,8 @@ d3.csv("dc.data.csv", function(csv){
 
 	dc.renderAll();
 
-	$("#question_half_hour rect").hover(function(){
-		console.log($(this)[0].data); 
+	$("#question_half_hour rect title").hover(function(){
+		console.log($(this).text()); 
 	})
 
 })
