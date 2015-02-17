@@ -19,6 +19,9 @@ javascript:
 	#time_spent {
 		text-align: center; 
 	}
+	#small-charts {
+		clear:both;
+	}
 	rect.selected,
 	.pie-slice.selected {
 		opacity: 1; 
@@ -37,7 +40,7 @@ javascript:
 	<h4>Questions by half hour</h4>
 	<div id="question_half_hour"></div>
 </div>	
-<div class="row">
+<div class="row" id="small-charts">
 	<div class="col-md-3" id="question_weekday">
 		<h4>Weekday</h4>
 	</div>
