@@ -17,7 +17,8 @@ javascript:
 	#question_weekday,
 	#location_name,
 	#patron_type,
-	#time_spent {
+	#time_spent,
+	.jumbotron a {
 		text-align: center; 
 	}
 	#question_half_hour {
