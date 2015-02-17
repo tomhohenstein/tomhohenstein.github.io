@@ -24,9 +24,9 @@ d3.csv("dc.data.csv", function(csv){
 		location_name_group = location_name.group().reduceCount(), 
 		patron_type_group = patron_type.group().reduceCount(),
 		time_spent_group = time_spent.group().reduceCount();  
-//$("#question_half_hour").width()
+
 	var question_half_hour_chart = dc.barChart("#question_half_hour")
-		.width(1000) 
+		.width($("#question_half_hour").width()) 
 		.height(300)
 		.margins({top:10, left:50, right:10, bottom:80})
 		.dimension(question_half_hour)
@@ -56,6 +56,7 @@ d3.csv("dc.data.csv", function(csv){
 		.group(location_name_group)
 		.radius([100])
 		.innerRadius([50])
+		.renderLable(false)
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"])
 		.legend(dc.legend().x(10).y(10));
  
