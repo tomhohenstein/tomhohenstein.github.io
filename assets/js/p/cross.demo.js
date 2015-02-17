@@ -93,7 +93,7 @@ d3.csv("dc.data.csv", function(csv){
 		.xAxis().ticks(4);
 
 	dc.renderAll();
-
+	//add pie mouse events 
 	d3.selectAll(".pie-slice path")
 		.on("mouseover", function(d){ 
 			var pie =d3.select("#location_name svg");
@@ -108,11 +108,12 @@ d3.csv("dc.data.csv", function(csv){
 		.on("mouseout", function(){
 			$(".center-text").remove()
 		})
-	var row = d3.selectAll(".row")
+	//add row chart mouse events 
+	var row = d3.selectAll("g.row")
 		.on("mouseover", function(d){
 			d3.select(this).select("text").attr("class", "hide");
 			d3.select(this).append("text")
-				.text(function(d){ return d.value})
+				.text(d.value)
 				.attr("class", "rect-text")
 				.attr("x", d3.select(this).select("rect").attr("width"))
 				.attr("y", "15");			
