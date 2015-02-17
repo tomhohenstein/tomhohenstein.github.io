@@ -50,6 +50,9 @@ javascript:
 	.dc-chart g.row text {
 		fill: rgb(5, 5, 5);
 	}
+	.center-text {
+		font-size: 20px; 
+	}
 </style>
 <h1>LibStats Question Data Visualized</h1>
 <div class="jumbotron">
