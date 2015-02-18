@@ -82,8 +82,8 @@ javascript:
 	</div>
 </div> 	
 <div class="row">
+	{::options parse_block_html="true" /}
 	<div class="col-md-6 col-md-offset-3">
-	<p>I am taking a [Library Juice Academy](http://libraryjuiceacademy.com/) class on using [D3](http://d3js.org/). I created this crossfilter dashboard for my last assignment (which was also late :).</p>
-
+	I am taking a [Library Juice Academy](http://libraryjuiceacademy.com/) class on using [D3](http://d3js.org/). I created this crossfilter dashboard for my last assignment (which was also late :).
 	</div>
 <div>
