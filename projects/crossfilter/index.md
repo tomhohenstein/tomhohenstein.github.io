@@ -81,12 +81,5 @@ javascript:
 		<h4>Time spent <a class="btn btn-default btn-sm" href="javascript:time_spent_chart.filterAll();dc.redrawAll();">Reset</a></h4>
 	</div>
 </div> 	
-<div class="row">
-	<div class="col-md-6 col-md-offset-3">
-
-	{::options parse_block_html="true" /}
 	
 	I am taking a [Library Juice Academy](http://libraryjuiceacademy.com/) class on using [D3](http://d3js.org/). I created this crossfilter dashboard for my last assignment (which was also late :).
-	
-	</div>
-<div>
