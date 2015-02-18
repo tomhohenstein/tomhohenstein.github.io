@@ -21,7 +21,7 @@ javascript:
 	.jumbotron {
 		text-align: center; 
 	}
-	p {
+	p:last-child {
 		width: 500px;
 		margin: 40px auto;
 	}
@@ -66,7 +66,7 @@ javascript:
 	}
 </style>
 <h1>LibStats Question Data Visualized</h1>
-<p>2014 data</p>
+<p>2014 Data</p>
 <div class="jumbotron">
 <a class="btn btn-warning btn-lg" href="javascript:dc.filterAll();dc.redrawAll();">Reset All</a>
 	<h4>Questions by Half Hour</h4>
