@@ -13,7 +13,7 @@ javascript:
 <style>
 	h1, 
 	h4,
-	p:first-child,
+	h1 + p,
 	#question_half_hour,
 	#question_weekday,
 	#location_name,
