@@ -66,10 +66,10 @@ javascript:
 	}
 </style>
 <h1>LibStats Question Data Visualized</h1>
+<span>2014 data</span>
 <div class="jumbotron">
 <a class="btn btn-warning btn-lg" href="javascript:dc.filterAll();dc.redrawAll();">Reset All</a>
 	<h4>Questions by Half Hour</h4>
-	<p>2014 data</p>
 	<div id="question_half_hour"></div>
 </div>	
 <div class="row" id="small-charts">
