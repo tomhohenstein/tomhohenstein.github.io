@@ -72,8 +72,7 @@ d3.csv("dc.data.csv", function(csv){
 		.label(function(d){ return d.key; })
 		.renderLabel(true)
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"])
-		.legend(dc.legend().x(10).y(10).itemHeight(12).gap(5));
- 
+		
 	patron_type_chart
 		.width(250) 
 		.height(250)
@@ -109,10 +108,18 @@ d3.csv("dc.data.csv", function(csv){
     			.attr("x", $("#location_name svg").width()/2) 
     			.attr("y", $("#location_name svg").height()/2)
    				.attr("class", "center-text")
-   				.text(d.value)
+   				.text(d.value);
+   			pie.append("text")
+   				.attr("text-anchor", "middle")
+    			.attr("dy", ".35em")
+    			.attr("x", $("#location_name svg").width()/2) 
+    			.attr("y", ($("#location_name svg").height()/2)-20)
+    			.attr("class", "loc-text")
+   				.text(d.data.key);
 		})
 		.on("mouseout", function(){
 			$(".center-text").remove()
+			$(".loc-text").remove()
 		})
 	//add row chart mouse events 
 	var row = d3.selectAll("g.row")
@@ -141,6 +148,3 @@ d3.csv("dc.data.csv", function(csv){
 			$(".bar-text").remove();
 		})	
 })
-
-
-
