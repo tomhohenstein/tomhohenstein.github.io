@@ -69,7 +69,7 @@ javascript:
 </div>	
 <div class="row" id="small-charts">
 	<div class="col-md-3" id="question_weekday">
-		<h4>Weekday <a class="btn btn-default btn-sm" href="javascript:question_weekday_chart.filterAll();dc.redrawAll();">Reset</a></h4>
+		<h4>Weekday <a class="reset btn btn-default btn-sm" href="javascript:question_weekday_chart.filterAll();dc.redrawAll();">Reset</a></h4>
 	</div>
 	<div class="col-md-3" id="location_name">
 		<h4>Department <a class="btn btn-default btn-sm" href="javascript:location_name_chart.filterAll();dc.redrawAll()">Reset</a></h4>
