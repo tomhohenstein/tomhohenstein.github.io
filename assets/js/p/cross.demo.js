@@ -137,7 +137,7 @@ d3.csv("dc.data.csv", function(csv){
 				.attr("y", +d3.select(this).attr("y"));	
 		})
 		.on("mouseout", function(){
-			//$(".bar-text").remove();
+			$(".bar-text").remove();
 		})	
 })
 
