@@ -21,6 +21,10 @@ javascript:
 	.jumbotron {
 		text-align: center; 
 	}
+	p {
+		width: 500px;
+		margin: 40px auto;
+	}
 	#question_half_hour {
 		float:none;
 	}
