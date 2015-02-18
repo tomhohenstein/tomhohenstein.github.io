@@ -83,7 +83,7 @@ javascript:
 </div> 	
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
-	<p>I am taking a <a href="http://libraryjuiceacademy.com/"title="Library Juice Academy">Library Juice Academy</a> class on using <a href="http://d3js.org/" title="D3">D3</a> I created this crossfilter dashboard for my last assignment (which was also late :).</p>
+	<p>I am taking a [Library Juice Academy](http://libraryjuiceacademy.com/) class on using [D3](http://d3js.org/). I created this crossfilter dashboard for my last assignment (which was also late :).</p>
 
 	</div>
 <div>
