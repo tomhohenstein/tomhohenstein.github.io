@@ -1,3 +1,4 @@
+var question_half_hour_chart = dc.barChart("#question_half_hour");
 var question_weekday_chart = dc.rowChart("#question_weekday");
 var location_name_chart = dc.pieChart("#location_name");
 var patron_type_chart = dc.rowChart("#patron_type");
@@ -37,7 +38,7 @@ d3.csv("dc.data.csv", function(csv){
 		patron_type_group = patron_type.group().reduceCount(),
 		time_spent_group = time_spent.group().reduceCount();  
 
-	question_half_hour_chart = dc.barChart("#question_half_hour")
+	question_half_hour_chart
 		.width($("#question_half_hour").width()) 
 		.height(300)
 		.margins({top:20, left:50, right:10, bottom:80})
