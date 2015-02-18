@@ -1,4 +1,7 @@
 var question_weekday_chart = dc.rowChart("#question_weekday");
+var location_name_chart = dc.pieChart("#location_name");
+var patron_type_chart = dc.rowChart("#patron_type");
+var time_spent_chart = dc.rowChart("#time_spent");
 
 d3.csv("dc.data.csv", function(csv){
 	var data = crossfilter(csv);  
@@ -47,7 +50,6 @@ d3.csv("dc.data.csv", function(csv){
         .xUnits(dc.units.ordinal)
         .yAxis().ticks(4);
 
-	
 	question_weekday_chart
 		.width(250) 
 		.height(250)
@@ -59,9 +61,9 @@ d3.csv("dc.data.csv", function(csv){
 		.renderTitle(true)
 		.colors(["rgb(65, 174, 118)"])
 		.elasticX(true)
-		.xAxis().ticks(4);
-		
-	location_name_chart = dc.pieChart("#location_name")
+		.xAxis().ticks(4);	
+	
+	location_name_chart
 		.radius([100])
 		.innerRadius([50])
 		.dimension(location_name)
@@ -71,7 +73,7 @@ d3.csv("dc.data.csv", function(csv){
 		.colors(["#fdae61", "#ffffbf", "#abdda4", "#2b83ba", "#d7191c"])
 		.legend(dc.legend().x(10).y(10).itemHeight(12).gap(5));
  
-	patron_type_chart = dc.rowChart("#patron_type")
+	patron_type_chart
 		.width(250) 
 		.height(250)
 		.margins({top:10, left:10, right:10, bottom:30})
@@ -83,7 +85,7 @@ d3.csv("dc.data.csv", function(csv){
 		.elasticX(true)
 		.xAxis().ticks(4);
 
-	time_spent_chart = dc.rowChart("#time_spent")
+	time_spent_chart
 		.width(250) 
 		.height(250)
 		.margins({top:10, left:10, right:10, bottom:30})
