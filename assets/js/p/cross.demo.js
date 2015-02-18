@@ -1,7 +1,9 @@
+var question_weekday_chart = dc.rowChart("#question_weekday");
+
 d3.csv("dc.data.csv", function(csv){
 	var data = crossfilter(csv);  
 	//set dimension vars
-	question_half_hour = data.dimension(function (d){
+	var question_half_hour = data.dimension(function (d){
 			//console.log(d.question_half_hour)
 			return d.question_half_hour; 
 		}),
@@ -26,7 +28,7 @@ d3.csv("dc.data.csv", function(csv){
 		});
 
 	//set group vars 
-		question_half_hour_group = question_half_hour.group().reduceCount(), 
+	var question_half_hour_group = question_half_hour.group().reduceCount(), 
 		question_weekday_group = question_weekday.group().reduceCount(),
 		location_name_group = location_name.group().reduceCount(), 
 		patron_type_group = patron_type.group().reduceCount(),
@@ -45,7 +47,8 @@ d3.csv("dc.data.csv", function(csv){
         .xUnits(dc.units.ordinal)
         .yAxis().ticks(4);
 
-	question_weekday_chart = dc.rowChart("#question_weekday")
+	
+	question_weekday_chart
 		.width(250) 
 		.height(250)
 		.margins({top:10, left:10, right:10, bottom:30})
@@ -132,7 +135,7 @@ d3.csv("dc.data.csv", function(csv){
 				.attr("y", +d3.select(this).attr("y"));	
 		})
 		.on("mouseout", function(){
-			$(".bar-text").remove();
+			//$(".bar-text").remove();
 		})	
 })
 
