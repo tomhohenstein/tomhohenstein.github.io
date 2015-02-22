@@ -10,7 +10,7 @@ css:
 javascript: 
 ---
 <div class="demo">
-	<a class="btn btn-success btn-lg" href="/projects/notebooks/gps-majors-2010-2013/" role="button">My Notebook</a>
+	<a class="btn btn-success btn-lg" href="/GPS-Majors-Notebook/" role="button" title="GPS Majors Notebook">My Notebook</a>
 </div>	
 
 While it was a relatively small feat, I wanted to note the sharing of my first [IPython Notebook](http://ipython.org/notebook.html) on my blog. Before enrolling in [DST4L - Data Science Training for Librarians](http://altbibl.io/dst4l/) - last fall, I didn't even know what an IPython Notebook was, let alone how to share them. 
