@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About
-css: p/about.css
 ---
 # Welcome!
 

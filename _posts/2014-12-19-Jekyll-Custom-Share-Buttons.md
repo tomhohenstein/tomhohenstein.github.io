@@ -5,7 +5,7 @@ excerpt: Learn how to make custom share buttons use Jekyll
 featured: true
 background: background-orange
 shorturl: http://goo.gl/DzkdrT
-tags: [[learning, Jekyll]]
+tags: [[jekyll]]
 ---
 
 As I continue building this website, I thought it would be a good idea to write about the site's features and the problems I encounter. This post is on how to build custom share buttons for posts and pages. 
@@ -125,5 +125,3 @@ Finally, the [Google+ branding guidelines](https://developers.google.com/+/brand
 {% endraw %}
 ```
 Google+ Example: <a href="https://plus.google.com/share?url=http://tomhohenstein.com{{ page.url }}&hl=en-US" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img alt="..." class="footer-icon" src="{{ site.baseurl }}/assets/img/social-icons/google.png"></a> 
-
-## Final Product

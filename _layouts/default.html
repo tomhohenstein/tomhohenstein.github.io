@@ -21,38 +21,20 @@
     {% for css in page.css %}
       <link href="{{ site.baseurl }}/assets/css/{{ css }}" rel="stylesheet">
     {% endfor %}
-    
-    {% for css in page.background %}
-      <link href="{{ site.baseurl }}/assets/css/b/{{ css }}.css" rel="stylesheet">
-    {% endfor %}
    </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        
         <div class="navbar-header">
           <div id="brand-holder">
             <a class="navbar-brand" href="{{ site.url }}" id="logo" ><sup>T</sup><sub>H</sub></a>
           </div>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="hamburger"> 
-            <ul class="nav navbar-nav">
-              <li><a class="custom-navbar-link" href="{{ site.baseurl }}/about/">About</a></li>
-              <li><a class="custom-navbar-link" href="{{ site.baseurl }}/blog/">Blog</a></li>
-              <li><a class="custom-navbar-link" href="{{ site.baseurl }}/projects/">Projects</a></li>
-            </ul>
-          </div>
-    
+          <a class="about-link" href="{{ site.baseurl }}/about/" title="About Tom Hohenstein">About</a>
          </div>
       </div><!-- /.container-fluid -->
     </nav>
-    <div id="body-wrapper">
+    <div class="body-wrapper" id="{{page.title}}">
     {{ content }}
     </div>
     <footer class="row">

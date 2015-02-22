@@ -5,7 +5,7 @@ excerpt: A markdown testing center
 featured: true
 shorturl: http://goo.gl/N7iu6p
 background: pattern-stripe
-tags: [[learning, markdown]]
+tags: [[markdown]]
 ---
 
 While I enjoy marking up text with HTML, it is in my interest to learn, and master, markdown. This post is a little playpen for me to learn and document learning markdowns. 

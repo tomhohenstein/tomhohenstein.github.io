@@ -3,7 +3,7 @@ $( document ).ready(function (){
 	//data obj 
 	obj = [];
 
-	d3.json("gps_major_counts.json", function(err, data){
+	d3.json("/assets/data/gps_major_counts.json", function(err, data){
 
 		//reformat data a little bit :( 
 		for (var key in data){

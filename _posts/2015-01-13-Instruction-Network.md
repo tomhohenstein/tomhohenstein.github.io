@@ -5,12 +5,27 @@ excerpt: My first D3 Force Layout
 featured: true
 background: background-light-red
 shorturl: http://goo.gl/E5uSW0
-tags: [[D3, javascript, force layout]]
-css: p/instruction-network.css
+tags: [[D3, force layout]]
 javascript: 
 - l/d3.min.js
 - p/instruction.network.js
 ---
+<style>
+.link {
+    stroke: rgb(25, 25, 25);
+    stroke-width: 0.5px;
+}
+.node {
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 5px;
+}
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+  }
+</style>
+
 <div id="svg"></div>
 
 This project attempts to represent instructional statistics from [WPI's Gordon Library](http://www.wpi.edu/academics/library.html) as a network graph and has two primary goals: 

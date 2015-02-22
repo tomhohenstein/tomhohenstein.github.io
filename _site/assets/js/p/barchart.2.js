@@ -6,7 +6,7 @@ $( document ).ready(function (){
 //Make x-axis a linear scale and y-axis an ordinal scale. 
 
 	//load data from json file 
-	d3.json("/projects/barchart-2/data.json", function(error, data){
+	d3.json("/assets/data/barchart.2.json", function(error, data){
 		// send any errors to the console
 		if(error) return console.warn(error);
 

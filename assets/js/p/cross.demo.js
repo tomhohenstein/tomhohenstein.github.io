@@ -4,7 +4,7 @@ var location_name_chart = dc.pieChart("#location_name");
 var patron_type_chart = dc.rowChart("#patron_type");
 var time_spent_chart = dc.rowChart("#time_spent");
 
-d3.csv("dc.data.csv", function(csv){
+d3.csv("/assets/data/dummy.libstats.data.csv", function(csv){
 	var data = crossfilter(csv);  
 	//set dimension vars
 	var question_half_hour = data.dimension(function (d){

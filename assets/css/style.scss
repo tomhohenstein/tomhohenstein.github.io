@@ -57,12 +57,8 @@ pre code  {
 	w/sticky footer 
 
 *************************/ 
-article {
-	max-width: 700px; 
-}
 
-#body-wrapper {
-	margin: $nav-margin auto 0; 
+.body-wrapper {
 	min-height: 100%;
 } 
 
@@ -100,6 +96,14 @@ body {
   Navigation  
 
 *************************/ 
+
+.about-link {
+	float: right;
+	margin-top: 15px;
+	@media (min-width: $break-m) {
+		margin: 15px; 
+	} 
+}
 
 #brand-holder {
 	display: inline-block;
@@ -180,3 +184,199 @@ a.btn-success,
 a.btn-success:visited {
 	color: #fff; 
 }
+
+/************************
+
+  Home Page  
+
+*************************/
+
+.current-icon {
+	width: 70%; 
+}
+
+#current-projects {
+	background-color: rgba(122, 182, 102, 0.57); 
+	margin-bottom: 0; 
+}
+
+#current-projects,
+#featured-post {
+	text-align: center;  
+}
+
+#current-projects .row {
+	padding: 0 3%; 
+}
+
+.current-text { 
+	text-align: left; 
+}
+
+.current-text a.btn:visited {
+	color: $text-w; 
+}
+
+#featured-post a:visited, 
+#recent-work a:visited {
+	color: $text-p; 
+}
+
+#featured-post > div > p:first-child {
+	font-size: 40px; 
+	font-style: italic; 
+	margin-top: 50px; 
+}
+
+#featured-post h2 {
+	font-size: 50px; 
+	margin-bottom: 40px; 
+}
+
+#featured-post > div > p:last-child {
+	font-size: 30px;  
+	margin: 0 auto 50px; 
+	max-width: 600px; 
+}
+
+#featured-project > div > p:first-child {
+	color: $primary;
+	font-size: 25px; 
+}
+
+.jumbotron {
+	background: rgb(255, 255, 255); 
+}
+
+.panel-body {
+	text-align: center; 
+}
+
+.post-item {
+	border: 1px solid black;
+	margin-top: 5%; 
+	padding: 5% 1%; 
+}
+
+.post-item a {
+	display: block; 
+	overflow-x: hidden;
+}
+
+.post-item .tags,
+.post-item .date {
+		margin-left: 70px; 
+		text-align: left;
+}
+
+.post-item .tags {
+	display: none; 
+	@media (min-width: $break-m) {
+		display: block;
+	}
+}
+
+.post-item h3 {
+	margin-top: 10px; 
+}
+
+.post-list {
+	padding: 3%; 
+}
+
+.post-list img {
+	margin: 0 10px 0 0; 
+	float: left; 
+}
+
+#recent-work > div > p:first-child {	
+	font-size: 40px;
+	font-style: italic;
+	text-align: center;
+}
+
+/************************
+
+  About Page  
+
+*************************/
+#About.body-wrapper {
+	margin: 80px auto; 
+	max-width: 1000px;
+	padding: 0 2%
+}
+
+#about-content h2, 
+#about-content p {
+	text-align: center; 
+}
+
+#about-content h4 {
+	font-size: 22px; 
+}
+
+#about-content ul {
+	padding: 0 20px; 
+}
+
+#about-timeline {
+	display:none; 
+	@media (min-width: $break-m) {
+		display: block; 
+	}
+}
+
+.resume-location {
+	display: block; 
+	margin: 10px 0; 
+	@media (min-width: $break-m) {
+		display: inline; 
+		float: right; 
+		margin: 0; 
+	}
+}
+
+#resume-experience > h3,
+#resume-education > h3, 
+#resume-additional > h3 {
+	@media (min-width: $break-m) {
+		margin-left: 8.33333333%; 
+	}
+}
+
+#text-timeline {
+	display: none; 
+	@media (min-width: $break-m) {
+		display: inline; 
+	}
+}
+
+/************************
+
+  Articles 
+
+*************************/
+
+article {
+	margin-top: 80px; 
+	margin-bottom: 80px; 
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5
+ {
+	text-align: center; 
+}
+
+article p,
+article ul,
+article ol,
+article pre,
+article code {
+	max-width: 700px;
+	margin: 10px auto;
+}
+

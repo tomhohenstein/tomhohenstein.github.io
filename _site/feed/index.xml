@@ -7,11 +7,119 @@
 		<atom:link href="http://tomhohenstein.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Libstats Questions Visualized</title>
+				<description>&lt;style&gt;
+	h1, 
+	h4,
+	p,
+	#question_half_hour,
+	#question_weekday,
+	#location_name,
+	#patron_type,
+	#time_spent,
+	.jumbotron {
+		text-align: center; 
+	}
+	p:last-child {
+		text-align: left; 
+	}
+	#question_half_hour {
+		float:none;
+	}
+	.jumbotron {
+		background-color: white; 
+		margin-bottom: 0px; 
+		padding-bottom: 0px;
+
+&lt;/style&gt;
+</description>
+				<pubDate>Fri, 20 Feb 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/Libstats-Questions-Visualized/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Libstats-Questions-Visualized/</guid>
+			</item>
+		
+			<item>
+				<title>D3 Choropleth Map</title>
+				<description>&lt;div id=&quot;clinic&quot;&gt;&lt;/div&gt;
+
+</description>
+				<pubDate>Thu, 05 Feb 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/D3-Choropleth-Map/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/D3-Choropleth-Map/</guid>
+			</item>
+		
+			<item>
+				<title>D3 Map 2</title>
+				<description>&lt;div id=&quot;clinic&quot;&gt;&lt;/div&gt;
+
+</description>
+				<pubDate>Fri, 30 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/D3-Map-2/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/D3-Map-2/</guid>
+			</item>
+		
+			<item>
+				<title>D3 Map 1</title>
+				<description>&lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+
+</description>
+				<pubDate>Fri, 30 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/D3-Map/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/D3-Map/</guid>
+			</item>
+		
+			<item>
+				<title>Donut Chart 1</title>
+				<description>&lt;style&gt;
+	.center-text {
+      font-size: 50px;
+  }
+&lt;/style&gt;
+
+</description>
+				<pubDate>Wed, 21 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/Donut-Chart-1/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Donut-Chart-1/</guid>
+			</item>
+		
+			<item>
+				<title>Pie Chart 1</title>
+				<description>&lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
+
+</description>
+				<pubDate>Tue, 20 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/Pie-Chart-1/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Pie-Chart-1/</guid>
+			</item>
+		
+			<item>
+				<title>Row Chart 2</title>
+				<description>&lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
+
+</description>
+				<pubDate>Tue, 20 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/Bar-Chart-2/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/Bar-Chart-2/</guid>
+			</item>
+		
+			<item>
 				<title>Sharing IPython Notebooks</title>
 				<description>A tidbit about publishing my first IPython Notebook</description>
-				<pubDate>Tue, 20 Jan 2015 00:00:00 -0500</pubDate>
+				<pubDate>Thu, 15 Jan 2015 00:00:00 -0500</pubDate>
 				<link>http://tomhohenstein.com/Sharing-iPython-Notebooks/</link>
 				<guid isPermaLink="true">http://tomhohenstein.com/Sharing-iPython-Notebooks/</guid>
+			</item>
+		
+			<item>
+				<title>GPS Majors 2010-2013</title>
+				<description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+</description>
+				<pubDate>Thu, 15 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://tomhohenstein.com/GPS-Majors-Notebook/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/GPS-Majors-Notebook/</guid>
 			</item>
 		
 			<item>
@@ -20,46 +128,6 @@
 				<pubDate>Tue, 13 Jan 2015 00:00:00 -0500</pubDate>
 				<link>http://tomhohenstein.com/Instruction-Network/</link>
 				<guid isPermaLink="true">http://tomhohenstein.com/Instruction-Network/</guid>
-			</item>
-		
-			<item>
-				<title>My First D3 Bar Chart</title>
-				<description>Resources and pseudocode from creating my first D3 bar chart</description>
-				<pubDate>Fri, 09 Jan 2015 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/My-First-D3-Bar-Chart/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/My-First-D3-Bar-Chart/</guid>
-			</item>
-		
-			<item>
-				<title>Timeline JS</title>
-				<description>Learn to use Timeline JS via iframe</description>
-				<pubDate>Sun, 04 Jan 2015 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Timeline-JS/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Timeline-JS/</guid>
-			</item>
-		
-			<item>
-				<title>Jekyll - Custom Share Buttons</title>
-				<description>Learn how to make custom share buttons use Jekyll</description>
-				<pubDate>Fri, 19 Dec 2014 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</guid>
-			</item>
-		
-			<item>
-				<title>Learning Markdown</title>
-				<description>A markdown testing center</description>
-				<pubDate>Sun, 30 Nov 2014 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Learning-Markdown/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Learning-Markdown/</guid>
-			</item>
-		
-			<item>
-				<title>Hello World</title>
-				<description>My first post</description>
-				<pubDate>Sun, 16 Nov 2014 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Hello-World/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Hello-World/</guid>
 			</item>
 		
 	</channel>

@@ -2,7 +2,7 @@ $( document ).ready(function (){
 	
 	//declare vars
 	var width = $("article").width(),
-		height = 500;  
+		height = $("article").width()/2;  
 	
 	var projection = d3.geo.albers()
 						.scale(width)
@@ -17,8 +17,8 @@ $( document ).ready(function (){
     				.attr("height", height);				
 
 	queue()
-    	.defer(d3.json, "/projects/map/us.json")
-    	.defer(d3.tsv, "/projects/map/airports.tsv")
+    	.defer(d3.json, "/assets/data/us.json")
+    	.defer(d3.tsv, "/assets/data/airports.tsv")
     	.await(ready);
 
 	function ready(error, us, airports) {

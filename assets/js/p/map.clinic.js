@@ -2,7 +2,7 @@ $( document ).ready(function (){
 	
 	//declare vars
 	var width = $("article").width(),
-		height = 500;  
+		height = $("article").width()/2;  
 	
 	var projection = d3.geo.albers()
 						.scale(width)
@@ -17,9 +17,9 @@ $( document ).ready(function (){
     				.attr("height", height);				
 
 	queue()
-      .defer(d3.json, "/projects/choropleth-map/us.json")
-    	.defer(d3.json, "/projects/choropleth-map/state.topo.clinics.json")
-    	.defer(d3.csv, "/projects/choropleth-map/clinics.csv")
+      .defer(d3.json, "/assets/data/us.json")
+    	.defer(d3.json, "/assets/data/state.topo.clinics.json")
+    	.defer(d3.csv, "/assets/data/dialysis.clinics.csv")
     	.await(ready);
 
 	function ready(error, us, state, clinics) {
