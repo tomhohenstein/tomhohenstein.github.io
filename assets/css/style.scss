@@ -248,6 +248,7 @@ a.btn-success:visited {
 	background: rgb(255, 255, 255); 
 }
 
+
 .panel-body {
 	text-align: center; 
 }
@@ -386,7 +387,7 @@ article code {
 
 *************************/
 
-.background-aqua { background-color: rgba(109, 229, 189, 0.29); }
-.background-lavender { background-color: rgba(149, 149, 208, 0.23); }
-.background-light-red { background-color: rgba(157, 21, 21, 0.51); }
-.background-orange { background-color: rgb(253, 193, 156); }
+.jumbotron.background-aqua { background-color: rgba(109, 229, 189, 0.29); }
+.jumbotron.background-lavender { background-color: rgba(149, 149, 208, 0.23); }
+.jumbotron.background-light-red { background-color: rgba(157, 21, 21, 0.51); }
+.jumbotron.background-orange { background-color: rgb(253, 193, 156); }
