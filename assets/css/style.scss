@@ -195,31 +195,14 @@ a.btn-success:visited {
 	width: 70%; 
 }
 
-#current-projects {
-	background-color: rgba(122, 182, 102, 0.57); 
-	margin-bottom: 0; 
-}
-
 
 #featured-post {
 	padding-bottom: 50px; 
 	text-align: center;  
 }
 
-#current-projects .row {
-	padding: 0 3%; 
-}
 
-.current-text { 
-	text-align: left; 
-}
-
-.current-text a.btn:visited {
-	color: $text-w; 
-}
-
-#featured-post a:visited, 
-#recent-work a:visited {
+#featured-post a:visited {
 	color: $text-p; 
 }
 
@@ -289,12 +272,6 @@ a.btn-success:visited {
 .post-list img {
 	margin: 0 10px 0 0; 
 	float: left; 
-}
-
-#recent-work > div > p:first-child {	
-	font-size: 40px;
-	font-style: italic;
-	text-align: center;
 }
 
 /************************
