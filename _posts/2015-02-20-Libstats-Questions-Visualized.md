@@ -1,7 +1,7 @@
 ---
 layout: post
 featured: Yes
-background: background-aqua
+background: background-lavender
 title: Libstats Questions Visualized
 tags: [[library juice, D3, crossfilter, dc-js]]
 css: l/dc.css
