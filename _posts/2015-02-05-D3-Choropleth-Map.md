@@ -2,7 +2,7 @@
 layout: post
 title: D3 Choropleth Map 
 css:
-tags: [[library juice, D3, map, choropleth, geoJSON]]
+tags: [[library juice, D3, map, choropleth]]
 javascript:
 - l/d3.min.js
 - l/queue.v1.min.js
