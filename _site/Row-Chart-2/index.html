@@ -38,7 +38,81 @@
 	<div class="entry">
 		<div id="chart"></div>
 
-<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. This bar chart was my first assignment, which I handed in late :(. But, I have a much better understanding of how to create bar charts with D3 after completing the assignment. </p>
+<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. This bar chart was my first assignment, which I handed in late :(. But, I have a much better understanding of how to create bar charts with D3 after completing the assignment. Below is the pseudocode, enjoy!</p>
+
+<pre><code>//basic on ready function
+$( document ).ready(function (){
+ 	
+	//load data from json file 
+	// error is for errors, data is the json data
+	d3.json("/assets/data/barchart.2.json", function(error, data){
+		
+		// send any errors to the console
+		if(error) return console.warn(error);
+
+		//set initial values
+		var barheight,
+			margin,
+			width,
+			height,
+			inWidth,
+			inHeight;			 
+
+		//create x axis linear scale 
+		var x = d3.scale.linear()
+			.domain()
+			.range();
+
+		//set y axis as ordinal scale 
+		var y = d3.scale.ordinal()
+			.domain()
+			.rangeBands(); 	
+
+		//var for x axis
+		var xAxis = d3.svg.axis()
+			.scale(x)
+			.orient();
+
+		//var for y axis
+		var yAxis = d3.svg.axis()
+			.scale(y)
+			.orient();
+
+		//create chart
+		var chart = d3.select("#chart").append("svg")
+			.attr("class", )
+			.attr("width", )
+			.attr("height", )
+			.attr("transform", "")
+			.append("g");
+
+		//add x axis
+		chart.append("g")
+			.attr("class", "axis")
+			.attr("transform", )
+			.call(xAxis);
+
+		//add y axis 
+		chart.append("g")
+			.attr("class", "axis")
+			.attr("transform", )
+			.call(yAxis);
+
+		chart.selectAll(".chart")
+			.data(data)
+			.enter()
+			.append('rect')
+			.attr("class", )
+			.attr("x", )	
+			.attr("y", )
+			.attr("width", )
+			.attr("height", )
+			.attr("style", );
+
+	});//end d3.json
+}); // .ready() 
+
+</code></pre>
 
 	</div>
 </article>
@@ -67,7 +141,7 @@
     
       <script src="/assets/js/l/d3.min.js"></script>
     
-      <script src="/assets/js/p/barchart.2.js"></script>
+      <script src="/assets/js/p/row.chart.2.js"></script>
     
   </body>
 </html>

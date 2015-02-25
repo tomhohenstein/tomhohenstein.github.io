@@ -1,5 +1,3 @@
-var obj = [] // for exploring in the console 
-
 $( document ).ready(function (){
 
 //Show values on the x-axis, and categories on the y-axis. 
@@ -9,9 +7,6 @@ $( document ).ready(function (){
 	d3.json("/assets/data/barchart.2.json", function(error, data){
 		// send any errors to the console
 		if(error) return console.warn(error);
-
-		//for outside access 
-		obj = data; 
 
 		//set widths, heights, and margins
 		var barheight = 50,
@@ -31,7 +26,6 @@ $( document ).ready(function (){
 		//should be ordinal scale 
 		var y = d3.scale.ordinal()
 					.domain(data.map(function(d){ return d.fruits }))
-					//.range([0, inHeight])
 					.rangeBands([0, barheight * data.length]); 			
 		//var for x axis
 		var xAxis = d3.svg.axis()
