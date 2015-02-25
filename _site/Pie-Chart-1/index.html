@@ -38,7 +38,59 @@
 	<div class="entry">
 		<div id="chart"></div>
 
-<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this pie chart for my second assignment. </p>
+<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this pie chart for my second assignment. Below is the pseudocode, enjoy! </p>
+
+<pre><code>$( document ).ready(function (){ 
+	//the data for my pie chart 
+	var data = [];
+
+	//make sure all values are numbers
+	data.forEach(function(d){ 
+		d.value = +d.value; 
+	});
+
+	//set some vars
+	var width, 
+	height, 
+	radius,
+	colors;
+
+	//create arc var
+	var arc = d3.svg.arc()
+		.outerRadius()
+		.innerRadius();
+
+	//create pie var for pie chart
+	var pie = d3.layout.pie()
+		.sort()
+		.value();			
+
+	//create chart
+	var chart = d3.select("#chart")
+		.append("svg")
+		.attr("width",)
+		.attr("height",)
+		.append("g")
+		.attr("transform", );
+
+	var g = chart.selectAll(".arc")
+		.data(pie(data))
+		.enter()
+		.append("g")
+		.attr("class",);
+
+	g.append("path")
+		.attr("d", arc)
+		.style("fill", );
+
+	g.append("text")
+		.attr("transform", ) 	
+		.attr("dy", ) 
+		.style("text-anchor", )
+		.text();
+
+}); // .ready()
+</code></pre>
 
 	</div>
 </article>
