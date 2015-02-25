@@ -93,16 +93,5 @@ $( document ).ready(function (){
    			.attr("text-anchor", "middle")
    			.attr("class", "center-text")
    			.text("Welcome");
-/*
 
-
-	g.append("text")
-		.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; }) //centers text 	
-		.attr("dy", ".35em") //text y location 
-		.style("text-anchor", "middle")
-		.text(function(d) { 
-			var t = d.data.person + " (" + d.data.value + ")";
-			return  t
-		});
-*/
 }); // .ready() 
