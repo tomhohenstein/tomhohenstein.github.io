@@ -237,9 +237,17 @@ a.btn-success:visited {
 	padding: 5% 1%; 
 }
 
+.post-item:hover {
+	background-color: $background-b; 
+	border: 1px solid white; 
+}
 .post-item a {
 	display: block; 
 	overflow-x: hidden;
+}
+
+a.post-link:hover {
+	text-decoration: none; 
 }
 
 .post-item .tags,
