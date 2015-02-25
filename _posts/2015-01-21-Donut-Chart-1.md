@@ -100,9 +100,9 @@ $( document ).ready(function (){
       	.on('mouseout', remove_tip);
 
       chart.append("text")
-   			.attr("text-anchor", )
-   			.attr("class", )
-   			.text("Welcome");
+		.attr("text-anchor", )
+		.attr("class", )
+		.text("Welcome");
 
 }); // .ready() 
 ```
