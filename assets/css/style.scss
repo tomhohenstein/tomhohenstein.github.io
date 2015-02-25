@@ -69,7 +69,7 @@ pre code  {
 footer {
 	background-color: $background-b; 
 	clear:both; 
-	height: 200px; 
+	height: 321px; 
 	padding: 50px 0; 
 }
 
@@ -79,6 +79,14 @@ footer > div {
 
 footer .footer-icon {
 	margin: 0 2%; 
+}
+
+#issues {
+	margin: 50px; 
+}
+
+#error:visited {
+	color: rgb(51, 51, 51);
 }
 
 html, 
