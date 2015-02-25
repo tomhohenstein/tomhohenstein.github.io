@@ -1,280 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  
   <url>
     <loc>http://tomhohenstein.com/Libstats-Questions-Visualized/</loc>
-    
     <lastmod>2015-02-20T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/D3-Choropleth-Map/</loc>
-    
     <lastmod>2015-02-05T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/D3-Map-2/</loc>
-    
     <lastmod>2015-01-30T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/D3-Map/</loc>
-    
     <lastmod>2015-01-30T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Donut-Chart-1/</loc>
-    
     <lastmod>2015-01-21T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Pie-Chart-1/</loc>
-    
     <lastmod>2015-01-20T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Bar-Chart-2/</loc>
-    
     <lastmod>2015-01-20T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Sharing-iPython-Notebooks/</loc>
-    
     <lastmod>2015-01-15T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/GPS-Majors-Notebook/</loc>
-    
     <lastmod>2015-01-15T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Instruction-Network/</loc>
-    
     <lastmod>2015-01-13T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Row-Chart-1/</loc>
-    
     <lastmod>2015-01-09T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Timeline-JS/</loc>
-    
     <lastmod>2015-01-05T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Jekyll-Custom-Share-Buttons/</loc>
-    
     <lastmod>2014-12-19T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Learning-Markdown/</loc>
-    
     <lastmod>2014-11-30T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/Hello-World/</loc>
-    
     <lastmod>2014-11-16T00:00:00-05:00</lastmod>
-    
     <priority>0.8</priority>
   </url>
-  
-  
   <url>
     <loc>http://tomhohenstein.com/</loc>
-    <lastmod>2015-02-22T14:45:02-05:00</lastmod>
+    <lastmod>2015-02-25T08:25:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/about/</loc>
-    <lastmod>2015-02-22T14:45:02-05:00</lastmod>
+    <lastmod>2015-02-25T08:25:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/bu/index.html</loc>
-    <lastmod>2015-01-06T19:42:44Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/boilerplate.html</loc>
-    <lastmod>2015-01-06T19:42:44Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/extensions/goto/deck.goto.html</loc>
-    <lastmod>2015-01-06T19:42:44Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/extensions/navigation/deck.navigation.html</loc>
-    <lastmod>2015-01-06T19:42:44Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/extensions/status/deck.status.html</loc>
-    <lastmod>2015-01-06T19:42:44Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/introduction/index.html</loc>
-    <lastmod>2015-01-06T19:42:44Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/test/fixtures/empty.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/test/fixtures/nesteds.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/test/fixtures/standard.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/deck/test/index.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/index.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/plugin/markdown/example.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/plugin/notes/notes.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/plugin/notes-server/notes.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/plugin/postmessage/example.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/examples/barebones.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/examples/embedded-media.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/examples/math.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/examples/slide-backgrounds.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test-markdown-element-attributes.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test-markdown-slide-attributes.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test-markdown.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
   <url>
     <loc>http://tomhohenstein.com/presentations/reveal/test/test.html</loc>
-    <lastmod>2015-01-06T19:42:45Z</lastmod>
+    <lastmod>2015-01-29T09:30:10-05:00</lastmod>
     <priority>0.6</priority>
   </url>
-  
 </urlset>
