@@ -38,7 +38,7 @@
 	<div class="entry">
 		<div id="clinic"></div>
 
-<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this choropleth map for my third assignment. </p>
+<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this choropleth map for my third assignment. The map is a bit off because I the topoJSON file includes the area for lakes and water, but the basic functionality is there. </p>
 
 <pre><code>$( document ).ready(function (){ 
 
@@ -120,7 +120,7 @@
 		.datum({type: "MultiPoint", coordinates: clinics})
 		.attr("class", "points")
 		.attr("d", path); 
-		
+
 	}//end ready funciton 
 }); // end .ready() 
 </code></pre>

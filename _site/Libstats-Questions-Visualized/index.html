@@ -41,7 +41,6 @@
 		<style>
 	h1, 
 	h4,
-	p,
 	#question_half_hour,
 	#question_weekday,
 	#location_name,
@@ -115,7 +114,112 @@
 	</div>
 </div>
 
-<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this crossfilter dashboard for my last assignment (which was also late :).</p>
+<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this <a href="http://square.github.io/crossfilter/">crossfilter</a> dashboard for my last assignment (which was also late :). Be sure to check out the APIs for both <a href="https://github.com/square/crossfilter/wiki/API-Reference">crossfilter</a> and <a href="https://github.com/mbostock/d3/wiki/API-Reference">D3</a> for further documentation. </p>
+
+<pre><code>//declare var outside of d3.csv for user interactions
+var question_half_hour_chart = ;
+var question_weekday_chart = ;
+var location_name_chart = ;
+var patron_type_chart = ;
+var time_spent_chart = ;
+
+d3.csv("data.csv", function(csv){
+	
+	//create crossfilter data 
+	var data = crossfilter(csv);  
+	
+	//set dimension vars
+	var question_half_hour = data.dimension(),
+		question_weekday = data.dimension(),
+		location_name = data.dimension(), 
+		patron_type = data.dimension(), 
+		time_spent = data.dimension();
+
+	//set group vars 
+	var question_half_hour_group = question_half_hour.group().reduceCount(), 
+		question_weekday_group = question_weekday.group().reduceCount(),
+		location_name_group = location_name.group().reduceCount(), 
+		patron_type_group = patron_type.group().reduceCount(),
+		time_spent_group = time_spent.group().reduceCount();  
+
+	question_half_hour_chart
+		.width() 
+		.height()
+		.margins({})
+		.dimension(question_half_hour)
+		.group(question_half_hour_group)
+		.label()
+		.colors([])
+		.elasticY()
+		.x(d3.scale.ordinal().domain()
+        .xUnits(dc.units.ordinal)
+        .yAxis().ticks(4);
+
+	question_weekday_chart
+		.width() 
+		.height()
+		.margins({})
+		.dimension(question_weekday)
+		.group(question_weekday_group)
+		.label()
+		.title()
+		.renderTitle(true)
+		.colors([])
+		.elasticX()
+		.xAxis().ticks(4);	
+	
+	location_name_chart
+		.radius([])
+		.innerRadius([])
+		.dimension(location_name)
+		.group(location_name_group)
+		.label()
+		.renderLabel()
+		.colors([])
+		
+	patron_type_chart
+		.width() 
+		.height()
+		.margins({})
+		.dimension(patron_type)
+		.group(patron_type_group)
+		.label()
+		.title()
+		.colors([])
+		.elasticX(true)
+		.xAxis().ticks(4);
+
+	time_spent_chart
+		.width() 
+		.height()
+		.margins({})
+		.dimension(time_spent)
+		.group(time_spent_group)
+		.label()
+		.title()
+		.colors([])
+		.elasticX(true)
+		.xAxis().ticks(4);
+
+	//render all charts 
+	dc.renderAll();
+	
+	//add pie mouse events 
+	d3.selectAll(".pie-slice path")
+		.on("mouseover", function(d){ })
+		.on("mouseout", function(){})
+
+	//add row chart mouse events 
+	var row = d3.selectAll("g.row")
+		.on("mouseover", function(d){})
+		.on("mouseout", function(){})
+
+	//add bar chart mouse events 
+	var bar = d3.selectAll(".bar")
+		.on("mouseover", function(d){})
+		.on("mouseout", function(){})	
+})
+</code></pre>
 
 	</div>
 </article>
@@ -151,8 +255,6 @@
       <script src="/assets/js/l/crossfilter.v1.min.js"></script>
     
       <script src="/assets/js/l/dc.min.js"></script>
-    
-      <script src="/assets/js/l/d3.tooltip.js"></script>
     
       <script src="/assets/js/p/cross.demo.js"></script>
     
