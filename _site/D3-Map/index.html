@@ -38,7 +38,57 @@
 	<div class="entry">
 		<div id="map"></div>
 
-<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this map for my third assignment. </p>
+<p>I am taking a <a href="http://libraryjuiceacademy.com/">Library Juice Academy</a> class on using <a href="http://d3js.org/">D3</a>. I created this map for my third assignment. An outline of the code is below.</p>
+
+<pre><code>$( document ).ready(function (){ 
+
+	//declare vars
+	var width ,
+	height;  
+
+	var projection = d3.geo.albers()
+		.scale(width)
+		.translate([width / 2, height / 2]);
+
+	var path = d3.geo.path()
+		.projection(projection)
+		.pointRadius(1);
+
+	var map = d3.select("#map").append("svg")
+		.attr("width", width)
+		.attr("height", height);	
+
+	//loads map data - using queue.v1.min.js
+	queue()
+		.defer(d3.json, "/assets/data/us.json")
+		.defer(d3.tsv, "/assets/data/airports.tsv")
+		.await(ready);
+
+	//function for when data is loaded
+	function ready(error, us, airports) {
+		map.append("path")
+			.datum(topojson.feature(us, us.objects.land))
+			.attr("class", "land")
+			.attr("d", path)
+			.attr("style",);   
+
+		map.append("g")
+			.attr("class", "state")
+			.selectAll("path")
+			.data(topojson.feature(us, us.objects.states).features)
+			.enter()
+			.append("path") 
+			.attr("d", path)
+			.attr("style",); 
+
+		map.append("path")
+			.datum({type: "MultiPoint", coordinates: airports})
+			.attr("class", "points")
+			.attr("d", path); 
+			
+	}// end ready function
+}); // end .ready() 
+</code></pre>
 
 	</div>
 </article>
