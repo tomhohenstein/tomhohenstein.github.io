@@ -85,7 +85,7 @@ javascript:
 	<div class="col-md-3" id="time_spent">
 		<h4>Time spent <a class="btn btn-default btn-sm" href="javascript:time_spent_chart.filterAll();dc.redrawAll();">Reset</a></h4>
 	</div>
-</div> 	
+</div> 
 	
 I am taking a [Library Juice Academy](http://libraryjuiceacademy.com/) class on using [D3](http://d3js.org/). I created this [crossfilter](http://square.github.io/crossfilter/) dashboard for my last assignment (which was also late :). Be sure to check out the APIs for both [crossfilter](https://github.com/square/crossfilter/wiki/API-Reference) and [D3](https://github.com/mbostock/d3/wiki/API-Reference) for further documentation. 
 
