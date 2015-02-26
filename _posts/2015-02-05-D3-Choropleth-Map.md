@@ -12,7 +12,7 @@ javascript:
 
 <div id="clinic"></div> 
 
-I am taking a [Library Juice Academy](http://libraryjuiceacademy.com/) class on using [D3](http://d3js.org/). I created this choropleth map for my third assignment. 
+I am taking a [Library Juice Academy](http://libraryjuiceacademy.com/) class on using [D3](http://d3js.org/). I created this choropleth map for my third assignment. The map is a bit off because I the topoJSON file includes the area for lakes and water, but the basic functionality is there. 
 
 ```
 $( document ).ready(function (){ 
@@ -95,7 +95,7 @@ $( document ).ready(function (){
 		.datum({type: "MultiPoint", coordinates: clinics})
 		.attr("class", "points")
 		.attr("d", path); 
-		
+
 	}//end ready funciton 
 }); // end .ready() 
 ```
