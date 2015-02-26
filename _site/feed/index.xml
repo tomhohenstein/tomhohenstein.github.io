@@ -16,6 +16,7 @@
 	#location_name,
 	#patron_type,
 	#time_spent,
+	.center, 
 	.jumbotron {
 		text-align: center; 
 	}

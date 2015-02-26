@@ -19,6 +19,7 @@ javascript:
 	#location_name,
 	#patron_type,
 	#time_spent,
+	.center, 
 	.jumbotron {
 		text-align: center; 
 	}
@@ -65,7 +66,7 @@ javascript:
 		display: none; 
 	}
 </style>
-<p>2014 Data</p>
+<p class="center">2014 Data</p>
 <div class="jumbotron">
 <a class="btn btn-warning btn-lg" href="javascript:dc.filterAll();dc.redrawAll();">Reset All</a>
 	<h4>Questions by Half Hour</h4>
