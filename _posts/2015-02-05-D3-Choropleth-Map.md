@@ -1,6 +1,7 @@
 ---
 layout: post
 title: D3 Choropleth Map 
+number: 14
 css:
 tags: [[library juice, D3, map, choropleth]]
 javascript:

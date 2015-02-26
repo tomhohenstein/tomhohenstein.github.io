@@ -7,17 +7,16 @@ title: Welcome
 		{% capture count %}{{ count | plus: '1' }}{% endcapture %}
       	{% if count == '1' %}
 			<div class="pattern {{ post.background }}"></div> 
-			<div class="jumbotron {{ post.background }}" id="featured-post">
-				<script>
-					var linkElement = document.createElement("link");
-					linkElement.rel = "stylesheet";
-					linkElement.href = "{{ site.baseurl }}/assets/css/b/{{ post.background }}.css";
-					document.head.appendChild(linkElement);
-				</script>		
+			<div class="jumbotron {{ post.background }}" id="featured-post" >		
 				<div class="container">
 					<p>Featured</p> 
 					{% assign featuredcount = featuredcount | plus:'1' %}
-					<a href="{{ post.url }}" /><h2>{{ post.title }}</h2></a>
+					<a href="{{ post.url }}" />
+						<h2>{{ post.title }}
+						<!-- <img class="img-reponsive" src="/assets/img/p/libstats-2.svg" alt="Image of Libstats Data Visualization"/> --> 
+						</h2>
+					</a>
+
 				</div>
 			</div> 	
 		{% endif %}
@@ -28,7 +27,7 @@ title: Welcome
 {% for post in site.posts%}
 	<div class="col-lg-5 col-lg-offset-1">
 		<a class="post-link" href="{{ post.url }}" title="{{ post.title }}">
-		<div class="post-item"> 
+		<div class="post-item" id="a{{ post.number }}"> 
 		
 			{% if post.tags contains "python" %}
 			<img alt="python icon" height="60" src="/assets/img/python.svg" width="60">

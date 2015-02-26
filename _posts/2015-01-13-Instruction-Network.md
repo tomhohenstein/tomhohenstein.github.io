@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Instruction Network
-excerpt: My first D3 Force Layout
-featured: true
-background: background-light-red
-shorturl: http://goo.gl/E5uSW0
+number: 6
 tags: [[D3, force layout]]
 javascript: 
 - l/d3.min.js

@@ -200,8 +200,20 @@ a.btn-success:visited {
 *************************/
 
 #featured-post {
+	background-color: #fdc19c;
 	padding-bottom: 50px; 
 	text-align: center;  
+}
+
+#featured-post .container {
+	min-height: 250px; 
+}
+
+#featured-post .container { 
+	background: url('/assets/img/p/libstats-2.svg');
+	background-repeat: no-repeat; 
+	background-position:center; 
+	margin-top: 70px; 	
 }
 
 #featured-post a:visited {
@@ -230,11 +242,6 @@ a.btn-success:visited {
 	font-size: 25px; 
 }
 
-.jumbotron {
-	background: rgb(255, 255, 255); 
-}
-
-
 .panel-body {
 	text-align: center; 
 }
@@ -246,8 +253,7 @@ a.btn-success:visited {
 }
 
 .post-item:hover {
-	background-color: $background-b; 
-	border: 1px solid white; 
+	border: 1px solid $background-b; 
 }
 .post-item a {
 	display: block; 
@@ -371,11 +377,56 @@ article code {
 
 /************************
 
-  Backgrounds 
+  Post Item Backgrounds  
 
 *************************/
 
-.jumbotron.background-aqua { background-color: rgba(109, 229, 189, 0.29); }
-.jumbotron.background-lavender { background-color: rgba(149, 149, 208, 0.23); }
-.jumbotron.background-light-red { background-color: rgba(157, 21, 21, 0.51); }
-.jumbotron.background-orange { background-color: rgb(253, 193, 156); }
+#a15 {
+	background: url('/assets/img/p/libstats-2.svg');  
+}
+
+#a14 {
+	background: url('/assets/img/p/d3-choropleth-map.svg');
+}
+
+#a13 {
+	background: url('/assets/img/p/d3-map-1.svg');
+}
+
+#a12 {
+	background: url('/assets/img/p/d3-map-2.svg');
+}
+
+#a11 {
+	background: url('/assets/img/p/donut-chart-1.svg');
+}
+
+#a10 {
+	background: url('/assets/img/p/row-chart-2.svg');
+}
+
+#a9 {
+	background: url('/assets/img/p/pie-chart-1.svg');
+}
+
+#a6 {
+	background: url('/assets/img/p/instruction-network.svg');
+}
+
+#a5 {
+	background: url('/assets/img/p/row-chart-1.svg');
+}
+
+#a5,
+#a6,
+#a9,
+#a10,
+#a11,
+#a12,
+#a13,
+#a14,
+#a15 {
+	background-repeat: no-repeat; 
+	background-position:center; 
+}
+

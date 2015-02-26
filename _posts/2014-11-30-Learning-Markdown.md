@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Learning Markdown 
-excerpt: A markdown testing center 
-featured: true
-shorturl: http://goo.gl/N7iu6p
-background: pattern-stripe
+number: 2 
 tags: [[markdown]]
 ---
 

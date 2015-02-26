@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Sharing IPython Notebooks
-excerpt: A tidbit about publishing my first IPython Notebook
-featured: Yes
-background: background-orange 
-shorturl: http://goo.gl/gNKJnN
+number: 8
 tags: [[ipython, notebook, python]]
 css:
 javascript: 

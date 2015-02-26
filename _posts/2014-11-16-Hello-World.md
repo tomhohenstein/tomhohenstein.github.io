@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World
+number: 1
 excerpt: My first post
 tags: [[test]]
 ---
