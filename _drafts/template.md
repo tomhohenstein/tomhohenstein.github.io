@@ -1,11 +1,8 @@
 ---
 layout: post
-title: TEMPLATE
-excerpt: 
-featured:  
-background: 
-shorturl: 
+title: TEMPLATE 
+featured:
+number:    
 tags: [[ ]]
-css:
 javascript: 
 ---
