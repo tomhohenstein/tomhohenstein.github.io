@@ -381,6 +381,10 @@ article code {
 
 *************************/
 
+#a16 {
+	background: url('/assets/img/p/usa.map.gif');  
+}
+
 #a15 {
 	background: url('/assets/img/p/libstats-2.png');  
 }
@@ -425,7 +429,8 @@ article code {
 #a12,
 #a13,
 #a14,
-#a15 {
+#a15,
+#a16 {
 	background-repeat: no-repeat; 
 	background-position:center; 
 }

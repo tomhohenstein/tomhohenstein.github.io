@@ -7,6 +7,22 @@
 		<atom:link href="http://tomhohenstein.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Map of the USA</title>
+				<description>&lt;style&gt;
+.state {
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+}
+
+&lt;/style&gt;
+</description>
+				<pubDate>Sun, 15 Mar 2015 00:00:00 -0400</pubDate>
+				<link>http://tomhohenstein.com/USA-map/</link>
+				<guid isPermaLink="true">http://tomhohenstein.com/USA-map/</guid>
+			</item>
+		
+			<item>
 				<title>Libstats Questions Visualized</title>
 				<description>&lt;style&gt;
 	h1, 
@@ -124,30 +140,6 @@
 				<pubDate>Thu, 15 Jan 2015 00:00:00 -0500</pubDate>
 				<link>http://tomhohenstein.com/GPS-Majors-Notebook/</link>
 				<guid isPermaLink="true">http://tomhohenstein.com/GPS-Majors-Notebook/</guid>
-			</item>
-		
-			<item>
-				<title>Instruction Network</title>
-				<description>&lt;style&gt;
-.link {
-    stroke: rgb(25, 25, 25);
-    stroke-width: 0.5px;
-}
-.node {
-    fill: #ccc;
-    stroke: #fff;
-    stroke-width: 5px;
-}
-.node text {
-  pointer-events: none;
-  font: 10px sans-serif;
-  }
-&lt;/style&gt;
-
-</description>
-				<pubDate>Tue, 13 Jan 2015 00:00:00 -0500</pubDate>
-				<link>http://tomhohenstein.com/Instruction-Network/</link>
-				<guid isPermaLink="true">http://tomhohenstein.com/Instruction-Network/</guid>
 			</item>
 		
 	</channel>
