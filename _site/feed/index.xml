@@ -25,27 +25,12 @@
 			<item>
 				<title>Libstats Questions Visualized</title>
 				<description>&lt;style&gt;
-	h1, 
-	h4,
-	#question_half_hour,
-	#question_weekday,
-	#location_name,
-	#patron_type,
-	#time_spent,
-	.center, 
-	.jumbotron {
-		text-align: center; 
+	html,
+	body, 
+	article,
+	#small-charts {
+		min-width: 992px; 
 	}
-	p:last-child {
-		text-align: left; 
-	}
-	#question_half_hour {
-		float:none;
-	}
-	.jumbotron {
-		background-color: white; 
-		margin-bottom: 0px; 
-		padding-bottom: 0px;
 
 &lt;/style&gt;
 </description>

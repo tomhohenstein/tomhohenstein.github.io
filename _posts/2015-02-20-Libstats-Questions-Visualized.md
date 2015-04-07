@@ -12,6 +12,13 @@ javascript:
 - p/cross.demo.js 
 ---
 <style>
+	html,
+	body, 
+	article,
+	#small-charts {
+		min-width: 992px; 
+	}
+
 	h1, 
 	h4,
 	#question_half_hour,
@@ -65,6 +72,10 @@ javascript:
 	.hide {
 		display: none; 
 	}
+	#small-charts div {
+		max-width: 248px; 
+	}
+
 </style>
 <p class="center">2014 Data</p>
 <div class="jumbotron">

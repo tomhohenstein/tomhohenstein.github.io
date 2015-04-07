@@ -19,8 +19,6 @@
     <link href="/assets/css/l/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
     
-      <link href="/assets/css/p/barchart.css" rel="stylesheet">
-    
    </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -80,7 +78,7 @@
 <h3 id="sorted">Sorted: A-Z</h3>
 <svg id="chart"></svg>
 
-<p>Creating my first <a href="http://d3js.org/">D3</a> bar chart was both a lot of fun and a bit more work than I anticipated. However, I think the results are <a href="http://tomhohenstein.com/projects/barchart/">well worth the effort</a>. </p>
+<p>Creating my first <a href="http://d3js.org/">D3</a> row chart was both a lot of fun and a bit more work than I anticipated. However, I think the results are worth the effort. </p>
 
 <h2 id="resources">Resources</h2>
 
@@ -95,7 +93,7 @@
 
 <h2 id="process">Process</h2>
 
-<p>The process seems easy enough, tell D3 to load some data and then build the bar chart. However, between adding the x and y axes, making the bar chart sortable, and incorporating transitions, the process can be a bit complicated. You can find the <a href="https://github.com/tomhohenstein/tomhohenstein.github.io/blob/master/assets/js/p/barchart.js">full JavaScript source on my GitHub account</a>, but I highly recommend reading <a href="http://bost.ocks.org/mike/bar/">Mike Bostock’s posts</a>.  Below is some pseudocode of the process to get you started.  </p>
+<p>The process seems easy enough, tell D3 to load some data and then build the row chart. However, between adding the x and y axes, making the row chart sortable, and incorporating transitions, the process can be a bit complicated. You can find the <a href="https://github.com/tomhohenstein/tomhohenstein.github.io/blob/master/assets/js/p/barchart.js">full JavaScript source on my GitHub account</a>, but I highly recommend reading <a href="http://bost.ocks.org/mike/bar/">Mike Bostock’s posts</a>.  Below is some pseudocode of the process to get you started.  </p>
 
 <pre><code class="language-javascript">//load data
 d3.json("data file", function(err, data){
