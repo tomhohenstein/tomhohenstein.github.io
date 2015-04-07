@@ -40,11 +40,11 @@ Within the graph above the smaller "redish" circles, or nodes, depict faculty me
 
 I could add more to this project, such as text and css effects, but I am happy with the current result. Feel free to click around, drag the circles, and generally play. If you break it, [let me know!](https://github.com/tomhohenstein/tomhohenstein.github.io/issues)
 
-##Background
+## Background
 
 Before starting, I would like to thank a [series of posts](http://bl.ocks.org/sathomas/11550728) by [sathomas](http://bl.ocks.org/sathomas) on [bl.ocks.org](http://bl.ocks.org). I was completely lost before I found these posts and would probably still be. I would also like to think the [DST4L](http://altbibl.io/dst4l/) community that [Chris Erdmann](https://twitter.com/libcce) is building. The [DST4L](http://altbibl.io/dst4l/) classes that I attended this fall were awesome and made it possible for me to get this little project off the ground. 
 
-##Tools
+## Tools
 I used the following tools to build this project: 
 
 * Mike Bostock's [D3 javascript](http://d3js.org/) library, which can be found [on GitHub](https://github.com/mbostock/d3). 
@@ -53,11 +53,12 @@ I used the following tools to build this project:
 * [Convert CSV to JSON](http://www.convertcsv.com/csv-to-json.htm)
 * [Excel](http://products.office.com/en-us/excel)
 
-##Basic Process 
+## Basic Process 
 
 Like many libraries we keep rather detailed instruction statistics. However, outside of doing some basic counting with them - number of sessions, number of student contacts, number of session per department - we don't do too much with the data. 
 
-###Our Data
+### Our Data
+
 Our statistics are entered into a form - Google Docs or Qualtrics - and ported into [Excel](http://products.office.com/en-us/excel) at the end of each term. The result is a spreadsheet has the following data: 
 
  * Library Coordinator  
@@ -73,15 +74,15 @@ Our statistics are entered into a form - Google Docs or Qualtrics - and ported i
  * Type of Instruction / Activity 
  * Is this the first time we have worked with this faculty member?
 
-###Cleaning with OpenRefine
+### Cleaning with OpenRefine
 
 I ignored/deleted all the data except library coordinator and faculty instructor. Next, I moved the spreadsheet into [OpenRefine](http://openrefine.org/) and cleaned it. As one might imagine our statistics had small typos, variations in faculty names, and other small undesirable data features. However, with [OpenRefine](http://openrefine.org/) I was able to quickly clean our data and transform it into two csv documents. One document for the nodes and one for the edges, or links. 	
 
-###Converting to JSON 
+### Converting to JSON 
 
 I converted my files into JSON as a personal preference. [D3 javascript](http://d3js.org/) does have the ability to [parse csv](https://github.com/mbostock/d3/wiki/CSV) data but I would rather work with JSON. I used [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) to transform my csv to JSON. There are other tools that can perform the same task, [convertcsv.com](http://www.convertcsv.com/csv-to-json.htm) just happened to show up higher on my [Google search](https://www.google.com?q=csv%20to%20json).
 
-###Using D3
+### Using D3
 
 Mike Bostock's [D3 javascript](http://d3js.org/) library is a really powerful library with more features and capacity than I could ever hope to explain. But, it has very good [documentation](https://github.com/mbostock/d3/wiki) and lots of [examples](https://github.com/mbostock/d3/wiki/Gallery). 
 
@@ -152,8 +153,4 @@ The basic procedure for creating a network graph are best explained by sathomas'
         //do things when node is clicked
     }
 </script>
-``` 
-
-##Code
-
-You can find the [code for this project on GitHub](https://github.com/tomhohenstein/tomhohenstein.github.io/tree/master/projects/instruction-network). If you have any questions, ideas, or improvements. Feel free to [contact me](https://twitter.com/tomhohenstein). 
+```  
