@@ -20,7 +20,7 @@ As a relative newbie to creating social media buttons, I decided it was best to 
 
 * [Twitter](https://dev.twitter.com/web/tweet-button)
 * [Facebook](https://developers.facebook.com/docs/sharing/reference/share-dialog)
-* [LinkedIn's "official"](https://developer.linkedin.com/plugins/share-plugin-generator); and [the url way](https://developer.linkedin.com/documents/share-linkedin)
+* [LinkedIn's "official"](https://developer.linkedin.com/plugins/share-plugin-generator)
 * [Google+](https://developers.google.com/+/web/share/)
 
 My approach is to use each platform's ""share via url feature. Each platform has buttons and other gadgets for sharing content, but I want to keep it simple and went with the simplest solution.  
