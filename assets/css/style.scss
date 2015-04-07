@@ -2,6 +2,28 @@
 # Foundation styles 
 ---
 @import 'sass_vars';
+/************************
+
+  tomhohenstein.com styles 
+
+  Organization
+  	- Typography 
+  	- Body 
+  	- Navigation
+  	- Home Page 
+  	- About Page
+  	- Articles 
+  	- Post Item Backgrounds 
+
+  Within each category styles are 
+  organized by
+  	- element styles
+  	- class styles
+  	- id styles 
+
+
+*************************/ 
+
 
 /************************
 
@@ -18,11 +40,11 @@ a:visited {
 	color: $link-visited;
 }
 
-a, 
-ul,
-li,  
+a,
+li,
 p,
-span {
+span, 
+ul {
 	font-size: $font-size; 
 }
 
@@ -31,15 +53,15 @@ h2,
 h3,
 h4, 
 h5,  
-ul,
-li,  
+li,
 p,
-span {
+span,
+ul {
 	color: $text-p; 
 }
 
+code,
 pre,
-code, 
 pre > code,
 pre code  {
 	color: $text-p; 
@@ -54,16 +76,11 @@ pre code  {
 
   Body  
 
-	w/sticky footer 
-
 *************************/ 
 
-.body-wrapper {
-	min-height: 100%;
-} 
-
-.container {
-	width: 100%; 
+body,
+html {
+	height: 100%; 
 }
 
 footer {
@@ -81,17 +98,12 @@ footer .footer-icon {
 	margin: 0 2%; 
 }
 
-#issues {
-	margin: 50px; 
-}
+.body-wrapper {
+	min-height: 100%;
+} 
 
-#error:visited {
-	color: rgb(51, 51, 51);
-}
-
-html, 
-body {
-	height: 100%; 
+.container {
+	width: 100%; 
 }
 
 .social-share {
@@ -99,11 +111,23 @@ body {
 	margin: 10px; 
 }
 
+#error:visited {
+	color: rgb(51, 51, 51);
+}
+
+#issues {
+	margin: 50px; 
+}
+
 /************************
 
   Navigation  
 
 *************************/ 
+a.btn-success,
+a.btn-success:visited {
+	color: #fff; 
+}
 
 .about-link {
 	float: right;
@@ -113,32 +137,13 @@ body {
 	} 
 }
 
-#brand-holder {
-	display: inline-block;
-	float: none;
-	margin: 0 0;
-	padding: 16px 10px 20px 10px;
-}
-
 .custom-navbar-link {
  	color: $text-p; 
 }
 
-#hamburger {
-	clear: both;
-	float: right; 
-}
-
-#hamburger ul {
-	display: inline-block;
-	list-style: none;
-	margin-bottom: 0; 
-	float: right;
-	padding: 10px 10px 0 0; 
-}
-
-#hamburger ul li {
-	text-align: right; 
+.demo {
+	margin: 0 0 15px 0; 
+	text-align: center; 
 }
 
 .hide {
@@ -158,15 +163,6 @@ body {
 	background-color: $background-b; 
 }
 
-#brand-holder .navbar-brand {
-	border-radius: 0 0 60px 60px;
-	color: $text-p; 
-	float: none; 
-	font-size: 35px; 
-	margin: 0 25px;
-	padding: 15px 40px 40px 40px;
-}
-
 .navbar-header {
     float: left;
     width: 100%; 
@@ -176,6 +172,39 @@ body {
 	margin-right: 0; 
 }
 
+#brand-holder {
+	display: inline-block;
+	float: none;
+	margin: 0 0;
+	padding: 16px 10px 20px 10px;
+}
+
+#brand-holder .navbar-brand {
+	border-radius: 0 0 60px 60px;
+	color: $text-p; 
+	float: none; 
+	font-size: 35px; 
+	margin: 0 25px;
+	padding: 15px 40px 40px 40px;
+}
+
+#hamburger {
+	clear: both;
+	float: right; 
+}
+
+#hamburger ul {
+	display: inline-block;
+	list-style: none;
+	margin-bottom: 0; 
+	float: right;
+	padding: 10px 10px 0 0; 
+}
+
+#hamburger ul li {
+	text-align: right; 
+}
+
 /* fix some bootstap styles to match */ 
 @media (min-width: $break-s) {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
@@ -183,64 +212,15 @@ body {
 	}
 }
 
-.demo {
-	margin: 0 0 15px 0; 
-	text-align: center; 
-}
-
-a.btn-success,
-a.btn-success:visited {
-	color: #fff; 
-}
-
 /************************
 
   Home Page  
 
 *************************/
-
-#featured-post {
-	background-color: #fdc19c;
-	padding-bottom: 50px; 
-	text-align: center;  
+a.post-link:hover {
+	text-decoration: none; 
 }
 
-#featured-post .container {
-	min-height: 250px;  
-}
-
-#featured-post .container { 
-	background: url('/assets/img/p/libstats-2.png');
-	background-repeat: no-repeat; 
-	background-position:center; 
-	margin-top: 70px; 	
-}
-
-#featured-post a:visited {
-	color: $text-p; 
-}
-
-#featured-post > div > p:first-child {
-	font-size: 40px; 
-	font-style: italic; 
-	margin-top: 50px; 
-}
-
-#featured-post h2 {
-	font-size: 50px; 
-	margin-bottom: 40px; 
-}
-
-#featured-post > div > p:last-child {
-	font-size: 30px;  
-	margin: 0 auto 50px; 
-	max-width: 600px; 
-}
-
-#featured-project > div > p:first-child {
-	color: $primary;
-	font-size: 25px; 
-}
 
 .panel-body {
 	text-align: center; 
@@ -255,19 +235,20 @@ a.btn-success:visited {
 .post-item:hover {
 	border: 1px solid $background-b; 
 }
+
 .post-item a {
 	display: block; 
 	overflow-x: hidden;
 }
 
-a.post-link:hover {
-	text-decoration: none; 
+.post-item h3 {
+	margin-top: 10px; 
 }
 
-.post-item .tags,
-.post-item .date {
-		margin-left: 70px; 
-		text-align: left;
+.post-item .date,
+.post-item .tags {
+	margin-left: 70px; 
+	text-align: left;
 }
 
 .post-item .tags {
@@ -275,10 +256,6 @@ a.post-link:hover {
 	@media (min-width: $break-m) {
 		display: block;
 	}
-}
-
-.post-item h3 {
-	margin-top: 10px; 
 }
 
 .post-list {
@@ -290,11 +267,57 @@ a.post-link:hover {
 	float: left; 
 }
 
+#featured-post {
+	background-color: #fdc19c;
+	padding-bottom: 50px; 
+	text-align: center;  
+}
+
+#featured-post a:visited {
+	color: $text-p; 
+}
+
+#featured-post > div > p:first-child {
+	color: $primary;
+	font-size: 25px; 
+	font-style: italic; 
+	margin-top: 50px; 
+}
+
+#featured-post > div > p:last-child {
+	font-size: 30px;  
+	margin: 0 auto 50px; 
+	max-width: 600px; 
+}
+
+#featured-post h2 {
+	font-size: 50px; 
+	margin-bottom: 40px; 
+}
+
+#featured-post .container { 
+	background: url('/assets/img/p/libstats-2.png');
+	background-repeat: no-repeat; 
+	background-position:center; 
+	margin-top: 70px; 
+	min-height: 250px;	
+}
+
 /************************
 
   About Page  
 
 *************************/
+.resume-location {
+	display: block; 
+	margin: 10px 0; 
+	@media (min-width: $break-m) {
+		display: inline; 
+		float: right; 
+		margin: 0; 
+	}
+}
+
 #About.body-wrapper {
 	margin: 80px auto; 
 	max-width: 1000px;
@@ -321,16 +344,6 @@ a.post-link:hover {
 	}
 }
 
-.resume-location {
-	display: block; 
-	margin: 10px 0; 
-	@media (min-width: $break-m) {
-		display: inline; 
-		float: right; 
-		margin: 0; 
-	}
-}
-
 #resume-experience > h3,
 #resume-education > h3, 
 #resume-additional > h3 {
@@ -351,7 +364,6 @@ a.post-link:hover {
   Articles 
 
 *************************/
-
 article {
 	margin-top: 80px; 
 	margin-bottom: 80px; 
@@ -361,16 +373,15 @@ article h1,
 article h2,
 article h3,
 article h4,
-article h5
- {
+article h5 {
 	text-align: center; 
 }
 
+article code,
 article p,
-article ul,
-article ol,
 article pre,
-article code {
+article ol,
+article ul {
 	max-width: 700px;
 	margin: 10px auto;
 }
