@@ -7,5 +7,6 @@ layout: default
   
   <h1><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
   {{ post.content }}
+  <p class="small gray"><time datetime="{{ page.date | date: "%Y-%m-%d"}}">{{ post.date | date_to_long_string }}</time></p>
 </article>
 {% endfor %}
