@@ -1,7 +1,0 @@
-.pattern-stripe {
-	background: repeating-linear-gradient( 90deg, 
-		rgba(96, 109, 188, 0.1), 
-		rgba(96, 109, 188, 0.1) 10%, 
-		rgba(124, 138, 219, 0.3) 10%, 
-		rgba(121, 132, 195, 0.3) 20% );
-}

@@ -1,9 +1,32 @@
-#Welcome 
+# Heather
+A Hyperminimal Jekyll Theme
 
-Welcome to tomhohenstein.com (aka the tomhohenstein.github.io repository). This site is currently under construction as I am moving from my wordpress site into github and learning jekyll. 
+http://jxnblk.github.io/Heather/
 
-##Licensing 
+## About Jekyll
+Jekyll is a static site generator that plays nicely with Github pages and is extremely quick to set up.
 
-Any software I develop, which is a long shot at this point, is licensed under the MIT license. See license.txt for more information. 
+Read more about Jekyll: http://jekyllrb.com/
 
-Any content found on this site, like images, text, videos, diagrams, dioramas, or hand puppets, is licensed under Creative Commons BY 3.0. Which essentially means, if I have this right, you can do whatever you want with it as long as you provide attribution. See LICENSE.md for more information.
+## Get Started
+Once you have Jekyll set up, the first thing you'll want to do is edit the `_config.yml` file. Change the name, description, author and url. An example localhost url is commented out for conveniently switching between local and production environments.
+
+    name: "Heather"
+    description: "A Hyperminimal Jekyll Theme"
+    author: "Jxnblk"
+
+    # url: "http://localhost:4000"
+    url: "http://jxnblk.github.io/Heather"
+
+    exclude: [README.md, Rakefile]
+    paginate: 16
+    permalink: /:title
+
+## Creating a Post
+Once you've customized the settings, use the `_posts/2103-01-01-template.md` file as a starting point for creating a post. Rename the file to reflect the date and title of your post. Open the file, change the title and write your own content.
+
+---
+
+MIT License
+http://opensource.org/licenses/MIT
+

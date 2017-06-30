@@ -1,0 +1,19 @@
+---
+layout: default
+permalink: /archive/
+---
+
+{% for post in site.posts %}
+<article class="post">
+  
+  <h1>
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </h1>
+  <p>
+    {{ post.date | date: '%B %d, %Y' }} <br>
+    {{ post.excerpt }}</p>
+  <p>
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read More &raquo;</a>
+  </p> 
+</article>
+{% endfor %}
