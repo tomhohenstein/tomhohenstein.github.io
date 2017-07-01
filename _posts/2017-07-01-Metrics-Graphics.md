@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using MetricsGraphics.js
-permalink: MetricsGraphics
+permalink: /metricsgraphicss/
 css: metricsgraphics.css
 js:
 - jquery.js
