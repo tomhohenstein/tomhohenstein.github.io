@@ -10,6 +10,9 @@
   <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/assets/images/favicon.svg" />
   <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.min.css" /> 
   <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css" /> 
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+  {% for css in page.css %}
+   <link href="{{ site.baseurl }}/assets/css/{{ css }}" rel="stylesheet">
+  {% endfor %}
+
 </head>
 <body>

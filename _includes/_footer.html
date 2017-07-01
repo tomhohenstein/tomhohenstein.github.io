@@ -4,5 +4,11 @@
     <a class="btn-lg btn-default" href="{{ site.url }}/archive/" role="button">More Posts</a> 
   </div>
 </footer>
+
+{% for js in page.js %}
+ <script src="{{ site.url }}/assets/js/{{ js }}"></script>
+{% endfor %}
+
+
 </body>
 </html>
