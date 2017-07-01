@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.min.css" /> 
   <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css" /> 
 
-{% for post in site.posts limit:1%}
+{% for post in site.posts limit:1 %}
   {% for css in post.css %}
      <link href="{{ site.baseurl }}/assets/css/{{ css }}" rel="stylesheet"> 
   {% endfor %}
